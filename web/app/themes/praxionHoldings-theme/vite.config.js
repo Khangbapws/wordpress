@@ -3,30 +3,13 @@ import tailwindcss from '@tailwindcss/vite';
 import laravel from 'laravel-vite-plugin';
 import { wordpressPlugin, wordpressThemeJson } from '@roots/vite-plugin';
 
-const appUrl =
-  process.env.APP_URL ||
-  process.env.DDEV_PRIMARY_URL ||
-  'http://my-wp-bedrock-praxionholdingspage.ddev.site:33000/';
-const appHost = new URL(appUrl).hostname;
-
-process.env.APP_URL = appUrl;
+// Set APP_URL if it doesn't exist for Laravel Vite plugin
+if (!process.env.APP_URL) {
+  process.env.APP_URL = 'http://example.test';
+}
 
 export default defineConfig({
-  base: '/app/themes/praxionHoldings-theme/public/build/',
-  server: {
-    host: '0.0.0.0',
-    port: 5173,
-    strictPort: true,
-    origin: `${appUrl}:5173`,
-    cors: {
-      origin: /https?:\/\/([A-Za-z0-9-]+\.)?ddev\.site(?::\d+)?$/,
-    },
-    hmr: {
-      protocol: 'wss',
-      host: appHost,
-      clientPort: 5173,
-    },
-  },
+  base: '/app/themes/sage/public/build/',
   plugins: [
     tailwindcss(),
     laravel({

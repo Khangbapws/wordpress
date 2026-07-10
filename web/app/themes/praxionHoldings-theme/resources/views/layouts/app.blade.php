@@ -10,6 +10,26 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
+<body @php(body_class())>
+    @php(wp_body_open())
+
+    <div id="app">
+        {{-- Gọi đúng component header nằm trong thư mục front-page --}}
+        <x-front-page.header />
+
+        <main id="main" class="main">
+            @yield('content')
+        </main>
+
+        {{-- Gọi đúng component footer nằm trong thư mục front-page --}}
+        <x-front-page.footer />
+    </div>
+
+    @php(do_action('get_footer'))
+    @php(wp_footer())
+</body>
+
+</html>
 {{-- <body @php(body_class())>
     @php(wp_body_open())
 
@@ -36,11 +56,3 @@
     @php(do_action('get_footer'))
     @php(wp_footer())
   </body> --}}
-
-<body>
-    <main id="main" class="main">
-        @yield('content')
-    </main>
-</body>
-
-</html>

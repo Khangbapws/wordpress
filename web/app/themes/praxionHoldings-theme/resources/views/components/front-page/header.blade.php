@@ -1,14 +1,51 @@
-<div class="w-screen flex flex-row items-center justify-between">
-    <div class="w-fit">
-        <a href="/">praxionHoldings</a>
+<header class="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur-md">
+
+    <div class="container-page">
+
+        <div class="grid h-20 grid-cols-3 items-center">
+
+            <!-- Logo -->
+
+            <div class="flex justify-start">
+
+                <a href="{{ home_url('/') }}" class="text-2xl font-bold no-underline text-primary">
+                    PRX Holdings
+                </a>
+
+            </div>
+
+            <!-- Menu -->
+
+            <nav class="flex justify-center">
+
+                <ul class="flex items-center gap-10">
+
+                    <li><a href="#services">Dịch vụ</a></li>
+
+                    <li><a href="#showcase">Giải pháp</a></li>
+
+                    <li><a href="#about">Về chúng tôi</a></li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Buttons -->
+
+            <div class="flex justify-end gap-3">
+
+                <x-ui.button href="/login" variant="text">
+                    Đăng nhập
+                </x-ui.button>
+
+                <x-ui.button href="/register">
+                    Bắt đầu ngay
+                </x-ui.button>
+
+            </div>
+
+        </div>
+
     </div>
-    <div class="w-fit flex flex-row items-center gap-4">
-        <a href="/services">Dịch vụ</a>
-        <a href="/showcase">Giải pháp</a>
-        <a href="/about">Về chúng tôi</a>
-    </div>
-    <div class="w-fit flex flex-row items-center gap-4">
-        <a href="/login">Đăng nhập</a>
-        <a href="/register">Bắt đầu ngay</a>
-    </div>
-</div>
+
+</header>

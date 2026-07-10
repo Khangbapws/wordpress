@@ -1,4 +1,81 @@
 @import 'tailwindcss' theme(static);
+@import 'lenis/lenis.css';
 @source "../../app/**/*.php";
 @source "../**/*.blade.php";
 @source "../**/*.js";
+
+@theme {
+  /* Fonts - Đồng bộ font chữ hiện đại, bo tròn nhẹ cho ngành làm đẹp */
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Colors - Định nghĩa lại bảng màu Xanh Lá & Trắng của Praxion Holdings */
+  --color-primary: #2e7d32; /* Xanh lá thương hiệu (Thay cho màu xanh dương cũ) */
+  --color-primary-dark: #1b5e20; /* Xanh lá đậm khi hover */
+  --color-brand-light: #f2f9f3; /* Xanh lá siêu nhạt làm nền */
+  --color-brand-mint: #c8e6c9; /* Xanh mint làm điểm nhấn */
+  --color-text-dark: #1c2a1e; /* Chữ xanh đen đậm cho thanh lịch */
+  --color-muted: #616e64; /* Màu xám nhạt cho text phụ */
+  --color-surface: #fafcfb;
+
+  /* Spacing */
+  --spacing-18: 4.5rem;
+  --spacing-88: 22rem;
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+/* Component styles — Quy hoạch toàn bộ nút bấm vào đây bằng @apply */
+@layer components {
+  /* Nhóm các nút bấm cạnh nhau */
+  .btn-group {
+    @apply inline-flex items-center gap-3; /* gap-3 tương đương 12px */
+  }
+
+  /* Nút bấm chính (Bắt đầu ngay) */
+  .btn-cta {
+    @apply inline-flex items-center justify-center px-6 py-3
+           font-semibold rounded-full bg-primary text-white
+           transition-all duration-300 no-underline;
+  }
+  .btn-cta:hover {
+    @apply bg-primary-dark -translate-y-0.5 shadow-lg shadow-primary/20 no-underline;
+  }
+
+  /* Nút Đăng nhập tối giản (Màu xanh lá, không gạch chân) */
+  .btn-login {
+    @apply text-primary font-semibold px-6 py-3 rounded-full
+           transition-all duration-300 inline-block no-underline;
+  }
+  .btn-login:hover {
+    @apply bg-primary/10 -translate-y-0.5 no-underline; /* Tạo nền mờ 10% từ màu primary */
+  }
+}
+
+@layer base {
+  body {
+    @apply antialiased bg-surface text-text-dark;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold tracking-tight;
+  }
+
+  /* Thẻ a mặc định sẽ ăn theo màu xanh lá của hệ thống */
+  a {
+    @apply no-underline;
+  }
+}
+@utility container-page {
+  @apply mx-auto
+    max-w-[1440px]
+    px-10;
+}
