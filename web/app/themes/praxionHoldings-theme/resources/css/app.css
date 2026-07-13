@@ -1,5 +1,4 @@
 @import 'tailwindcss' theme(static);
-@import 'lenis/lenis.css';
 @source "../../app/**/*.php";
 @source "../**/*.blade.php";
 @source "../**/*.js";
