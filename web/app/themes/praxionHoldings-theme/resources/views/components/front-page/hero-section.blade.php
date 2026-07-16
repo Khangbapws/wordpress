@@ -9,23 +9,23 @@
     <div class="container-page">
 
         <x-ui.badge>
-            Xu hướng công nghệ tương lai
+            Future technology trends
         </x-ui.badge>
 
         <h1
             class="mx-auto mt-6 max-w-4xl text-4xl font-bold leading-tight tracking-tight text-dark md:text-5xl lg:text-6xl">
-            Đơn giản hóa quy trình vận hành doanh nghiệp của bạn
+            Simplify your business operations
         </h1>
 
         <p class="mx-auto mt-6 max-w-2xl text-lg text-muted">
-            Chúng tôi cung cấp các giải pháp tối giản giúp thương hiệu của bạn nổi bật và tiếp cận khách hàng một cách
-            tự nhiên nhất.
+            We offer minimalist solutions that help your brand stand out and reach customers in the most natural way
+            possible.
         </p>
 
         <div class="mt-10">
 
             <x-ui.button href="/solutions-page">
-                Khám phá giải pháp
+                Explore solutions
             </x-ui.button>
 
         </div>

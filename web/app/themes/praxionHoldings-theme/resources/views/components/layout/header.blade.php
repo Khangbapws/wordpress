@@ -20,11 +20,11 @@
 
                 <ul class="flex items-center gap-10">
 
-                    <li><a href="#services">Dịch vụ</a></li>
+                    <a href="{{ home_url('/services') }}">Services</a></li>
 
-                    <li><a href="#showcase">Giải pháp</a></li>
+                    <li><a href="#showcase">Solution</a></li>
 
-                    <li><a href="#about">Về chúng tôi</a></li>
+                    <li><a href="#about">About us</a></li>
 
                 </ul>
 
@@ -35,11 +35,11 @@
             <div class="flex justify-end gap-3">
 
                 <x-ui.button href="/login" variant="text">
-                    Đăng nhập
+                    Login
                 </x-ui.button>
 
                 <x-ui.button href="/register">
-                    Bắt đầu ngay
+                    Start now
                 </x-ui.button>
 
             </div>

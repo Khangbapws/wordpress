@@ -2,25 +2,25 @@
 
     <div class="container-page">
 
-        <x-ui.section-title title="Dịch vụ cốt lõi"
-            subtitle="Mọi thứ bạn cần để tăng trưởng, được tinh gọn trong một nền tảng." />
+        <x-ui.section-title title="Core services"
+            subtitle="Everything you need for growth, streamlined into one platform." />
 
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-            <x-front-page.bento-card icon="✦" title="Thiết kế Trải nghiệm Cao cấp" :wide="true">
-                Giao diện nịnh mắt, mượt mà giúp giữ chân khách hàng lâu hơn trên nền tảng của bạn.
+            <x-front-page.bento-card icon="✦" title="Premium Experience Design" :wide="true">
+                A visually appealing and smooth interface helps keep customers on your platform longer.
             </x-front-page.bento-card>
 
-            <x-front-page.bento-card icon="⚡" title="Tối ưu Tốc độ">
-                Tải trang trong chớp mắt, tối ưu SEO tuyệt đối.
+            <x-front-page.bento-card icon="⚡" title="Speed ​​Optimization">
+                Load pages in the blink of an eye, with absolute SEO optimization.
             </x-front-page.bento-card>
 
-            <x-front-page.bento-card icon="⚲" title="Bảo mật Tối đa">
-                Hệ thống chuẩn mã hóa dữ liệu an toàn.
+            <x-front-page.bento-card icon="⚲" title="Maximum Security">
+                A data encryption standard system.
             </x-front-page.bento-card>
 
-            <x-front-page.bento-card icon="📊" title="Phân tích Dữ liệu thông minh" :wide="true">
-                Báo cáo trực quan, giúp bạn đưa ra quyết định kinh doanh chính xác dựa trên hành vi người dùng thực tế.
+            <x-front-page.bento-card icon="📊" title="Smart Data Analysis" :wide="true">
+                Visual reports help you make accurate business decisions based on actual user behavior.
             </x-front-page.bento-card>
 
         </div>

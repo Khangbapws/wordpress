@@ -4,7 +4,7 @@
 
 @php
     $colors = [
-        'green' => 'bg-[#c8e6c9] text-[#2e7d32]',
+        'green' => 'bg-brand-mint text-primary',
         'gray' => 'bg-gray-100 text-gray-700',
         'blue' => 'bg-blue-100 text-blue-700',
     ];
@@ -13,7 +13,7 @@
 <span
     {{ $attributes->merge([
         'class' =>
-            'inline-flex items-center rounded-full px-4 py-1.5 text-sm font-semibold ' .
+            'inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium transition-colors duration-200 ' .
             ($colors[$color] ?? $colors['green']),
     ]) }}>
     {{ $slot }}

@@ -6,12 +6,12 @@
 
             <div>
 
-                <x-ui.section-title align="left" title="Sẵn sàng nâng tầm thương hiệu?"
-                    subtitle="Hãy để chúng tôi đồng hành cùng bạn xây dựng một không gian số tối giản, chuyên nghiệp và hiệu quả."
+                <x-ui.section-title align="left" title="Ready to take your brand to the next level?"
+                    subtitle="Let us help you build a minimalist, professional, and efficient digital space."
                     class="mb-8" />
 
                 <x-ui.button href="/contact" variant="secondary">
-                    Liên hệ tư vấn
+                    Contact us
                 </x-ui.button>
 
             </div>

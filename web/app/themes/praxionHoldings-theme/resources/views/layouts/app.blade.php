@@ -14,15 +14,15 @@
     @php(wp_body_open())
 
     <div id="app">
-        {{-- Gọi đúng component header nằm trong thư mục front-page --}}
-        <x-front-page.header />
+
+        <x-layout.header />
 
         <main id="main" class="main">
             @yield('content')
         </main>
 
-        {{-- Gọi đúng component footer nằm trong thư mục front-page --}}
-        <x-front-page.footer />
+
+        <x-layout.footer />
     </div>
 
     @php(do_action('get_footer'))
