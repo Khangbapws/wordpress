@@ -24,7 +24,7 @@
 
                     <li><a href="{{ home_url('/solution') }}">Solution</a></li>
 
-                    <li><a href="#about">About us</a></li>
+                    <li><a href="{{ home_url('/about-us') }}">About us</a></li>
 
                 </ul>
 
