@@ -1,11 +1,11 @@
 import { heroAnimation } from './hero';
-import { servicesAnimation } from './services';
-import { showcaseAnimation } from './showcase';
-import { footerAnimation } from './footer';
+import { scrollTriggerAnimation } from './scrolltrigger';
+import { faqAnimation } from './faq';
+
+export { heroAnimation, scrollTriggerAnimation, faqAnimation };
 
 export function initAnimations() {
   heroAnimation();
-  servicesAnimation();
-  showcaseAnimation();
-  footerAnimation();
+  scrollTriggerAnimation();
+  faqAnimation();
 }

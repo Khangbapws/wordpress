@@ -22,7 +22,7 @@
 
                     <a href="{{ home_url('/services') }}">Services</a></li>
 
-                    <li><a href="#showcase">Solution</a></li>
+                    <li><a href="{{ home_url('/solution') }}">Solution</a></li>
 
                     <li><a href="#about">About us</a></li>
 

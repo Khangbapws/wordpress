@@ -72,6 +72,9 @@
   a {
     @apply no-underline;
   }
+  [x-cloak] {
+    display: none !important;
+  }
 }
 @utility container-page {
   @apply mx-auto

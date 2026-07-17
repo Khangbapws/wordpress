@@ -1,29 +1,37 @@
-const tl = gsap.timeline({
-  defaults: {
-    ease: 'power3.out',
-  },
-});
+import { gsap } from '../lib/gsap';
 
-tl.from('.hero-title', {
-  y: 40,
-  opacity: 0,
-  duration: 0.9,
-})
-  .from(
-    '.hero-subtitle',
-    {
-      y: 20,
-      opacity: 0,
-      duration: 0.6,
+export function heroAnimation() {
+  const hero = document.querySelector('.hero-title');
+
+  if (!hero) return;
+
+  const tl = gsap.timeline({
+    defaults: {
+      ease: 'power3.out',
     },
-    '-=.4',
-  )
-  .from(
-    '.hero-cta',
-    {
-      y: 20,
-      opacity: 0,
-      duration: 0.5,
-    },
-    '-=.3',
-  );
+  });
+
+  tl.from('.hero-title', {
+    y: 40,
+    opacity: 0,
+    duration: 0.9,
+  })
+    .from(
+      '.hero-subtitle',
+      {
+        y: 20,
+        opacity: 0,
+        duration: 0.6,
+      },
+      '-=0.4',
+    )
+    .from(
+      '.hero-cta',
+      {
+        y: 20,
+        opacity: 0,
+        duration: 0.5,
+      },
+      '-=0.3',
+    );
+}
