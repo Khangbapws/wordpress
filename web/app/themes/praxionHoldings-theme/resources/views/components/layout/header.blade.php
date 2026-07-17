@@ -20,10 +20,8 @@
 
                 <ul class="flex items-center gap-10">
 
-                    <a href="{{ home_url('/services') }}">Services</a></li>
-
                     <li><a href="{{ home_url('/solution') }}">Solution</a></li>
-
+                    <li><a href="{{ home_url('/services') }}">Services</a></li>
                     <li><a href="{{ home_url('/about-us') }}">About us</a></li>
 
                 </ul>
@@ -34,11 +32,7 @@
 
             <div class="flex justify-end gap-3">
 
-                <x-ui.button href="/login" variant="text">
-                    Login
-                </x-ui.button>
-
-                <x-ui.button href="/register">
+                <x-ui.button href="{{ home_url('/services') }}">
                     Start now
                 </x-ui.button>
 

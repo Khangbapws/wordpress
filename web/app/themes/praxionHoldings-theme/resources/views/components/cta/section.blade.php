@@ -20,7 +20,7 @@
         <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
 
             {{-- Primary CTA --}}
-            <a href="/register"
+            <a href="{{ home_url('/services') }}"
                 class="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 font-semibold text-primary transition hover:-translate-y-1 hover:shadow-xl no-underline">
                 Start for free
             </a>
