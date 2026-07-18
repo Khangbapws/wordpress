@@ -1,150 +1,28 @@
-<footer class="mt-20 bg-white">
-
-    <div class="container-page py-16">
-
-        {{-- Top --}}
-        <div class="flex flex-col gap-12 lg:flex-row lg:items-start">
-
-            {{-- Brand --}}
-            <div class="lg:w-3/5">
-
+<footer class="mt-20 border-t border-gray-200/70 bg-white">
+    <div class="container-page py-14 lg:py-16">
+        <div class="grid gap-12 lg:grid-cols-[1.35fr_1fr] lg:gap-20">
+            <div>
                 <a href="{{ home_url('/') }}" class="text-2xl font-bold tracking-tight text-primary no-underline">
                     PRX Holdings
                 </a>
-
                 <p class="mt-5 max-w-xl text-base leading-7 text-muted">
-                    Building modern business management solutions
-                    for Beauty &amp; F&amp;B.
+                    A connected software ecosystem for beauty and spa businesses, their teams, and the customers who book with them.
                 </p>
-
             </div>
 
-            {{-- Navigation --}}
-            <div class="lg:ml-auto lg:w-2/5">
-
-                <div class="grid grid-cols-2 gap-x-12">
-
-                    {{-- Company --}}
-                    <div>
-
-                        <h3 class="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-text-dark">
-                            Company
-                        </h3>
-
-                        <ul class="space-y-3">
-
-                            <li>
-                                <a href="/about"
-                                    class="text-sm text-muted no-underline transition-colors duration-200 hover:text-primary">
-                                    About
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="/contact"
-                                    class="text-sm text-muted no-underline transition-colors duration-200 hover:text-primary">
-                                    Contact
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                    {{-- Legal --}}
-                    <div>
-
-                        <h3 class="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-text-dark">
-                            Legal
-                        </h3>
-
-                        <ul class="space-y-3">
-
-                            <li>
-                                <a href="/privacy-policy"
-                                    class="text-sm text-muted no-underline transition-colors duration-200 hover:text-primary">
-                                    Privacy
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="/terms"
-                                    class="text-sm text-muted no-underline transition-colors duration-200 hover:text-primary">
-                                    Terms
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+            <nav aria-label="Footer navigation">
+                <h2 class="text-sm font-semibold tracking-[0.16em] text-text-dark uppercase">Explore</h2>
+                <ul class="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-2">
+                    <li><a href="{{ home_url('/solution') }}" class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">Solution</a></li>
+                    <li><a href="{{ home_url('/services') }}" class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">Pricing</a></li>
+                    <li><a href="{{ home_url('/about-us') }}" class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">About us</a></li>
+                    <li><a href="{{ home_url('/contact') }}" class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">Contact</a></li>
+                </ul>
+            </nav>
         </div>
 
-        {{-- Bottom --}}
-
-        <div class="mt-12 border-t border-gray-200/60 pt-8">
-
-            <div class="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
-
-                {{-- Copyright --}}
-                <div>
-
-                    <p class="text-sm font-medium text-text-dark">
-                        © {{ date('Y') }} PRX Holdings
-                    </p>
-
-                    <p class="mt-2 text-sm text-muted">
-                        All rights reserved.
-                    </p>
-
-                </div>
-
-                {{-- Social --}}
-                <nav>
-
-                    <ul class="flex flex-wrap gap-x-8 gap-y-2">
-
-                        <li>
-
-                            <a href="#"
-                                class="text-sm text-muted no-underline transition-colors duration-200 hover:text-primary">
-                                Facebook
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a href="#"
-                                class="text-sm text-muted no-underline transition-colors duration-200 hover:text-primary">
-                                LinkedIn
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a href="#"
-                                class="text-sm text-muted no-underline transition-colors duration-200 hover:text-primary">
-                                GitHub
-                            </a>
-
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-            </div>
-
+        <div class="mt-12 border-t border-gray-200/70 pt-7">
+            <p class="text-sm text-muted">© {{ date('Y') }} PRX Holdings. All rights reserved.</p>
         </div>
-
     </div>
-
-
-
 </footer>

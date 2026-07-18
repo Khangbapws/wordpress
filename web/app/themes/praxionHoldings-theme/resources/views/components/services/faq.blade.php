@@ -1,88 +1,62 @@
-<section class="py-32">
+@php
+    $items = [
+        ['How long is the free trial?', 'The free trial lasts 15 days. No additional trial conditions are stated on this page.'],
+        ['Are the listed prices monthly rates?', 'No. Each amount is the complete price for its stated term—for example, 3 months costs US$30 for that three-month term.'],
+        ['Do the billing terms have different feature sets?', 'The choices on this page select a billing duration. They do not describe separate products or different feature limits.'],
+        ['Which terms receive a next-cycle discount?', 'Only the 12-month and Elite 24-month packages receive 30% off the next billing cycle. The benefit applies to that next cycle only.'],
+        ['Can PRX Holdings support more than one shop?', 'Yes. The ecosystem supports unlimited shop branches.'],
+        ['Who uses the mobile applications?', 'Booking customers use one mobile application. Business owners and staff share a separate mobile application.'],
+    ];
+@endphp
+
+<section aria-labelledby="pricing-faq-title" class="bg-white py-20 sm:py-24 lg:py-32">
     <div class="container-page">
-        {{-- Heading --}}
         <div class="mx-auto max-w-3xl text-center">
-            <x-ui.badge>
-                Support
-            </x-ui.badge>
-            <h2 class="mt-6 text-5xl font-bold tracking-tight text-text-dark">
-                Frequently asked
-                <span class="text-primary">
-                    questions
-                </span>
-            </h2>
-            <p class="mt-6 text-lg leading-8 text-muted">
-                Everything you need to know before choosing PRX Holdings.
-            </p>
+            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Pricing FAQ</p>
+            <h2 id="pricing-faq-title" class="mt-4 text-3xl font-bold text-text-dark sm:text-4xl lg:text-5xl">Facts before you choose.</h2>
         </div>
 
-        {{-- Accordion --}}
-        <div class="faq-list mx-auto mt-20 max-w-3xl">
-            @php
-                $items = [
-                    [
-                        'question' => 'What industries do you support?',
-                        'answer' => 'We specialize in Beauty, Spa, Clinic, Restaurant and Coffee businesses.',
-                    ],
-                    [
-                        'question' => 'Can I request custom features?',
-                        'answer' => 'Yes. We build custom modules tailored to your workflow.',
-                    ],
-                    [
-                        'question' => 'How long does implementation take?',
-                        'answer' => 'Most projects are completed within 2–3 weeks depending on complexity.',
-                    ],
-                    [
-                        'question' => 'Can I migrate from another software?',
-                        'answer' => 'Yes. We support secure data migration from most existing platforms.',
-                    ],
-                    [
-                        'question' => 'Do you provide technical support?',
-                        'answer' => 'Absolutely. Our engineers provide continuous maintenance and updates.',
-                    ],
-                ];
-            @endphp
+        <div x-data="{
+            openFaq: null,
+            toggleFaq(index) {
+                this.openFaq = this.openFaq === index ? null : index;
+            },
+            isOpen(index) {
+                return this.openFaq === index;
+            },
+        }"
+            class="faq-list mx-auto mt-12 max-w-3xl divide-y divide-gray-200/80 border-y border-gray-200/80">
+            @foreach ($items as $index => [$question, $answer])
+                <article x-bind:class="isOpen({{ $index }}) ? 'bg-brand-light/30' : 'bg-transparent'"
+                    class="faq-item px-4 transition-colors duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] sm:px-5">
+                    <h3>
+                        <button id="pricing-faq-button-{{ $index }}" type="button"
+                            x-on:click="toggleFaq({{ $index }})"
+                            x-on:keydown.escape.stop="openFaq = null"
+                            x-bind:aria-expanded="isOpen({{ $index }})"
+                            aria-controls="pricing-faq-panel-{{ $index }}"
+                            class="group flex min-h-16 w-full cursor-pointer items-center justify-between gap-5 py-5 text-left">
+                            <span
+                                class="text-lg font-semibold text-text-dark transition-colors duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:text-primary-dark sm:text-xl">
+                                {{ $question }}
+                            </span>
+                            <span
+                                x-bind:class="isOpen({{ $index }}) ? 'bg-primary text-white shadow-sm' : 'bg-brand-light text-primary'"
+                                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-[background-color,color,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
+                                <i data-lucide="plus"
+                                    class="h-5 w-5 origin-center transform-gpu transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform group-aria-expanded:rotate-45"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </h3>
 
-            @foreach ($items as $item)
-                <div x-data="{ open: false }" class="faq-item border-b border-gray-200/70 py-2">
-                    <button @click="open = !open" class="group flex w-full items-center justify-between py-6 text-left">
-                        <span
-                            class="text-xl font-semibold tracking-tight transition-colors duration-300 group-hover:text-primary">
-                            {{ $item['question'] }}
-                        </span>
-
-                        {{-- Dùng 1 icon duy nhất và xoay 45 độ để thành dấu X --}}
-                        <div class="flex h-6 w-6 items-center justify-center">
-                            <i data-lucide="plus"
-                                class="h-6 w-6 text-muted transition-transform duration-300 ease-in-out"
-                                :class="open ? 'rotate-45 text-primary' : ''">
-                            </i>
-                        </div>
-                    </button>
-
-                    {{-- Thêm x-cloak vào đây để ẩn khi Alpine chưa load --}}
-                    <div x-collapse x-show="open" x-cloak>
-                        <p class="pb-8 pr-10 text-[17px] leading-8 text-muted">
-                            {{ $item['answer'] }}
-                        </p>
+                    <div id="pricing-faq-panel-{{ $index }}" role="region"
+                        aria-labelledby="pricing-faq-button-{{ $index }}" x-show="isOpen({{ $index }})"
+                        x-collapse.duration.500ms>
+                        <p class="max-w-2xl pb-6 pr-12 leading-7 text-muted">{{ $answer }}</p>
                     </div>
-                </div>
+                </article>
             @endforeach
-        </div>
-
-        {{-- Bottom CTA --}}
-        <div class="mt-24 text-center">
-            <p class="text-lg text-muted">
-                Still have questions?
-            </p>
-            <h3 class="mt-2 text-3xl font-bold tracking-tight">
-                Talk with our experts.
-            </h3>
-            <div class="mt-8">
-                <x-ui.button href="/contact" variant="primary">
-                    Contact Sales
-                </x-ui.button>
-            </div>
         </div>
     </div>
 </section>

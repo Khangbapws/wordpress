@@ -59,6 +59,22 @@
     @apply antialiased bg-surface text-text-dark;
   }
 
+  :focus-visible {
+    @apply outline-2 outline-offset-3 outline-primary;
+  }
+
+  button,
+  summary,
+  select,
+  input,
+  textarea {
+    @apply scroll-mt-28;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
   h1,
   h2,
   h3,
@@ -79,5 +95,7 @@
 @utility container-page {
   @apply mx-auto
     max-w-[1440px]
-    px-10;
+    px-5
+    sm:px-8
+    lg:px-10;
 }

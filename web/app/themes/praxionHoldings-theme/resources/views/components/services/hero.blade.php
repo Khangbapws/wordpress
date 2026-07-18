@@ -1,93 +1,40 @@
-<section class="relative overflow-hidden bg-linear-to-b from-brand-light via-white to-white pt-36 pb-24">
-
-    <div class="container-page">
-
-        <div class="mx-auto max-w-4xl text-center">
-
-            {{-- Badge --}}
-            <x-ui.badge>
-                Business Solutions
-            </x-ui.badge>
-
-            {{-- Heading --}}
-            <h1
-                class="hero-title mt-8 text-5xl font-bold leading-tight tracking-tight text-text-dark md:text-6xl xl:text-7xl">
-
-                Business management software
-
-                <span class="block text-primary">
-                    built for Beauty &amp; F&amp;B.
-                </span>
-
-            </h1>
-
-            {{-- Subtitle --}}
-            <p class="hero-subtitle mx-auto mt-8 max-w-3xl text-lg leading-8 text-muted md:text-xl">
-
-                Everything you need to manage customers,
-                appointments, inventory, payments and analytics
-                from one unified platform.
-
-            </p>
-
-            {{-- CTA --}}
-            <div class="hero-cta mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-
-                <x-ui.button href="/solutions">
-                    Explore Solutions
-                </x-ui.button>
-
-                <x-ui.button href="/contact" variant="secondary">
-
-                    Contact Sales
-
-                </x-ui.button>
-
-            </div>
-
-            <x-services.social-proof />
-
-        </div>
-
-        <x-services.product-tags />
-
-        {{-- Dashboard Preview --}}
-        <div class="mt-20">
-
-            <div
-                class="relative mx-auto max-w-6xl overflow-hidden rounded-4xl border border-gray-200/70 bg-white shadow-xl shadow-black/5">
-
-                <div class="flex items-center gap-2 border-b border-gray-100 px-6 py-4">
-
-                    <span class="h-3 w-3 rounded-full bg-red-300"></span>
-                    <span class="h-3 w-3 rounded-full bg-yellow-300"></span>
-                    <span class="h-3 w-3 rounded-full bg-green-300"></span>
-
-                </div>
-
-                <div class="flex h-105 items-center justify-center bg-brand-light/40">
-
-                    <div class="text-center">
-
-                        <i data-lucide="layout-dashboard" class="mx-auto h-16 w-16 text-primary">
-                        </i>
-
-                        <p class="mt-6 text-lg font-medium text-text-dark">
-                            Interactive Dashboard Preview
-                        </p>
-
-                        <p class="mt-2 text-muted">
-                            Replace this mockup with your real application screenshot.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
+<section aria-labelledby="services-title"
+    class="relative isolate overflow-hidden bg-linear-to-b from-brand-light via-white to-surface pt-32 pb-18 sm:pt-36 sm:pb-24 lg:pt-44">
+    <div class="absolute inset-0 -z-10" aria-hidden="true">
+        <div class="absolute -top-32 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl"></div>
     </div>
 
+    <div class="container-page">
+        <div class="mx-auto max-w-4xl text-center">
+            <x-ui.badge>Pricing for beauty and spa businesses</x-ui.badge>
+
+            <h1 id="services-title"
+                class="hero-title mx-auto mt-7 max-w-4xl text-4xl leading-[1.08] font-bold tracking-tight text-text-dark sm:text-5xl lg:text-6xl xl:text-7xl">
+                One connected platform.
+                <span class="text-primary">Choose the billing term that fits your next stage.</span>
+            </h1>
+
+            <p class="hero-subtitle mx-auto mt-7 max-w-3xl text-lg leading-8 text-muted sm:text-xl">
+                PRX Holdings connects booking customers with beauty and spa businesses while giving owners and staff a clear way to manage daily operations. The billing choices change the commitment period—not the ecosystem described below.
+            </p>
+
+            <div class="hero-cta mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+                <x-ui.button href="#pricing">Compare billing terms</x-ui.button>
+                <x-ui.button :href="home_url('/solution')" variant="secondary">See the product experience</x-ui.button>
+            </div>
+
+            <div class="mx-auto mt-10 flex max-w-xl items-start gap-4 rounded-2xl border border-primary/15 bg-white p-5 text-left shadow-sm">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-light text-primary">
+                    <i data-lucide="calendar-check-2" class="h-5 w-5" aria-hidden="true"></i>
+                </span>
+                <div>
+                    <p class="font-semibold text-text-dark">Begin with a 15-day free trial</p>
+                    <p class="mt-1 text-sm leading-6 text-muted">Explore the platform before selecting one of the paid billing terms.</p>
+                    <a href="{{ home_url('/contact') }}" class="mt-3 inline-flex min-h-11 items-center font-semibold text-primary-dark underline decoration-primary/30 underline-offset-4 hover:text-primary">
+                        Ask PRX Holdings about starting the trial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

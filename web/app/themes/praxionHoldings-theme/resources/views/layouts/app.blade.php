@@ -14,10 +14,14 @@
     @php(wp_body_open())
 
     <div id="app">
+        <a href="#main"
+            class="sr-only fixed top-3 left-3 z-[100] rounded-lg bg-white px-4 py-3 font-semibold text-text-dark shadow-lg focus:not-sr-only focus:outline-2 focus:outline-offset-2 focus:outline-primary">
+            Skip to main content
+        </a>
 
         <x-layout.header />
 
-        <main id="main" class="main">
+        <main id="main" class="main" tabindex="-1">
             @yield('content')
         </main>
 
@@ -30,29 +34,3 @@
 </body>
 
 </html>
-{{-- <body @php(body_class())>
-    @php(wp_body_open())
-
-    <div id="app">
-      <a class="sr-only focus:not-sr-only" href="#main">
-        {{ __('Skip to content', 'sage') }}
-      </a>
-
-      @include('sections.header')
-
-      <main id="main" class="main">
-        @yield('content')
-      </main>
-
-      @hasSection('sidebar')
-        <aside class="sidebar">
-          @yield('sidebar')
-        </aside>
-      @endif
-
-      @include('sections.footer')
-    </div>
-
-    @php(do_action('get_footer'))
-    @php(wp_footer())
-  </body> --}}

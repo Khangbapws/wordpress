@@ -1,21 +1,26 @@
 import { gsap } from '../lib/gsap';
-import { ScrollTrigger } from '../lib/gsap';
+import { allowsMotion, markAnimated } from './utils';
 
 export function faqAnimation() {
-  gsap.from('.faq-item', {
-    opacity: 0,
-    y: 30,
+  if (!allowsMotion()) return;
 
-    duration: 0.6,
+  document.querySelectorAll('.faq-list').forEach((list) => {
+    if (!markAnimated(list)) return;
 
-    stagger: 0.08,
+    const items = list.querySelectorAll('.faq-item');
+    if (!items.length) return;
 
-    ease: 'power3.out',
-
-    scrollTrigger: {
-      trigger: '.faq-list',
-
-      start: 'top 75%',
-    },
+    gsap.from(items, {
+      opacity: 0,
+      y: 20,
+      duration: 0.5,
+      stagger: 0.06,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: list,
+        start: 'top 82%',
+        once: true,
+      },
+    });
   });
 }
