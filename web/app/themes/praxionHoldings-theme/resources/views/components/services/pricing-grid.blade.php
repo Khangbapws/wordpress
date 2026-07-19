@@ -8,7 +8,7 @@
         ],
         [
             'term' => '1 month',
-            'price' => 'US$20',
+            'price' => 'US$15',
             'fit' => 'Maximum flexibility for owners making near-term operating decisions.',
             'renewal_discount' => false,
         ],

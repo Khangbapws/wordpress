@@ -1,11 +1,26 @@
 @php
     $items = [
-        ['How long is the free trial?', 'The free trial lasts 15 days. No additional trial conditions are stated on this page.'],
-        ['Are the listed prices monthly rates?', 'No. Each amount is the complete price for its stated term—for example, 3 months costs US$30 for that three-month term.'],
-        ['Do the billing terms have different feature sets?', 'The choices on this page select a billing duration. They do not describe separate products or different feature limits.'],
-        ['Which terms receive a next-cycle discount?', 'Only the 12-month and Elite 24-month packages receive 30% off the next billing cycle. The benefit applies to that next cycle only.'],
-        ['Can PRX Holdings support more than one shop?', 'Yes. The ecosystem supports unlimited shop branches.'],
-        ['Who uses the mobile applications?', 'Booking customers use one mobile application. Business owners and staff share a separate mobile application.'],
+        [
+            'How long is the free trial?',
+            'The free trial lasts 15 days. No additional trial conditions are stated on this page.',
+        ],
+        [
+            'Are the listed prices monthly rates?',
+            'No. Each amount is the complete price for its stated term—for example, 3 months costs US$30 for that three-month term.',
+        ],
+        [
+            'Do the billing terms have different feature sets?',
+            'The choices on this page select a billing duration. They do not describe separate products or different feature limits.',
+        ],
+        [
+            'Which terms receive a next-cycle discount?',
+            'Only the 12-month and Elite 24-month packages receive 30% off the next billing cycle. The benefit applies to that next cycle only.',
+        ],
+        ['Can PRX platform support more than one shop?', 'Yes. The ecosystem supports unlimited shop branches.'],
+        [
+            'Who uses the mobile applications?',
+            'Booking customers use one mobile application. Business owners and staff share a separate mobile application.',
+        ],
     ];
 @endphp
 
@@ -13,7 +28,8 @@
     <div class="container-page">
         <div class="mx-auto max-w-3xl text-center">
             <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Pricing FAQ</p>
-            <h2 id="pricing-faq-title" class="mt-4 text-3xl font-bold text-text-dark sm:text-4xl lg:text-5xl">Facts before you choose.</h2>
+            <h2 id="pricing-faq-title" class="mt-4 text-3xl font-bold text-text-dark sm:text-4xl lg:text-5xl">Facts before
+                you choose.</h2>
         </div>
 
         <div x-data="{
@@ -31,8 +47,7 @@
                     class="faq-item px-4 transition-colors duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] sm:px-5">
                     <h3>
                         <button id="pricing-faq-button-{{ $index }}" type="button"
-                            x-on:click="toggleFaq({{ $index }})"
-                            x-on:keydown.escape.stop="openFaq = null"
+                            x-on:click="toggleFaq({{ $index }})" x-on:keydown.escape.stop="openFaq = null"
                             x-bind:aria-expanded="isOpen({{ $index }})"
                             aria-controls="pricing-faq-panel-{{ $index }}"
                             class="group flex min-h-16 w-full cursor-pointer items-center justify-between gap-5 py-5 text-left">
@@ -41,7 +56,8 @@
                                 {{ $question }}
                             </span>
                             <span
-                                x-bind:class="isOpen({{ $index }}) ? 'bg-primary text-white shadow-sm' : 'bg-brand-light text-primary'"
+                                x-bind:class="isOpen({{ $index }}) ? 'bg-primary text-white shadow-sm' :
+                                    'bg-brand-light text-primary'"
                                 class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-[background-color,color,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
                                 <i data-lucide="plus"
                                     class="h-5 w-5 origin-center transform-gpu transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform group-aria-expanded:rotate-45"
