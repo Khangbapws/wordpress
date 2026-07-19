@@ -15,7 +15,7 @@
 
     <div id="app">
         <a href="#main"
-            class="sr-only fixed top-3 left-3 z-[100] rounded-lg bg-white px-4 py-3 font-semibold text-text-dark shadow-lg focus:not-sr-only focus:outline-2 focus:outline-offset-2 focus:outline-primary">
+            class="sr-only fixed top-3 left-3 z-100 rounded-lg bg-white px-4 py-3 font-semibold text-text-dark shadow-lg focus:not-sr-only focus:outline-2 focus:outline-offset-2 focus:outline-primary">
             Skip to main content
         </a>
 
