@@ -1,3 +1,7 @@
+{{--
+  Template Name: Price Template
+--}}
+
 @extends('layouts.app')
 
 @section('content')

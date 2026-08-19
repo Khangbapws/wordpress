@@ -1,3 +1,7 @@
+{{--
+  Template Name: Contact Template
+--}}
+
 @extends('layouts.app')
 
 @php
@@ -47,8 +51,29 @@
                             Explore the product experience
                             <i data-lucide="arrow-right" class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true"></i>
                         </a>
-                        <a href="{{ home_url('/services') }}" class="group flex min-h-14 items-center justify-between gap-4 rounded-2xl border border-gray-200/80 bg-white px-5 py-4 font-semibold text-text-dark shadow-sm hover:border-primary/30 hover:text-primary">
+                        <a href="{{ home_url('/price') }}" class="group flex min-h-14 items-center justify-between gap-4 rounded-2xl border border-gray-200/80 bg-white px-5 py-4 font-semibold text-text-dark shadow-sm hover:border-primary/30 hover:text-primary">
                             Compare billing terms
+                            <i data-lucide="arrow-right" class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61593519958952" class="group flex min-h-14 items-center justify-between gap-4 rounded-2xl border border-gray-200/80 bg-white px-5 py-4 font-semibold text-text-dark shadow-sm hover:border-primary/30 hover:text-primary">
+                            <div class="flex flex-row gap-2">
+                                <img src="{{ Vite::asset('resources/images/contact/facebook.svg') }}" alt="Facebook" class="h-6 w-6 shrink-0" />
+                                Facebook
+                            </div>
+                            <i data-lucide="arrow-right" class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/prxholdings777/" class="group flex min-h-14 items-center justify-between gap-4 rounded-2xl border border-gray-200/80 bg-white px-5 py-4 font-semibold text-text-dark shadow-sm hover:border-primary/30 hover:text-primary">
+                            <div class="flex flex-row gap-2">
+                                <img src="{{ Vite::asset('resources/images/contact/instagram.svg') }}" alt="Instagram" class="h-6 w-6 shrink-0"  />
+                                Instagram
+                            </div>
+                            <i data-lucide="arrow-right" class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://x.com/prxholdings" class="group flex min-h-14 items-center justify-between gap-4 rounded-2xl border border-gray-200/80 bg-white px-5 py-4 font-semibold text-text-dark shadow-sm hover:border-primary/30 hover:text-primary">
+                            <div class="flex flex-row gap-2">
+                                <img src="{{ Vite::asset('resources/images/contact/social.svg') }}" alt="X Social" class="h-6 w-6 shrink-0"  />
+                                X social
+                            </div>
                             <i data-lucide="arrow-right" class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -180,3 +205,5 @@
         </div>
     </section>
 @endsection
+
+

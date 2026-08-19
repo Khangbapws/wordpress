@@ -30,8 +30,10 @@
                 <div>
                     <p class="font-semibold text-text-dark">Begin with a 15-day free trial</p>
                     <p class="mt-1 text-sm leading-6 text-muted">Explore the platform before selecting one of the paid billing terms.</p>
-                    <a href="{{ home_url('/contact') }}" class="mt-3 inline-flex min-h-11 items-center font-semibold text-primary-dark underline decoration-primary/30 underline-offset-4 hover:text-primary">
-                        Ask PRX Holdings about starting the trial
+                    <a href="{{ home_url('/contact') }}" class="group mt-3 inline-flex min-h-11 items-center font-semibold text-primary-dark no-underline transition-colors duration-300 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                        <span class="relative inline-block after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 after:ease-out after:content-[''] group-hover:after:scale-x-100 group-focus-visible:after:scale-x-100 motion-reduce:after:transition-none">
+                            Ask PRX Holdings about starting the trial
+                        </span>
                     </a>
                 </div>
             </div>

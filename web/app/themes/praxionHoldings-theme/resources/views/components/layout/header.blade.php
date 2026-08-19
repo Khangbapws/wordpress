@@ -1,7 +1,7 @@
 @php
     $navigation = [
         ['label' => 'Solution', 'path' => '/solution', 'page' => 'solution'],
-        ['label' => 'Pricing', 'path' => '/services', 'page' => 'services'],
+        ['label' => 'Pricing', 'path' => '/price', 'page' => 'services'],
         ['label' => 'About us', 'path' => '/about-us', 'page' => 'about-us'],
         ['label' => 'Contact', 'path' => '/contact', 'page' => 'contact'],
     ];
@@ -23,9 +23,9 @@
                             <a href="{{ home_url($item['path']) }}"
                                 @if (is_page($item['page'])) aria-current="page" @endif
                                 @class([
-                                    'inline-flex min-h-11 items-center rounded-full px-4 py-2 text-sm font-semibold no-underline transition-colors',
+                                    'inline-flex min-h-11 items-center rounded-full px-4 py-2 text-sm font-semibold no-underline transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-dark hover:text-white hover:shadow-[0_8px_20px_rgba(46,125,50,0.2)]',
                                     'bg-brand-light text-primary-dark' => is_page($item['page']),
-                                    'text-text-dark hover:bg-gray-100 hover:text-primary-dark' => !is_page($item['page']),
+                                    'text-text-dark' => !is_page($item['page']),
                                 ])>
                                 {{ $item['label'] }}
                             </a>
@@ -36,7 +36,7 @@
 
             <div class="hidden lg:block">
                 <x-ui.button :href="home_url('/services#pricing')">
-                    Review free trial
+                    Start Your 15-Day Free Trial
                 </x-ui.button>
             </div>
 
@@ -66,7 +66,7 @@
                         @endforeach
                     </ul>
                     <x-ui.button :href="home_url('/services#pricing')" class="mt-3 w-full">
-                        Review 15-day trial
+                        Start Your 15-Day Free Trial
                     </x-ui.button>
                 </nav>
             </details>

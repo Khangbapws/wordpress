@@ -1,65 +1,19 @@
-<my_prompt>
-
-    <role>
-        - you are senior wordpress developer.
-        - you are senior frontend UI/UX designer and your design make user easy to use and easy to understand.
-        - you are senior content writer, content creator, content validator.
-        - you are expert in sage theme, tailwindcss, alpinejs, gsap.
-    </role>
-
-    <company_context>
-        - company name : PRX holdings
-            - P stand for : Precision
-            - R stand for : Reliability
-            - X stand for : eXcellence
-
-        - company will provide eco-system ( booking users and services providers aka business owners )  and solutions for business owners in the field of Beauty for Men & Women and Spa.
-
-        - solutions we have :
-            1. Manage staff, work schedules, and commissions.
-            2. Manage inventory, tracking when items are running low on shelves (for example, customers will receive notifications on the system if shampoo is running low).
-            3. Manage pre-tax and post-tax revenue.
-            4. Manage accounting and profit after deducting all expenses.
-            5. Track trending services, providing an objective view of services that are popular and frequently used by customers.
-            6. Digital Beauty Portfolio: Allows staff to store "Before/After" images of customers' services in chronological order. The system automatically combines images so customers can clearly see the improvement (very important for skin care spas or hair salons).
-            7. Customer Retention System (Smart CRM & Retention): Automatically analyzes each customer's service usage cycle. For example, hair dyeing services often require touch-ups after 4 weeks. In the 3rd week, the system will automatically send a Zalo/SMS reminder message with a small discount code to encourage repeat visits.
-            8. 1 mobile application for booking users, 1 mobile application for both business owner and staff.
-            9. support unlimited branches of shop.
-            10. free check-in app management.
-
-        - pricing :
-        + 15 days free trial
-        + monthly : 20 USD
-        + 3 months : 30 USD
-        + 6 months : 50 USD
-        + 12 months : 99 USD
-        + elite - 2 years : 199 USD ( next billing cycle 30% off only for elite - 2 years package or 12 month package)
-
-        - in the website, we have the following url paths
-        + /services -> display prices with explaination for each package suitable for each different type and size of business
-        + /solution -> display solutions and FAQ
-        + /about-us -> about our core values, our mission, our vision
-        + /contact  -> contact form ( full name, email, phone, message )
-    </company_context>
-
-    <task>
-        - i want you to update content in the following urls `/services`, `/solution`, `/about-us`, `/contact` based on the company context above .
-        - in `/solution` url, i want to implement, improve dashboard for business owner to visualize what functions will be in the website and mobile application for buiness owner.
-        - in `/services` and `about-us` urls, you can replace all of current content in those urls.
-        - your update must be responsive from mobile to desktop.
-    </task>
-
-    <restrictions>
-        - you must analyze deeply, validate strictly to apply correct changes.
-        - you must anti assumption, anti hallucincation, anti digression , anti bias, avoid context drift, avoid action drift.
-    </restrictions>
-
-</my_prompt>
+<role>
+    - you are senior wordpress developer.
+    - you are senior frontend UI/UX designer .
+    - you are expert in sage theme, tailwindcss, alpinejs, gsap.
+</role>
 
 <task>
-- i want you to improve, advance, optimize my prompt and write the new version in real-prompt.md .
+    - I have this component web/app/themes/praxionHoldings-theme/resources/views/components/about/timeline.blade.php .
+    - here is what i want to do :
+    + from the line 29 to line 32, i want to add a new button with the text is `Our team`.
+    + when user click on the button `Our team`, the component with class="relative isolate overflow-hidden rounded-3xl bg-text-dark px-6 py-14 text-white sm:rounded-4xl sm:px-10 sm:py-16 lg:px-16 lg:py-20" will flip in vertical to display its back .
+    + the back will display three cards. Each card will display image of member in team, their position, their quote . Currently you can leave them with dummy text and blank image. 
 </task>
 
-
-Here is extra task i want you to do :
-1/ I want you to update completely the homepage front-page.blade.php to synchorinze with content from `/about-us` , `/solution`, `/services`.
+<restrictions>
+    - before you implement solution, you must tell me how much do you understand my requirement and after i confirm then you can proceed.
+    - you must analyze deeply, validate strictly to apply correct changes.
+    - you must anti-assumption, anti-hallucination, anti-digression , anti-bias, avoid context drift, avoid action drift.
+</restrictions>
