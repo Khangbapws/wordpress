@@ -35,7 +35,7 @@
             </nav>
 
             <div class="hidden lg:block">
-                <x-ui.button :href="home_url('/services#pricing')">
+                <x-ui.button :href="home_url('/contact')">
                     Start Your 15-Day Free Trial
                 </x-ui.button>
             </div>
@@ -65,7 +65,7 @@
                             </li>
                         @endforeach
                     </ul>
-                    <x-ui.button :href="home_url('/services#pricing')" class="mt-3 w-full">
+                    <x-ui.button :href="home_url('/contact')" class="mt-3 w-full">
                         Start Your 15-Day Free Trial
                     </x-ui.button>
                 </nav>
