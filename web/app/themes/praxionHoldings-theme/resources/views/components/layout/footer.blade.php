@@ -6,17 +6,26 @@
                     PRX Holdings
                 </a>
                 <p class="mt-5 max-w-xl text-base leading-7 text-muted">
-                    A connected software ecosystem for beauty and spa businesses, their teams, and the customers who book with them.
+                    A connected software ecosystem for beauty and spa businesses, their teams, and the customers who
+                    book with them.
                 </p>
             </div>
 
             <nav aria-label="Footer navigation">
                 <h2 class="text-sm font-semibold tracking-[0.16em] text-text-dark uppercase">Explore</h2>
                 <ul class="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-2">
-                    <li><a href="{{ home_url('/solution') }}" class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">Solution</a></li>
-                    <li><a href="{{ home_url('/services') }}" class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">Pricing</a></li>
-                    <li><a href="{{ home_url('/about-us') }}" class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">About us</a></li>
-                    <li><a href="{{ home_url('/contact') }}" class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">Contact</a></li>
+                    <li><a href="{{ home_url('/solution') }}"
+                            class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">Solution</a>
+                    </li>
+                    <li><a href="{{ home_url('/services') }}"
+                            class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">Services</a>
+                    </li>
+                    <li><a href="{{ home_url('/about-us') }}"
+                            class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">About
+                            us</a></li>
+                    <li><a href="{{ home_url('/contact') }}"
+                            class="inline-flex min-h-11 items-center text-sm font-medium text-muted hover:text-primary">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>

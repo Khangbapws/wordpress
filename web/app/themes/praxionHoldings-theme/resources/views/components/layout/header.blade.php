@@ -1,7 +1,7 @@
 @php
     $navigation = [
         ['label' => 'Solution', 'path' => '/solution', 'page' => 'solution'],
-        ['label' => 'Pricing', 'path' => '/price', 'page' => 'services'],
+        ['label' => 'Services', 'path' => '/services', 'page' => 'services'],
         ['label' => 'About us', 'path' => '/about-us', 'page' => 'about-us'],
         ['label' => 'Contact', 'path' => '/contact', 'page' => 'contact'],
     ];

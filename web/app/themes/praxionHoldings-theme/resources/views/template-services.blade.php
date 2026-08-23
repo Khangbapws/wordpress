@@ -1,5 +1,5 @@
 {{--
-  Template Name: Price Template
+  Template Name: Services Template
 --}}
 
 @extends('layouts.app')
@@ -14,6 +14,6 @@
     <x-cta.section eyebrow="Ready to explore PRX Holdings?"
         title="Start with the 15-day free trial, then choose your billing horizon."
         description="Review how the ecosystem works or contact PRX Holdings before deciding on a billing term."
-        :primary-href="home_url('/contact')" primary-label="Ask to start the free trial"
-        :secondary-href="home_url('/solution')" secondary-label="Explore the solution" />
+        :primary-href="home_url('/contact')" primary-label="Ask to start the free trial" :secondary-href="home_url('/solution')"
+        secondary-label="Explore the solution" />
 @endsection
