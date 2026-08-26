@@ -1,17 +1,38 @@
 @php
     $connections = [
-        ['calendar-heart', 'Booking customers', 'Use a dedicated mobile application to connect with beauty and spa service providers.'],
-        ['monitor-smartphone', 'Owners and staff', 'Use the owner web experience and a shared mobile application to manage operational information.'],
-        ['scan-line', 'Check-in and branches', 'Manage the free check-in application while supporting unlimited shop branches.'],
+        [
+            'monitor-smartphone',
+            'Customer-facing software',
+            'Websites, portals, booking experiences, and mobile applications designed around the customer journey.',
+        ],
+        [
+            'panels-top-left',
+            'Business operations software',
+            'Internal platforms for workflows, teams, branches, inventory, financial visibility, and day-to-day operations.',
+        ],
+        [
+            'cable',
+            'Connected digital systems',
+            'Software that connects people, processes, third-party services, and operational data into one coherent workflow.',
+        ],
     ];
 @endphp
 
 <section aria-labelledby="ecosystem-title" class="py-20 sm:py-24 lg:py-32">
     <div class="container-page">
         <div class="mx-auto max-w-3xl text-center">
-            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">How the ecosystem connects</p>
-            <h2 id="ecosystem-title" class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">Different experiences, one operating context.</h2>
-            <p class="mt-5 text-lg leading-8 text-muted">Each application has a clear audience while the business remains connected across customer booking, team operations, check-in, and branch management.</p>
+            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
+                Solutions we build
+            </p>
+
+            <h2 id="ecosystem-title" class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
+                Software for customers, teams, and operations.
+            </h2>
+
+            <p class="mt-5 text-lg leading-8 text-muted">
+                We build connected digital experiences that support the people
+                using your product and the teams operating behind it.
+            </p>
         </div>
 
         <ol class="relative mt-12 grid gap-5 lg:grid-cols-3">

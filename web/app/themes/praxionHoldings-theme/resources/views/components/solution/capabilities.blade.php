@@ -1,15 +1,35 @@
 @php
     $groups = [
-        ['users-round', 'People operations', 'Staff management, work schedules, workload context, and commissions.'],
-        ['boxes', 'Inventory control', 'Inventory management with low-stock tracking and notifications.'],
         [
-            'landmark',
-            'Financial clarity',
-            'Revenue before tax and after tax, expenses, and resulting profit visibility.',
+            'code-2',
+            'Custom software development',
+            'Purpose-built web platforms, business applications, and digital products designed around your requirements.',
         ],
-        ['trending-up', 'Service demand', 'Trending-service tracking for popular and frequently booked services.'],
-        ['images', 'Customer progress', 'Chronological before-and-after images in the Digital Beauty Portfolio.'],
-        ['message-square-heart', 'Retention timing', 'Service-cycle analysis with Zalo or SMS reminder workflows.'],
+        [
+            'smartphone',
+            'Web & mobile applications',
+            'Responsive web experiences and mobile applications for customers, teams, and business operations.',
+        ],
+        [
+            'blocks',
+            'Product engineering',
+            'From early product concepts to production-ready software, we turn ideas into maintainable digital products.',
+        ],
+        [
+            'plug-zap',
+            'Systems integration',
+            'Connect the services, tools, and workflows your business already relies on.',
+        ],
+        [
+            'refresh-cw',
+            'Legacy modernization',
+            'Improve outdated systems, interfaces, and workflows without losing the business logic behind them.',
+        ],
+        [
+            'workflow',
+            'Ongoing development',
+            'Continue improving, scaling, integrating, and maintaining your software as your requirements evolve.',
+        ],
     ];
 @endphp
 
@@ -17,11 +37,18 @@
     <div class="container-page">
         <div class="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
             <div>
-                <p class="text-sm font-semibold tracking-[0.18em] text-brand-mint uppercase">Capability map</p>
+                <p class="text-sm font-semibold tracking-[0.18em] text-brand-mint uppercase">
+                    What we build
+                </p>
+
                 <h2 id="capability-title" class="mt-4 text-3xl leading-tight font-bold sm:text-4xl lg:text-5xl">
-                    Operational detail owners can act on.</h2>
-                <p class="mt-5 text-lg leading-8 text-white/70">The ecosystem brings together the supplied management,
-                    financial, insight, portfolio, and retention capabilities.</p>
+                    Software capabilities for real business needs.
+                </h2>
+
+                <p class="mt-5 text-lg leading-8 text-white/70">
+                    We build around your workflows, users, and business objectives —
+                    not around a predefined product template.
+                </p>
             </div>
 
             <div class="grid gap-px overflow-hidden rounded-3xl bg-white/15 sm:grid-cols-2">
