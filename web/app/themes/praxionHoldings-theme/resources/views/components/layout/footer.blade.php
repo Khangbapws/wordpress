@@ -1,4 +1,4 @@
-<footer class="mt-20 border-t border-gray-200/70 bg-white">
+<footer class="border-t border-gray-200/70 bg-white">
     <div class="container-page py-14 lg:py-16">
         <div class="grid gap-12 lg:grid-cols-[1.35fr_1fr] lg:gap-20">
             <div>

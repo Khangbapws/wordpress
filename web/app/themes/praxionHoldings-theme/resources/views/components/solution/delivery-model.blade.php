@@ -37,7 +37,8 @@
 
             <h2 id="delivery-model-title"
                 class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                Flexible engagement. Clear ownership.
+                Flexible engagement.
+                <span class="block">Clear ownership.</span>
             </h2>
 
             <p class="mt-5 max-w-2xl text-lg leading-8 text-muted">

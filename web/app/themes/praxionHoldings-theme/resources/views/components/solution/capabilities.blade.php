@@ -6,7 +6,7 @@
             'Purpose-built web platforms, business applications, and digital products designed around your requirements.',
         ],
         [
-            'smartphone',
+            'tablet',
             'Web & mobile applications',
             'Responsive web experiences and mobile applications for customers, teams, and business operations.',
         ],
@@ -21,8 +21,8 @@
             'Connect the services, tools, and workflows your business already relies on.',
         ],
         [
-            'refresh-cw',
-            'Legacy modernization',
+            'smartphone',
+            'Mini App Development',
             'Improve outdated systems, interfaces, and workflows without losing the business logic behind them.',
         ],
         [
