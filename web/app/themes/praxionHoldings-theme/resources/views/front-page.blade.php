@@ -11,5 +11,5 @@
 
     <x-cta.section eyebrow="Start your engineering journey" title="Ready to build software that scales?"
         description="Schedule a technical consultation to discuss your product architecture, engineering needs, or MVP ideas."
-        :primary-href="home_url('/contact')" primary-label="Discuss Your Project" :secondary-href="home_url('/capabilities')" secondary-label="View Capabilities" />
+        :primary-href="home_url('/contact')" primary-label="Discuss Your Project" :secondary-href="home_url('/services')" secondary-label="View Capabilities" />
 @endsection

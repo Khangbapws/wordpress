@@ -23,7 +23,7 @@
 
                 <div class="hero-cta mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
                     <x-ui.button :href="home_url('/contact')">Discuss Your Project</x-ui.button>
-                    <x-ui.button :href="home_url('/capabilities')" variant="secondary">View Capabilities</x-ui.button>
+                    <x-ui.button :href="home_url('/services')" variant="secondary">View Capabilities</x-ui.button>
                 </div>
 
                 <p class="mt-6 flex items-start gap-2 text-sm leading-6 text-muted">
@@ -82,8 +82,8 @@
 
                     <div class="mt-3 flex flex-wrap gap-2">
                         <span
-                            class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Sub-100ms
-                            Latency</span>
+                            class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Faster
+                            than jerking off</span>
                         <span
                             class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Automated
                             CI/CD</span>

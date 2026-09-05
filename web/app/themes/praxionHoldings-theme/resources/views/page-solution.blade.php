@@ -7,7 +7,7 @@
     <x-solution.delivery-model />
     <x-solution.ecosystem />
     <x-solution.why-us />
-    <x-solution.dashboard-preview />
+    {{-- <x-solution.dashboard-preview /> --}}
     <x-solution.live-demo />
     <x-solution.mobile-preview />
     <x-cta.section eyebrow="START A PROJECT" title="Have a software idea worth building?"

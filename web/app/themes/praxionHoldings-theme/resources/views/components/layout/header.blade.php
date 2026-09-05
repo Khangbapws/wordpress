@@ -36,7 +36,7 @@
 
             <div class="hidden lg:block">
                 <x-ui.button :href="home_url('/contact')">
-                    15-Day Free Trial
+                    Start now
                 </x-ui.button>
             </div>
 
