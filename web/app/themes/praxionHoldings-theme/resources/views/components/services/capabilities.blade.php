@@ -1,25 +1,60 @@
 @php
     $capabilities = [
-        ['calendar-clock', 'People and schedules', 'Manage staff, work schedules, appointments, and commissions in one operational view.'],
-        ['package-search', 'Inventory awareness', 'Track inventory and receive low-stock notifications, such as when shampoo is running low.'],
-        ['badge-dollar-sign', 'Revenue and profit visibility', 'View revenue before tax and after tax, then understand profit after expenses are deducted.'],
-        ['chart-no-axes-combined', 'Trending services', 'See which services are popular and frequently booked.'],
-        ['images', 'Digital Beauty Portfolio', 'Store before-and-after customer images chronologically and automatically combine them so progress is easier to see.'],
-        ['refresh-cw', 'Smart CRM and Retention', 'Analyze service cycles and send timely Zalo or SMS reminders with a small discount code to encourage a return visit.'],
-        ['smartphone', 'Two focused mobile applications', 'One application serves booking customers; another is shared by business owners and staff.'],
-        ['git-branch-plus', 'Branches and check-in', 'Support unlimited shop branches and manage the free check-in application.'],
+        [
+            'layout-template',
+            'Custom Web Platforms',
+            'High-concurrency web applications built with modern JavaScript frameworks and scalable cloud infrastructure.',
+        ],
+        [
+            'smartphone',
+            'Mobile Engineering',
+            'Native and cross-platform mobile experiences optimized for user retention and smooth performance.',
+        ],
+        [
+            'network',
+            'System Integration & APIs',
+            'Connecting fragmented enterprise systems to automate data flow and eliminate manual business operations.',
+        ],
+        [
+            'bot',
+            'Intelligent Workflows (AI)',
+            'Integrating practical artificial intelligence to automate repetitive data processing and decision-making pipelines.',
+        ],
+        [
+            'message-square-text',
+            'Conversational Interfaces',
+            'Deploying context-aware chatbots that handle level-one customer support and internal knowledge retrieval.',
+        ],
+        [
+            'server-cog',
+            'Legacy Modernization',
+            'Refactoring monolithic architectures into microservices without disrupting your current business operations.',
+        ],
+        [
+            'shield-check',
+            'Security & DevOps',
+            'Automated CI/CD pipelines, containerization, and proactive cloud infrastructure monitoring.',
+        ],
+        [
+            'users',
+            'Dedicated Engineering Teams',
+            'Extend your internal capacity with our senior developers, fully integrated into your sprint cycles.',
+        ],
     ];
 @endphp
+
 
 <section aria-labelledby="shared-capabilities-title" class="py-20 sm:py-24 lg:py-32">
     <div class="container-page">
         <div class="max-w-3xl">
             <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">One shared ecosystem</p>
-            <h2 id="shared-capabilities-title" class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
+            <h2 id="shared-capabilities-title"
+                class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
                 The billing terms do not represent different products.
             </h2>
             <p class="mt-5 text-lg leading-8 text-muted">
-                The capabilities below explain the connected PRX Holdings experience visitors are comparing when they choose a billing duration.
+                The capabilities below explain the connected PRX Holdings experience visitors are comparing when they
+                choose a billing duration.
             </p>
         </div>
 

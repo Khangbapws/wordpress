@@ -1,12 +1,14 @@
 @props([
-    'eyebrow' => 'Explore PRX Holdings',
-    'title' => 'Connect the moving parts of your beauty or spa business.',
-    'description' => 'See how the owner experience, mobile applications, and customer booking journey work together.',
+    'eyebrow' => 'Ready to engineer your next product?',
+    'title' => "You don't need every detail figured out yet.",
+    'description' =>
+        'Tell us about your business problem or product vision. Our technical team will help you define the architecture and scoping.',
     'primaryHref' => null,
-    'primaryLabel' => 'Explore the solution',
-    'secondaryHref' => null,
-    'secondaryLabel' => 'Contact PRX Holdings',
+    'primaryLabel' => 'Discuss Your Project',
+    'secondaryHref' => '#portfolio',
+    'secondaryLabel' => 'Explore Our Work',
 ])
+
 
 @php
     $primaryHref = $primaryHref ?: home_url('/solution');

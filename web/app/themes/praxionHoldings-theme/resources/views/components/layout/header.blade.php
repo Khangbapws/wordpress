@@ -66,7 +66,7 @@
                         @endforeach
                     </ul>
                     <x-ui.button :href="home_url('/contact')" class="mt-3 w-full">
-                        Start Your 15-Day Free Trial
+                        Start now
                     </x-ui.button>
                 </nav>
             </details>

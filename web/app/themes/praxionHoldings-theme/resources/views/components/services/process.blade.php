@@ -1,22 +1,26 @@
 @php
-    $guidance = [
+    $process = [
         [
-            'icon' => 'compass',
-            'title' => 'Exploring or newly operating',
-            'copy' => 'Start with the 15-day free trial. A 1-month term keeps the next commitment short while you decide how far ahead you want to plan.',
+            'icon' => 'search',
+            'title' => '01 — Understand & Architect',
+            'copy' =>
+                'We analyze your business logic, define the optimal tech stack, and map the database schema to eliminate technical debt early.',
         ],
         [
-            'icon' => 'calendar-range',
-            'title' => 'Building a steadier rhythm',
-            'copy' => 'A 3-month or 6-month term can suit owners who want more continuity without making a year-long commitment.',
+            'icon' => 'code',
+            'title' => '02 — Execute',
+            'copy' =>
+                'Transparent sprint cycles with automated testing, rigorous code reviews, and frequent staging environments.',
         ],
         [
-            'icon' => 'building-2',
-            'title' => 'Established or multi-branch',
-            'copy' => 'A 12-month or Elite 24-month term can fit businesses with stable plans and a preference for a longer commitment horizon.',
+            'icon' => 'rocket',
+            'title' => '03 — Launch & Scale',
+            'copy' =>
+                'Smooth production deployment followed by ongoing load optimization and dedicated maintenance as your user base grows.',
         ],
     ];
 @endphp
+
 
 <section aria-labelledby="guidance-title" class="bg-white py-20 sm:py-24 lg:py-28">
     <div class="container-page">
@@ -27,18 +31,21 @@
                     Choose for flexibility and planning horizon.
                 </h2>
                 <p class="mt-5 text-lg leading-8 text-muted">
-                    These are editorial suggestions, not claims about feature limits or popularity. Business size alone does not change the product capabilities listed on this page.
+                    These are editorial suggestions, not claims about feature limits or popularity. Business size alone
+                    does not change the product capabilities listed on this page.
                 </p>
             </div>
 
             <ol class="space-y-4">
-                @foreach ($guidance as $index => $item)
+                @foreach ($process as $index => $item)
                     <li class="rounded-3xl border border-gray-200/80 bg-surface p-6 sm:flex sm:gap-5 sm:p-8">
-                        <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-mint text-primary-dark">
+                        <span
+                            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-mint text-primary-dark">
                             <i data-lucide="{{ $item['icon'] }}" class="h-5 w-5" aria-hidden="true"></i>
                         </span>
                         <div class="mt-5 sm:mt-0">
-                            <p class="font-mono text-xs font-semibold tracking-[0.16em] text-primary uppercase">Fit {{ $index + 1 }}</p>
+                            <p class="font-mono text-xs font-semibold tracking-[0.16em] text-primary uppercase">Fit
+                                {{ $index + 1 }}</p>
                             <h3 class="mt-2 text-xl font-semibold text-text-dark">{{ $item['title'] }}</h3>
                             <p class="mt-3 leading-7 text-muted">{{ $item['copy'] }}</p>
                         </div>
