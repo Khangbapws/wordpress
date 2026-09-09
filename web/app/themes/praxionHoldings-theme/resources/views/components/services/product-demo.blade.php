@@ -24,7 +24,9 @@
         </div>
 
         <div class="mt-10 flex justify-center">
-            <x-ui.button :href="home_url('/solution')">Experience the Product</x-ui.button>
+            <x-ui.button href="https://demo.prxholdings.com" target="_blank" rel="noopener noreferrer">
+                Experience the Product
+            </x-ui.button>
         </div>
     </div>
 </section>

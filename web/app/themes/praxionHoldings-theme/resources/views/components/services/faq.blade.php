@@ -1,29 +1,27 @@
 @php
     $items = [
         [
-            'How long is the free trial?',
-            'The free trial lasts 15 days. No additional trial conditions are stated on this page.',
+            'Do I need a complete technical specification to start?',
+            'No. Bring us your business problem or initial product vision. Our technical architects will help you define the scope, user journeys, and technical requirements during our discovery phase.',
         ],
         [
-            'Are the listed prices monthly rates?',
-            'No. Each amount is the complete price for its stated term—for example, 3 months costs US$30 for that three-month term.',
+            'How do you determine project cost?',
+            'We scope the specific requirements, architecture, and timeline of your project to provide a tailored estimate. You only pay for the engineering resources and expertise your product actually needs.',
         ],
         [
-            'Do the billing terms have different feature sets?',
-            'The choices on this page select a billing duration. They do not describe separate products or different feature limits.',
+            'Can you integrate new software with our existing systems?',
+            'Yes. We specialize in building secure APIs and middleware to connect modern applications with your existing ERPs, CRMs, or third-party platforms without disrupting current business operations.',
         ],
         [
-            'Which terms receive a next-cycle discount?',
-            'Only the 12-month and Elite 24-month packages receive 30% off the next billing cycle. The benefit applies to that next cycle only.',
+            'Can you develop Zalo Mini Apps for our business?',
+            'Yes, this is one of our core advantages. We engineer lightweight, high-conversion Mini Apps directly within the Zalo ecosystem, giving you access to millions of users without the friction of app store downloads.',
         ],
-        ['Can PRX platform support more than one shop?', 'Yes. The ecosystem supports unlimited shop branches.'],
         [
-            'Who uses the mobile applications?',
-            'Booking customers use one mobile application. Business owners and staff share a separate mobile application.',
+            'Do you provide post-launch support and maintenance?',
+            'Absolutely. We offer dedicated maintenance, cloud infrastructure monitoring, and continuous feature development to ensure your software scales reliably as your user base grows.',
         ],
     ];
 @endphp
-
 <section aria-labelledby="pricing-faq-title" class="bg-white py-20 sm:py-24 lg:py-32">
     <div class="container-page">
         <div class="mx-auto max-w-3xl text-center">
