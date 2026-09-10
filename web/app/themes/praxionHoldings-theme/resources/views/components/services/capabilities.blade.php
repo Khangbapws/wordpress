@@ -28,7 +28,7 @@
             <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Technical Expertise</p>
             <h2 id="shared-capabilities-title"
                 class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                We build reliable systems, not isolated components.
+                We build reliable systems, not <span class="text-primary">isolated components.</span>
             </h2>
             <p class="mt-5 text-lg leading-8 text-muted">
                 Our engineering team translates complex business requirements into secure, maintainable software

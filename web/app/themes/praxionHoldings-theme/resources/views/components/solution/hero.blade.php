@@ -31,8 +31,8 @@
                         Discuss Your Project
                     </x-ui.button>
 
-                    <x-ui.button href="#capabilities" variant="secondary">
-                        Explore Our Capabilities
+                    <x-ui.button href="/services" variant="secondary">
+                        Explore Our Services
                     </x-ui.button>
                 </div>
             </div>
