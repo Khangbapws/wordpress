@@ -11,6 +11,8 @@
     {{-- 2. Capabilities: Chi tiết năng lực (Web, Mobile, AI, DevOps...) --}}
     <x-services.capabilities />
 
+    <x-services.why-us />
+
     {{-- 3. Zalo Mini App: Vũ khí cạnh tranh chiến lược với 80M+ users --}}
     <x-services.mini-app />
 
@@ -22,6 +24,8 @@
 
     {{-- 6. Process: Thay thế Guidance cũ - Quy trình làm việc từ Phân tích đến Launch --}}
     <x-services.process />
+
+    <x-services.project-economics />
 
     {{-- 7. FAQ: Xử lý các lo ngại (objections) của khách hàng B2B --}}
     <x-services.faq />
