@@ -88,8 +88,10 @@
                     </div>
                 </div>
 
-                <div class="rounded-3xl border border-gray-200/80 bg-white p-5 shadow-xl shadow-black/[0.05] sm:p-8 lg:p-10">
-                    {!! do_shortcode('[contact-form-7 id="ad43528" html_class="prx-contact-form"]') !!}
+                <div
+                    class="rounded-3xl border border-gray-200/80 bg-white p-5 shadow-xl shadow-black/[0.05] sm:p-8 lg:p-10">
+                    {{-- {!! do_shortcode('[contact-form-7 id="ad43528" html_class="prx-contact-form"]') !!} --}}
+                    {!! do_shortcode('[contact-form-7 id="55b067d" title="PRX holdings form 01"]') !!}
                 </div>
             </div>
         </div>
