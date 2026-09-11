@@ -1,7 +1,7 @@
 <section id="own-product" aria-labelledby="own-product-title" class="py-20 sm:py-24 lg:py-32">
     <div class="container-page">
 
-        <div class="overflow-hidden rounded-[2rem] border border-primary/15 bg-brand-light">
+        <div class="overflow-hidden rounded-\[2rem\] border border-primary/15 bg-brand-light">
 
             <div class="grid items-center gap-10 p-8 sm:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:p-14">
 
