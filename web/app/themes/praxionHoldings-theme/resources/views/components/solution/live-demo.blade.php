@@ -2,7 +2,7 @@
     <div class="container-page">
 
         <div
-            class="relative overflow-hidden rounded-[2rem] border border-primary/15 bg-brand-light px-8 py-16 text-center sm:px-12 lg:px-20 lg:py-20">
+            class="relative overflow-hidden rounded-\[2rem\] border border-primary/15 bg-brand-light px-8 py-16 text-center sm:px-12 lg:px-20 lg:py-20">
 
             {{-- Decorative glow --}}
             <div class="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl"
