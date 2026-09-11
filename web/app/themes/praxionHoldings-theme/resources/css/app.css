@@ -52,6 +52,72 @@
   .btn-login:hover {
     @apply bg-primary/10 -translate-y-0.5 no-underline; /* Tạo nền mờ 10% từ màu primary */
   }
+
+  .prx-contact-form .wpcf7-form {
+    @apply space-y-0;
+  }
+
+  .prx-contact-form .prx-field {
+    @apply space-y-2;
+  }
+
+  .prx-contact-form .prx-field-header {
+    @apply flex items-baseline justify-between gap-3;
+  }
+
+  .prx-contact-form .prx-field-label {
+    @apply font-semibold;
+  }
+
+  .prx-contact-form .prx-field-meta {
+    @apply text-xs font-medium text-muted;
+  }
+
+  .prx-contact-form .wpcf7-form-control-wrap {
+    @apply block;
+  }
+
+  .prx-contact-form .prx-contact-control {
+    @apply min-h-12 w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-text-dark shadow-sm placeholder:text-gray-400 focus:border-primary mt-2 mb-3;
+  }
+
+  .prx-contact-form textarea.prx-contact-control {
+    @apply resize-y;
+  }
+
+  .prx-contact-form .wpcf7-not-valid.prx-contact-control {
+    @apply border-red-400;
+  }
+
+  .prx-contact-form .wpcf7-not-valid-tip {
+    @apply mt-2 text-sm font-semibold text-red-700;
+  }
+
+  .prx-contact-form .prx-field-help {
+    @apply text-xs leading-5 text-muted;
+  }
+
+  .prx-contact-form .prx-submit-row {
+    @apply m-0;
+  }
+
+  .prx-contact-form .prx-contact-submit {
+    @apply inline-flex min-h-12 w-full items-center justify-center rounded-full bg-primary px-7 py-3 font-semibold text-white transition hover:bg-primary-dark disabled:cursor-wait disabled:opacity-70 sm:w-auto;
+  }
+
+  .prx-contact-form .wpcf7-response-output {
+    @apply mt-0 rounded-2xl border p-4 text-sm font-semibold;
+  }
+
+  .prx-contact-form.sent .wpcf7-response-output {
+    @apply border-green-300 bg-green-50 text-green-950;
+  }
+
+  .prx-contact-form.invalid .wpcf7-response-output,
+  .prx-contact-form.failed .wpcf7-response-output,
+  .prx-contact-form.spam .wpcf7-response-output {
+    @apply border-red-300 bg-red-50 text-red-950;
+  }
 }
 
 @layer base {
