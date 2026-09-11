@@ -71,19 +71,19 @@
                         <div class="rounded-2xl border border-gray-200/80 bg-white p-4">
                             <i data-lucide="server" class="h-5 w-5 text-primary" aria-hidden="true"></i>
                             <p class="mt-3 font-semibold text-text-dark">API & Microservices</p>
-                            <p class="mt-1 text-xs leading-5 text-muted">Scalable backend logic</p>
+                            <p class="mt-1 text-xs leading-5 text-muted">Scalable backend architecture</p>
                         </div>
                         <div class="rounded-2xl border border-gray-200/80 bg-white p-4">
                             <i data-lucide="database" class="h-5 w-5 text-primary" aria-hidden="true"></i>
                             <p class="mt-3 font-semibold text-text-dark">Cloud Database</p>
-                            <p class="mt-1 text-xs leading-5 text-muted">Secure data persistence</p>
+                            <p class="mt-1 text-xs leading-5 text-muted">Secure data storage</p>
                         </div>
                     </div>
 
                     <div class="mt-3 flex flex-wrap gap-2">
                         <span
-                            class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Less
-                            than 200ms</span>
+                            class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Performance-optimized
+                            systems</span>
                         <span
                             class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Automated
                             CI/CD</span>
