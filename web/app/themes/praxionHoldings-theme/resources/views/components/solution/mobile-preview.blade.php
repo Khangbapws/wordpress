@@ -32,7 +32,7 @@
             <div class="mx-auto w-full max-w-2xl rounded-3xl bg-brand-light p-5 sm:p-8">
                 <div class="grid items-center gap-6 sm:grid-cols-[minmax(0,1fr)_minmax(13rem,0.72fr)]">
                     <div
-                        class="rounded-[2rem] border-[0.45rem] border-text-dark bg-white p-4 shadow-2xl shadow-primary/10">
+                        class="rounded-\[2rem\] border-[0.45rem] border-text-dark bg-white p-4 shadow-2xl shadow-primary/10">
                         <div class="flex items-center justify-between border-b border-gray-200/80 pb-4">
                             <div>
                                 <p class="text-xs text-muted">Owner &amp; staff app</p>

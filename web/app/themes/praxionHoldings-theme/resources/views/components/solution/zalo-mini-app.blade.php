@@ -70,7 +70,7 @@
 
                 @foreach ($miniAppTypes as $miniApp)
                     <article
-                        class="group rounded-3xl border border-white/10 bg-white/[0.04] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-mint/30 hover:bg-white/[0.07]">
+                        class="group rounded-3xl border border-white/10 bg-white/4 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-mint/30 hover:bg-white/[0.07]">
 
                         <span
                             class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-brand-mint">
