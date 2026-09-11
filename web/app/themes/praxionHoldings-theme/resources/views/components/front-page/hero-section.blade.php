@@ -82,8 +82,8 @@
 
                     <div class="mt-3 flex flex-wrap gap-2">
                         <span
-                            class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Faster
-                            than jerking off</span>
+                            class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Less
+                            than 200ms</span>
                         <span
                             class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Automated
                             CI/CD</span>
