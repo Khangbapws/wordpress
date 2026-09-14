@@ -12,15 +12,23 @@
         </div>
 
         <div class="mt-12 rounded-4xl border border-gray-200/80 bg-surface p-2 sm:p-4">
-            <div class="relative aspect-video overflow-hidden rounded-3xl bg-gray-100 shadow-inner">
-                <!-- Replace with actual video/image or interactive iframe of your product -->
-                <div class="absolute inset-0 flex items-center justify-center bg-gray-800 text-white">
-                    <span class="flex flex-col items-center gap-3">
-                        <i data-lucide="play-circle" class="h-12 w-12 text-primary"></i>
-                        <span class="font-medium tracking-wide">Interactive Demo Preview</span>
-                    </span>
+
+            <div class="group relative aspect-video overflow-hidden rounded-3xl bg-gray-100 shadow-2xl shadow-black/5">
+
+                <video class="h-full w-full object-cover" autoplay muted loop playsinline preload="metadata"
+                    poster="{{ Vite::asset('resources/images/product-demo-poster.webp') }}">
+                    <source src="{{ Vite::asset('resources/videos/product-demo.mp4') }}" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+
+                {{-- Subtle overlay --}}
+                <div
+                    class="pointer-events-none absolute inset-0 bg-linear-to-t from-black/10 via-transparent to-transparent">
                 </div>
+
             </div>
+
         </div>
 
         <div class="mt-10 flex justify-center">
