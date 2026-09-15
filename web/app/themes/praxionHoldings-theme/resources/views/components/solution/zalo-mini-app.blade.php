@@ -7,7 +7,7 @@
             'description' =>
                 'Customer-facing Mini Apps for discovery, booking, ordering, membership, notifications, and everyday interactions.',
             'cta' => 'Explore User Mini App',
-            'href' => 'https://your-user-mini-app-url.com',
+            'href' => home_url('/services#user-mini-app-video'),
         ],
         [
             'icon' => 'layout-dashboard',
@@ -16,7 +16,7 @@
             'description' =>
                 'Management-focused Mini Apps for teams, branch operations, customer activity, workflows, and business visibility.',
             'cta' => 'Explore Manager Mini App',
-            'href' => 'https://your-manager-mini-app-url.com',
+            'href' => home_url('/services#manager-mini-app-video'),
         ],
     ];
 @endphp
@@ -92,7 +92,7 @@
                         {{-- CTA --}}
                         <div class="mt-7">
 
-                            <a href="{{ $miniApp['href'] }}" target="_blank" rel="noopener noreferrer"
+                            <a href="{{ $miniApp['href'] }}"
                                 class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-5 py-3.5 text-sm font-semibold text-text-dark shadow-sm no-underline transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-mint hover:text-primary hover:shadow-lg">
                                 {{ $miniApp['cta'] }}
 

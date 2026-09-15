@@ -13,7 +13,7 @@
 
         <div class="mx-auto mt-12 max-w-4xl" x-data="{ expanded: false }">
             <button @click="expanded = !expanded"
-                class="w-full rounded-3xl border border-primary/20 bg-white p-8 text-left shadow-sm transition-all hover:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50">
+                class="w-full rounded-3xl border border-primary/20 bg-white p-8 text-left shadow-sm transition-[border-color,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50">
                 <div class="flex items-center justify-between">
                     <div>
                         <h3 class="text-xl font-bold text-text-dark">AI Code Generation vs. Engineering Ownership</h3>
@@ -22,30 +22,33 @@
                     </div>
                     <span
                         class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-light text-primary">
-                        <i data-lucide="chevron-down" class="h-5 w-5 transition-transform duration-300"
+                        <i data-lucide="chevron-down"
+                            class="h-5 w-5 transform-gpu transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
                             :class="expanded ? 'rotate-180' : ''"></i>
                     </span>
                 </div>
 
-                <div x-show="expanded" x-collapse.duration.400ms class="mt-8 border-t border-gray-100 pt-8">
-                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
-                        <div class="font-semibold text-text-dark sm:col-span-1">Architecture & UX</div>
-                        <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">AI
-                                Tools:</span> Suggests generic patterns based on prompts.</div>
-                        <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Our
-                                Team:</span> Designed and validated around your specific business constraints.</div>
+                <div x-show="expanded" x-collapse.duration.500ms class="overflow-hidden">
+                    <div class="mt-8 border-t border-gray-100 pt-8">
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+                            <div class="font-semibold text-text-dark sm:col-span-1">Architecture & UX</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">AI
+                                    Tools:</span> Suggests generic patterns based on prompts.</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Our
+                                    Team:</span> Designed and validated around your specific business constraints.</div>
 
-                        <div class="font-semibold text-text-dark sm:col-span-1">Security & Deployment</div>
-                        <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">AI
-                                Tools:</span> Provides unverified scripts and instructions.</div>
-                        <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Our
-                                Team:</span> Hardens infrastructure and executes secure production deployment.</div>
+                            <div class="font-semibold text-text-dark sm:col-span-1">Security & Deployment</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">AI
+                                    Tools:</span> Provides unverified scripts and instructions.</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Our
+                                    Team:</span> Hardens infrastructure and executes secure production deployment.</div>
 
-                        <div class="font-semibold text-text-dark sm:col-span-1">Accountability</div>
-                        <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">AI
-                                Tools:</span> None. You own the technical debt.</div>
-                        <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Our
-                                Team:</span> Total technical ownership and ongoing reliability.</div>
+                            <div class="font-semibold text-text-dark sm:col-span-1">Accountability</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">AI
+                                    Tools:</span> None. You own the technical debt.</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Our
+                                    Team:</span> Total technical ownership and ongoing reliability.</div>
+                        </div>
                     </div>
                 </div>
             </button>

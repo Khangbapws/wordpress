@@ -21,7 +21,7 @@ export default defineConfig({
         'resources/js/editor.js',
       ],
       refresh: true,
-      assets: ['resources/images/**', 'resources/fonts/**'],
+      assets: ['resources/images/**', 'resources/fonts/**', 'resources/videos/**'],
     }),
 
     wordpressPlugin(),

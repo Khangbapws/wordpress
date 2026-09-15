@@ -16,7 +16,7 @@
             <div class="group relative aspect-video overflow-hidden rounded-3xl bg-gray-100 shadow-2xl shadow-black/5">
 
                 <video class="h-full w-full object-cover" autoplay muted loop playsinline preload="metadata"
-                    poster="{{ Vite::asset('resources/images/product-demo-poster.webp') }}">
+                    poster="{{ Vite::asset('resources/images/others/product-demo-poster.png') }}">
                     <source src="{{ Vite::asset('resources/videos/product-demo.mp4') }}" type="video/mp4">
 
                     Your browser does not support the video tag.
