@@ -81,6 +81,25 @@
 
             </ul>
 
+            {{-- Duplicate set for infinite loop --}}
+            <ul aria-hidden="true" class="flex w-max items-center gap-12 px-6 sm:gap-16 sm:px-8 motion-reduce:hidden">
+
+                @foreach ($technologies as $tech)
+                    <li
+                        class="flex items-center gap-3 grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+
+                        <img src="{{ Vite::asset('resources/images/infrastructure/' . $tech['logo']) }}" alt=""
+                            class="h-8 w-auto object-contain" loading="lazy" decoding="async">
+
+                        <span class="whitespace-nowrap text-lg font-semibold text-text-dark">
+                            {{ $tech['name'] }}
+                        </span>
+
+                    </li>
+                @endforeach
+
+            </ul>
+
         </div>
 
     </div>
