@@ -4,7 +4,7 @@
 
     $bookingMiniAppVideoUrl = Vite::asset('resources/videos/prx-for-booking-user.mp4');
 
-    $managerMiniAppVideoUrl = Vite::asset('resources/videos/prx-for-business-manager.mp4');
+    $managerMiniAppVideoUrl = Vite::asset('resources/videos/prx-for-booking-user.mp4');
 @endphp
 
 <section aria-labelledby="miniapp-section-title" class="overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
@@ -39,10 +39,12 @@
             {{-- =========================================================
                  01. CUSTOMER BOOKING EXPERIENCE
                  ========================================================= --}}
-            <article class="grid grid-cols-1 items-center gap-10 sm:grid-cols-2 sm:gap-12 lg:gap-16">
+            <article id="prx-for-booking-user"
+                class="grid grid-cols-1 items-center gap-10 sm:grid-cols-2 sm:gap-12 lg:gap-16"
+                style="scroll-margin-top:81px">
 
                 {{-- Copy --}}
-                <div class="order-1 max-w-xl lg:order-1">
+                <div class=" max-w-xl">
                     <div class="flex items-center gap-3">
                         <span
                             class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-light text-primary"
@@ -83,7 +85,7 @@
 
 
                 {{-- Phone --}}
-                <div id="prx-for-booking-user" class="order-2 flex justify-center lg:order-2 lg:justify-self-center">
+                <div class="flex justify-center lg:justify-self-center">
                     <div class="relative w-full max-w-[285px] sm:max-w-[300px]" data-mini-app-video>
                         <div
                             class="overflow-hidden rounded-[2rem] border border-gray-200 bg-white shadow-[0_24px_70px_rgba(16,24,16,0.12)] ring-1 ring-black/5 transition-transform duration-500 hover:-translate-y-1">
@@ -103,11 +105,11 @@
             {{-- =========================================================
                  02. BUSINESS MANAGEMENT EXPERIENCE
                  ========================================================= --}}
-            <article class="grid grid-cols-1 items-center gap-10 sm:grid-cols-2 sm:gap-12 lg:gap-16">
+            <article id="prx-for-business-manager"
+                class="grid grid-cols-1 items-center gap-10 sm:grid-cols-2 sm:gap-12 lg:gap-16" style="scroll-margin-top:81px" >
 
                 {{-- Phone --}}
-                <div id="prx-for-business-manager"
-                    class="order-2 flex justify-center lg:order-1 lg:justify-self-center">
+                <div class="order-2 flex justify-center lg:order-1 lg:justify-self-center">
                     <div class="relative w-full max-w-[285px] sm:max-w-[300px]" data-mini-app-video>
                         <div
                             class="overflow-hidden rounded-[2rem] border border-gray-200 bg-white shadow-[0_24px_70px_rgba(16,24,16,0.12)] ring-1 ring-black/5 transition-transform duration-500 hover:-translate-y-1">
