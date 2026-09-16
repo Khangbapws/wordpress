@@ -4,7 +4,7 @@
 
     $bookingMiniAppVideoUrl = Vite::asset('resources/videos/prx-for-booking-user.mp4');
 
-    $managerMiniAppVideoUrl = Vite::asset('resources/videos/prx-for-booking-user.mp4');
+    $managerMiniAppVideoUrl = Vite::asset('resources/videos/prx-for-business-manager.mp4');
 @endphp
 
 <section aria-labelledby="miniapp-section-title" class="overflow-hidden bg-white py-20 sm:py-24 lg:py-32">
@@ -106,7 +106,8 @@
                  02. BUSINESS MANAGEMENT EXPERIENCE
                  ========================================================= --}}
             <article id="prx-for-business-manager"
-                class="grid grid-cols-1 items-center gap-10 sm:grid-cols-2 sm:gap-12 lg:gap-16" style="scroll-margin-top:81px" >
+                class="grid grid-cols-1 items-center gap-10 sm:grid-cols-2 sm:gap-12 lg:gap-16"
+                style="scroll-margin-top:81px">
 
                 {{-- Phone --}}
                 <div class="order-2 flex justify-center lg:order-1 lg:justify-self-center">
