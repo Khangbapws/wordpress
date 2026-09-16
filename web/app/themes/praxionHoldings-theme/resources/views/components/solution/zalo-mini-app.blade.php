@@ -7,7 +7,7 @@
             'description' =>
                 'Customer-facing Mini Apps for discovery, booking, ordering, membership, notifications, and everyday interactions.',
             'cta' => 'Explore User Mini App',
-            'href' => home_url('/services#user-mini-app-video'),
+            'href' => home_url('/services#prx-for-booking-user'),
         ],
         [
             'icon' => 'layout-dashboard',
@@ -16,7 +16,7 @@
             'description' =>
                 'Management-focused Mini Apps for teams, branch operations, customer activity, workflows, and business visibility.',
             'cta' => 'Explore Manager Mini App',
-            'href' => home_url('/services#manager-mini-app-video'),
+            'href' => home_url('/services#prx-for-business-manager'),
         ],
     ];
 @endphp
