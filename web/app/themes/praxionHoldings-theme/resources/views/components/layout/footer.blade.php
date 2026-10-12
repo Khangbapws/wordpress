@@ -30,7 +30,12 @@
         </div>
 
         <div class="mt-12 border-t border-gray-200/70 pt-7">
-            <p class="text-sm text-muted">© {{ date('Y') }} PRX Holdings. All rights reserved.</p>
+            <p class="text-sm text-muted select-none" oncopy="return false;" oncut="return false;"
+                oncontextmenu="return false;">
+                © {{ date('Y') }} PRX Holdings. All rights reserved. PRX CO.,LTD. Group
+                10, Vinh Chau Residential Group, Tay Nha Trang Ward, Khanh Hoa Province, Vietnam. Tax code: 4202068209,
+                issued on: 28/09/2026, by Enterprise Management Division, Khanh Hoa Provincial Department of Finance.
+            </p>
         </div>
     </div>
 </footer>

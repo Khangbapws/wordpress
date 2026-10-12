@@ -165,3 +165,86 @@
     sm:px-8
     lg:px-10;
 }
+
+/* ========================================
+   PRX Robot Mascot
+   Wave first, then bounce
+   ======================================== */
+
+.robot-mascot {
+  overflow: visible;
+  pointer-events: none;
+}
+
+.robot-mascot__body {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: prx-robot-bounce 4.8s ease-in-out infinite;
+}
+
+.robot-mascot__wave-arm {
+  transform-box: view-box;
+  transform-origin: 60% 65%;
+  animation: prx-robot-wave 4.8s ease-in-out infinite;
+}
+
+/* Greeting phase: wave the arm first */
+@keyframes prx-robot-wave {
+  0%,
+  8%,
+  38%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  12%,
+  28% {
+    transform: rotate(-25deg);
+  }
+
+  20%,
+  34% {
+    transform: rotate(12deg);
+  }
+}
+
+/* Invitation phase: gently bounce after waving */
+@keyframes prx-robot-bounce {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+
+  46% {
+    transform: translateY(-2px);
+  }
+
+  52% {
+    transform: translateY(0);
+  }
+
+  58% {
+    transform: translateY(-3px);
+  }
+
+  64% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-2px);
+  }
+
+  76% {
+    transform: translateY(0);
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .robot-mascot__body,
+  .robot-mascot__wave-arm {
+    animation: none !important;
+  }
+}
