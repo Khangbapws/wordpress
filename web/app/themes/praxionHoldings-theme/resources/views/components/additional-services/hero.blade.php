@@ -9,7 +9,7 @@
                 </x-ui.badge>
 
                 <h1 id="additional-services-title"
-                    class="mt-6 text-4xl font-semibold leading-[1.08] tracking-tight text-text-dark sm:text-5xl lg:text-6xl">
+                    class="mt-6 text-4xl font-bold leading-[1.08] tracking-tight text-text-dark sm:text-5xl lg:text-6xl">
                     Expert support for your next step.
                 </h1>
 
