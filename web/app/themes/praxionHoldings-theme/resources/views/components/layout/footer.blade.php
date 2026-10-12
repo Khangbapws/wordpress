@@ -6,8 +6,7 @@
                     PRX Holdings
                 </a>
                 <p class="mt-5 max-w-xl text-base leading-7 text-muted">
-                    A connected software ecosystem for beauty and spa businesses, their teams, and the customers who
-                    book with them.
+                    Building digital solutions. Empowering businesses. Enabling growth.
                 </p>
             </div>
 
