@@ -38,16 +38,16 @@
                         question. Fields marked “required” must be completed.</p>
 
                     <div class="mt-9 space-y-4">
-                        <a href="{{ home_url('/solution') }}"
+                        <a href="{{ home_url('/services') }}"
                             class="group flex min-h-14 items-center justify-between gap-4 rounded-2xl border border-gray-200/80 bg-white px-5 py-4 font-semibold text-text-dark shadow-sm hover:border-primary/30 hover:text-primary">
-                            Explore the product experience
+                            Explore our services
                             <i data-lucide="arrow-right"
                                 class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1"
                                 aria-hidden="true"></i>
                         </a>
-                        <a href="{{ home_url('/price') }}"
+                        <a href="{{ home_url('/additional-services') }}"
                             class="group flex min-h-14 items-center justify-between gap-4 rounded-2xl border border-gray-200/80 bg-white px-5 py-4 font-semibold text-text-dark shadow-sm hover:border-primary/30 hover:text-primary">
-                            Compare billing terms
+                            Learn about additional services
                             <i data-lucide="arrow-right"
                                 class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1"
                                 aria-hidden="true"></i>
@@ -80,6 +80,17 @@
                                 <img src="{{ Vite::asset('resources/images/contact/social.svg') }}" alt="X Social"
                                     class="h-6 w-6 shrink-0" />
                                 X social
+                            </div>
+                            <i data-lucide="arrow-right"
+                                class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1"
+                                aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/prx-holdings/"
+                            class="group flex min-h-14 items-center justify-between gap-4 rounded-2xl border border-gray-200/80 bg-white px-5 py-4 font-semibold text-text-dark shadow-sm hover:border-primary/30 hover:text-primary">
+                            <div class="flex flex-row gap-2">
+                                <img src="{{ Vite::asset('resources/images/contact/linkedin.svg') }}" alt="LinkedIn"
+                                    class="h-6 w-6 shrink-0" />
+                                LinkedIn
                             </div>
                             <i data-lucide="arrow-right"
                                 class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1"

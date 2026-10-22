@@ -81,40 +81,51 @@
             </div>
 
 
+
             {{-- Accordion --}}
-            <div x-data="{ openFaq: null }" class="faq-list border-t border-gray-200">
+            <div x-data="{ openFaq: null }" class="faq-list divide-y divide-gray-200/80 border-y border-gray-200/80">
                 @foreach ($faqs as $index => $faq)
-                    <article class="faq-item border-b border-gray-200">
+                    <article x-bind:class="openFaq === {{ $index }} ? 'bg-brand-light/30' : 'bg-transparent'"
+                        class="faq-item px-4 transition-colors duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] sm:px-5">
                         <h3>
                             <button id="additional-faq-trigger-{{ $index }}" type="button"
-                                class="flex w-full items-center justify-between gap-6 py-5 text-left sm:py-6"
                                 x-on:click="openFaq = openFaq === {{ $index }} ? null : {{ $index }}"
                                 x-bind:aria-expanded="openFaq === {{ $index }}"
-                                aria-controls="additional-faq-panel-{{ $index }}">
+                                aria-controls="additional-faq-panel-{{ $index }}"
+                                class="group flex min-h-16 w-full cursor-pointer items-center justify-between gap-5 py-5 text-left">
+                                {{-- Question --}}
                                 <span
-                                    class="text-base font-medium leading-7 text-text-dark transition-colors duration-200 hover:text-primary sm:text-lg">
+                                    class="text-lg font-semibold text-text-dark transition-colors duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:text-primary-dark sm:text-xl">
                                     {{ $faq['question'] }}
                                 </span>
 
+                                {{-- Animated toggle icon --}}
                                 <span
-                                    class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gray-200 text-muted transition-colors duration-200"
+                                    x-bind:class="openFaq === {{ $index }} ?
+                                        'bg-primary text-white shadow-sm' :
+                                        'bg-brand-light text-primary'"
+                                    class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-[background-color,color,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
                                     aria-hidden="true">
-                                    <i data-lucide="plus" class="h-4 w-4 transition-transform duration-300"
-                                        x-bind:class="{ 'rotate-45': openFaq === {{ $index }} }"></i>
+                                    <i data-lucide="plus"
+                                        x-bind:class="openFaq === {{ $index }} ? 'rotate-45' : 'rotate-0'"
+                                        class="h-5 w-5 origin-center transform-gpu transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                                        aria-hidden="true"></i>
                                 </span>
                             </button>
                         </h3>
 
+                        {{-- Animated answer --}}
                         <div id="additional-faq-panel-{{ $index }}" role="region"
                             aria-labelledby="additional-faq-trigger-{{ $index }}"
-                            x-show="openFaq === {{ $index }}" x-collapse.duration.300ms x-cloak>
-                            <div class="pb-6 pr-10 text-sm leading-7 text-muted sm:text-base">
+                            x-show="openFaq === {{ $index }}" x-collapse.duration.500ms x-cloak>
+                            <p class="max-w-2xl pb-6 pr-12 text-sm leading-7 text-muted sm:text-base">
                                 {{ $faq['answer'] }}
-                            </div>
+                            </p>
                         </div>
                     </article>
                 @endforeach
             </div>
+
 
         </div>
     </div>
