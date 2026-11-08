@@ -50,8 +50,7 @@
                 Engineering value without bloated agency overhead.
             </h2>
             <p class="mt-5 text-lg leading-8 text-muted">
-                You pay for senior engineering hours and architectural results—not flashy sales teams, unnecessary
-                management layers, or inflated agency fees.
+                Senior engineering. Sound architecture. No unnecessary overhead.
             </p>
         </div>
 

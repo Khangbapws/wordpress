@@ -26,11 +26,12 @@
         <div class="mx-auto max-w-3xl text-center">
             <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">The PRX Advantage</p>
             <h2 id="value-title" class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                Serious software engineering. Competitive global economics.
+                Serious software <span class="text-primary">engineering.</span> Competitive global <span
+                    class="text-primary">economics.</span>
             </h2>
             <p class="mt-5 text-lg leading-8 text-muted">
-                We reject the bloated overhead of traditional agencies. By leveraging Vietnam's premier tech talent
-                pool, we deliver enterprise-grade architecture at highly competitive development costs.
+                We combine Vietnam’s engineering talent with efficient delivery to build enterprise-grade software at
+                competitive costs.
             </p>
         </div>
 

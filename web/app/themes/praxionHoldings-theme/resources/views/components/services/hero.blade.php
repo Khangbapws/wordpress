@@ -15,9 +15,7 @@
             </h1>
 
             <p class="hero-subtitle mx-auto mt-7 max-w-3xl text-lg leading-8 text-muted sm:text-xl">
-                We do not sell predefined packages. We partner with ambitious companies to engineer custom web
-                platforms, mobile applications, and intelligent systems—balancing technical excellence with competitive
-                development economics.
+                No off-the-shelf solutions. Just purpose-built technology designed around your business.
             </p>
 
             <div class="hero-cta mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">

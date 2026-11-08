@@ -52,23 +52,22 @@
                             <i data-lucide="calendar-check" class="h-4 w-4"></i>
                         </span>
 
-                        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
+                        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
                             Customer experience
                         </p>
                     </div>
 
                     <h3
-                        class="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-[3rem]">
+                        class="mt-5 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-[3rem]">
                         Seamless service booking,
-                        <span class="lg:block">
+                        <span class="lg:block text-primary">
                             directly inside Zalo.
                         </span>
                     </h3>
 
                     <p class="mt-6 text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                        A complete customer booking journey built for Zalo —
-                        from discovering services and promotions to selecting
-                        appointments and completing verification.
+                        A Zalo Mini App that lets customers explore services, discover promotions, book appointments,
+                        and verify bookings—all in one place.
                     </p>
 
                     <div class="mt-8">
@@ -134,23 +133,21 @@
                             <i data-lucide="layout-dashboard" class="h-4 w-4"></i>
                         </span>
 
-                        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
+                        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
                             Business operations
                         </p>
                     </div>
 
                     <h3
-                        class="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-[3rem]">
+                        class="mt-5 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-[3rem]">
                         Business operations,
-                        <span class="lg:block">
+                        <span class="lg:block text-primary">
                             built for mobile.
                         </span>
                     </h3>
 
                     <p class="mt-6 text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                        Give business teams access to the information and
-                        workflows they need on the move — including staff,
-                        inventory, revenue, reporting, and store operations.
+                        Manage staff, inventory, revenue, and store operations—all from anywhere.
                     </p>
 
                     <div class="mt-8">

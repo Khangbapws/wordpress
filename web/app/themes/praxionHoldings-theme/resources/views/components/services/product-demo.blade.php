@@ -6,8 +6,8 @@
                 Don't just take our word for it. Experience what we've built.
             </h2>
             <p class="mt-5 text-lg leading-8 text-muted">
-                We don't just write code for clients; we conceptualize, architect, and scale our own technology. Explore
-                our flagship B2B platform to see our UI/UX, database architecture, and performance standards in action.
+                Beyond client work, we build technology of our own. Discover our flagship platform and the thinking
+                behind it.
             </p>
         </div>
 

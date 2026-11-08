@@ -31,8 +31,7 @@
                 We build reliable systems, not <span class="text-primary">isolated components.</span>
             </h2>
             <p class="mt-5 text-lg leading-8 text-muted">
-                Our engineering team translates complex business requirements into secure, maintainable software
-                architectures.
+                We turn complex business needs into secure, scalable software built to last.
             </p>
         </div>
         <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">

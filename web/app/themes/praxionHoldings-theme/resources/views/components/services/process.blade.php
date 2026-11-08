@@ -31,8 +31,7 @@
                     Choose for flexibility and planning horizon.
                 </h2>
                 <p class="mt-5 text-lg leading-8 text-muted">
-                    These are editorial suggestions, not claims about feature limits or popularity. Business size alone
-                    does not change the product capabilities listed on this page.
+                    One platform. The same capabilities for every business, regardless of size.
                 </p>
             </div>
 
