@@ -43,10 +43,16 @@
                 </ul>
             </nav>
 
-            <div class="hidden lg:block">
+            <div class="hidden shrink-0 items-center gap-3 lg:flex">
+
+                {{-- Language switcher --}}
+                <x-layout.language-switcher />
+
+                {{-- Primary CTA --}}
                 <x-ui.button :href="home_url('/contact')">
                     Start now
                 </x-ui.button>
+
             </div>
 
             <details class="group relative lg:hidden">
@@ -81,7 +87,23 @@
                             </li>
                         @endforeach
                     </ul>
-                    <x-ui.button :href="home_url('/contact')" class="mt-3 w-full">
+                    {{-- Mobile language switcher --}}
+                    <div class="mt-3 flex items-center justify-between gap-3 border-t border-gray-100 px-1 pt-4">
+                        <div>
+                            <p class="text-sm font-semibold text-text-dark">
+                                Language
+                            </p>
+
+                            <p class="mt-0.5 text-xs text-muted">
+                                Choose your preferred language
+                            </p>
+                        </div>
+
+                        <x-layout.language-switcher />
+                    </div>
+
+                    {{-- Mobile CTA --}}
+                    <x-ui.button :href="home_url('/contact')" class="mt-4 w-full">
                         Start now
                     </x-ui.button>
                 </nav>

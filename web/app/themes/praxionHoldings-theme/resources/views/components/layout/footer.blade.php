@@ -33,7 +33,7 @@
 
                 {{-- COLUMN 2: EXPLORE --}}
                 <nav aria-label="Explore">
-                    <h2 class="text-sm font-semibold uppercase tracking-[0.14em] text-text-dark">
+                    <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-primary">
                         Explore
                     </h2>
 
@@ -71,7 +71,7 @@
 
                 {{-- COLUMN 3: LEGAL --}}
                 <nav aria-label="Legal">
-                    <h2 class="text-sm font-semibold uppercase tracking-[0.14em] text-text-dark">
+                    <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-primary">
                         Legal
                     </h2>
 
@@ -95,7 +95,7 @@
 
                 {{-- COLUMN 4: CONTACT --}}
                 <div>
-                    <h2 class="text-sm font-semibold uppercase tracking-[0.14em] text-text-dark">
+                    <h2 class="text-sm font-bold uppercase tracking-[0.14em] text-primary">
                         Contact
                     </h2>
 

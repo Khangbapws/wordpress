@@ -29,13 +29,14 @@
             <div class="lg:sticky lg:top-32 lg:self-start">
                 <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Our Philosophy</p>
                 <h2 class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl">We build software with
-                    product intuition, not just code.</h2>
-                <p class="mt-5 text-lg leading-8 text-muted">Most vendors blindly execute specifications. We challenge
-                    assumptions, analyze user journeys, and take full ownership of the engineering outcome.</p>
+                    product intuition, not <span class="text-primary">just code.</span>
+                </h2>
+                <p class="mt-5 text-lg leading-8 text-muted">We go beyond specifications—challenging assumptions,
+                    improving user experiences, and owning results from start to finish.</p>
             </div>
 
             <div
-                class="relative space-y-8 before:absolute before:inset-y-0 before:left-[1.375rem] before:w-px before:bg-gray-200/80">
+                class="relative space-y-8 before:absolute before:inset-y-0 before:left-5.5 before:w-px before:bg-gray-200/80">
                 @foreach ($steps as $index => [$icon, $title, $desc])
                     <div class="relative flex gap-6">
                         <span

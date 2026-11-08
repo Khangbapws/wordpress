@@ -17,8 +17,7 @@
                 </h1>
 
                 <p class="hero-subtitle mt-7 max-w-2xl text-lg leading-8 text-muted sm:text-xl">
-                    We partner with ambitious founders and tech leaders to architect, build, and scale high-performance
-                    web platforms, mobile applications, and custom digital systems.
+                    We design, build, and scale digital solutions that help businesses operate smarter and grow faster.
                 </p>
 
                 <div class="hero-cta mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">

@@ -8,8 +8,7 @@
                     We engineer our own complex products.
                 </h2>
                 <p class="mt-5 text-lg leading-8 text-muted">
-                    To demonstrate our full-stack capabilities, look at our flagship internal product—a multi-tenant
-                    operating system for Beauty & Spa businesses.
+                    Meet our flagship product: an all-in-one platform built to run Beauty & Spa businesses.
                 </p>
                 <p
                     class="mt-5 rounded-2xl border border-primary/15 bg-brand-light p-4 text-sm leading-6 text-primary-dark">
