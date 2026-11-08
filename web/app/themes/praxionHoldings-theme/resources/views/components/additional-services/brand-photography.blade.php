@@ -82,10 +82,8 @@
 
             <div>
                 <p class="text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                    Professional brand photography helps customers understand
-                    your business before they visit. We create visual content
-                    for storefronts, products, teams, websites, and digital
-                    marketing campaigns.
+                    Make a lasting first impression with professional photography that brings your brand, products, and
+                    people to life.
                 </p>
 
                 <div class="mt-5 flex flex-wrap gap-2">
@@ -171,9 +169,7 @@
                 </h3>
 
                 <p class="mt-4 text-base leading-7 text-muted">
-                    Choose a package that fits your content needs.
-                    We will confirm the final scope and deliverables
-                    before the shoot.
+                    Choose your package. We'll confirm the scope and deliverables before the shoot.
                 </p>
             </div>
 

@@ -47,8 +47,7 @@
             </h2>
 
             <p class="mt-4 text-base leading-7 text-muted sm:text-lg">
-                A clear process keeps your shoot focused, your expectations
-                aligned, and your visual assets ready for their intended use.
+                A streamlined process ensures every shoot delivers the right visuals, ready to use across your brand.
             </p>
         </div>
 

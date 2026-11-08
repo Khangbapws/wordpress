@@ -77,8 +77,7 @@
             </h2>
 
             <p class="mt-5 text-base leading-7 text-muted sm:text-lg">
-                Start with one focused session or choose a package for
-                continued support as your project develops.
+                Start with a single session or get ongoing support as your project grows.
             </p>
         </div>
 

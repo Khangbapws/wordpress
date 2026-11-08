@@ -53,9 +53,7 @@
             </div>
 
             <p class="text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                Complement your photography with graphic design that helps
-                your business communicate clearly across social media,
-                websites, menus, service lists, and promotional materials.
+                Consistent visuals. Stronger branding. Every touchpoint matters.
             </p>
         </div>
 

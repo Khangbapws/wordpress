@@ -17,17 +17,13 @@
                 </h2>
 
                 <p class="mt-6 text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                    You bring the idea. Our senior developers help you turn
-                    it into working software through practical, one-to-one
-                    guidance — from your first prototype to more complex
-                    development challenges.
+                    Turn your ideas into working software with one-to-one guidance from experienced developers—from
+                    first prototype to production.
                 </p>
 
                 <p class="mt-4 text-base leading-7 text-muted">
-                    Whether you are experimenting with AI coding tools,
-                    building an MVP, or trying to resolve a stubborn technical
-                    issue, get experienced guidance without committing to a
-                    full development project.
+                    Get expert guidance for AI-assisted development, MVPs, and technical challenges—without committing
+                    to a full development project.
                 </p>
 
                 <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

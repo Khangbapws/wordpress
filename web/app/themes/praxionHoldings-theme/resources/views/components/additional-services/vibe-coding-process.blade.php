@@ -13,8 +13,7 @@
             </h2>
 
             <p class="mt-4 text-base leading-7 text-muted sm:text-lg">
-                A straightforward process designed to make every session
-                focused, practical, and useful.
+                A simple process. Every session focused on results.
             </p>
         </div>
 
@@ -93,8 +92,7 @@
                 </h3>
 
                 <p class="mt-3 text-sm leading-6 text-muted sm:text-base">
-                    Choose a package and tell us where you need expert guidance.
-                    We will help clarify the next steps before the session.
+                    Choose your support package and share your goals. We'll clarify the next steps before your session.
                 </p>
             </div>
 

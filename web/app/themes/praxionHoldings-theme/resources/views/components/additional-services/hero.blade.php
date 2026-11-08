@@ -19,18 +19,15 @@
                 </h1>
 
                 <p class="hero-subtitle mt-6 max-w-xl text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                    From building with AI to strengthening your brand presence,
-                    PRX provides focused expertise to help you move forward
-                    with greater confidence.
+                    From AI-powered solutions to digital branding, we help businesses innovate, stand out, and grow.
                 </p>
             </div>
 
             {{-- Supporting copy and navigation --}}
             <div class="lg:pl-6">
                 <p class="hero-subtitle text-lg leading-8 text-text-dark sm:text-xl">
-                    Not every challenge requires a full development project.
-                    Sometimes you need an experienced developer to guide you,
-                    or a creative team to help present your business at its best.
+                    Not every challenge needs custom software. Sometimes, expert technical guidance or creative support
+                    is all you need.
                 </p>
 
                 <div class="hero-buttons mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

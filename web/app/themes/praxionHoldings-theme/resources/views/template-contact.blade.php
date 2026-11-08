@@ -20,8 +20,7 @@
                     <span class="text-primary">build.</span>
                 </h1>
                 <p class="hero-subtitle mx-auto mt-7 max-w-3xl text-lg leading-8 text-muted sm:text-xl">
-                    Have a product, system, or idea in mind? Contact us to discuss your technical requirements,
-                    architecture, and how our engineering team can help bring it to production.
+                    Have a project in mind? Let's turn your ideas into production-ready solutions.
                 </p>
             </div>
         </div>

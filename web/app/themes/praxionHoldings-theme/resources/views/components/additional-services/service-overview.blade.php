@@ -12,8 +12,7 @@
             </h2>
 
             <p class="mt-4 text-base leading-7 text-muted sm:text-lg">
-                Choose the support that fits your current goals,
-                whether you are building a product or growing a brand.
+                Get the support you need—from building products to growing your brand.
             </p>
         </div>
 
