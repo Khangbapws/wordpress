@@ -35,12 +35,11 @@
                     We practice what we preach.
                 </h2>
                 <p class="mt-5 text-lg leading-8 text-muted">
-                    We don't just build custom software for clients. We design, engineer, and operate our own full-scale
-                    products—like the PRX Holdings beauty and spa ecosystem.
+                    Our expertise goes beyond delivery. We build, launch, and operate products of our own.
                 </p>
                 <p class="mt-5 text-lg leading-8 text-muted">
-                    Operating our own SaaS gives us deep empathy for product ownership. PRX stands for Precision,
-                    Reliability, and eXcellence—the exact engineering standards we apply to every client partnership.
+                    Having built and operated our own SaaS, we bring a product owner's perspective to every
+                    partnership—guided by Precision, Reliability, and eXcellence.
                 </p>
             </div>
 

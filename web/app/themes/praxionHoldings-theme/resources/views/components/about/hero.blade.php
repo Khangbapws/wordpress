@@ -14,9 +14,7 @@
                 <span class="text-primary">businesses rely on.</span>
             </h1>
             <p class="hero-subtitle mx-auto mt-7 max-w-3xl text-lg leading-8 text-muted sm:text-xl">
-                We are a software engineering and strategic outsourcing partner. We don't just write code—we design
-                architecture, integrate AI intelligently, and build products meant for real-world production and
-                long-term maintainability.
+                Beyond code. We engineer scalable software, integrate AI, and build technology that lasts.
             </p>
             <div class="hero-cta mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
                 <x-ui.button href="https://demo.prxholdings.com" target="_blank" rel="noopener noreferrer">
@@ -33,8 +31,8 @@
                             data-lucide="cpu" class="h-5 w-5" aria-hidden="true"></i></span>
                     <p class="text-sm font-semibold tracking-[0.16em] text-primary uppercase">Engineering Mindset</p>
                 </div>
-                <h2 class="mt-6 text-2xl leading-tight font-semibold text-text-dark sm:text-3xl">Technology follows
-                    requirements. We build for the problem, not the hype.</h2>
+                <h2 class="mt-6 text-xs leading-tight font-semibold text-text-dark sm:text-3xl">Business needs come
+                    first. Technology follows.</h2>
             </article>
 
             <article class="rounded-3xl bg-text-dark p-7 text-white shadow-lg shadow-black/10 sm:p-9">
@@ -44,8 +42,8 @@
                     <p class="text-sm font-semibold tracking-[0.16em] text-brand-mint uppercase">Outsourcing Philosophy
                     </p>
                 </div>
-                <h2 class="mt-6 text-2xl leading-tight font-semibold sm:text-3xl">Extend your engineering capability
-                    without inheriting unnecessary overhead.</h2>
+                <h2 class="mt-6 text-xs leading-tight font-semibold sm:text-3xl">Expert engineering. Flexible capacity.
+                    Lean operations.</h2>
             </article>
         </div>
     </div>
