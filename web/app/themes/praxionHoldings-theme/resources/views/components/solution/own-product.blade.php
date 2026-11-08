@@ -24,15 +24,12 @@
                     </h2>
 
                     <p class="mt-5 max-w-2xl text-lg leading-8 text-muted">
-                        Alongside software development for clients,
-                        we are exploring and developing our own technology products.
+                        Beyond client projects, we build and develop our own technology products.
                     </p>
 
                     <p class="mt-4 max-w-2xl leading-7 text-muted">
-                        Our first product direction is a business management platform
-                        for Beauty &amp; Spa owners and shop operators — designed to help
-                        them manage daily operations, customers, staff, and business
-                        performance from one connected workspace.
+                        Our first product is a business management platform for Beauty &amp; Spa businesses, bringing
+                        customers, staff, daily operations, and performance tracking into one place.
                     </p>
 
                     <div class="mt-8 flex flex-wrap gap-3">

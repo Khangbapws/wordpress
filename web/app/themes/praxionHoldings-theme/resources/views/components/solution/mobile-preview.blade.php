@@ -12,9 +12,8 @@
                 </h2>
 
                 <p class="mt-5 text-lg leading-8 text-muted">
-                    We can design and develop mobile experiences that complement
-                    the web platform and keep the right information available
-                    wherever your users work.
+                    We build mobile apps that extend your platform, keeping essential tools and information accessible
+                    wherever work happens.
                 </p>
 
                 <ul class="mt-8 space-y-4">

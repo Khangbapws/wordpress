@@ -21,9 +21,8 @@
                 </h1>
 
                 <p class="hero-subtitle mt-7 max-w-2xl text-lg leading-8 text-muted sm:text-xl">
-                    We design and develop web, mobile, business software and Mini Apps
-                    for companies that need a reliable technology partner
-                    to turn ideas, workflows, and requirements into scalable digital products.
+                    We build web, mobile, business software, and Mini Apps that turn business needs into scalable
+                    digital solutions.
                 </p>
 
                 <div class="hero-cta mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
