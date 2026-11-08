@@ -23,18 +23,21 @@
     $teamMembers = [
         [
             'position' => 'Mr. Nguyen Quang Tung - CTO',
+            'linkedin' => 'https://www.linkedin.com/in/tung-nguyen-quang-723450191/',
             'quote' =>
                 '“We don’t just build what you ask for. We understand why it needs to exist, then build it to last.”',
             'image' => 'team/Tung_4x3.jpg',
         ],
         [
             'position' => 'Mr. Ngo Khang - CEO',
+            'linkedin' => 'https://www.linkedin.com/in/khang-ngo-118a84283/',
             'quote' =>
                 '“The best technology does not make a business more complicated. It makes the right things simpler, clearer, and easier to scale.”',
             'image' => 'team/Khang_4x3.jpg',
         ],
         [
             'position' => 'Mr. Mihai - CDO',
+            'linkedin' => 'https://www.linkedin.com/in/mihai-soroiu-180727434/',
             'quote' =>
                 '“Great software is where engineering, design, and business thinking meet — every interaction should have a purpose.”',
             'image' => 'team/Mihai_4x3.jpg',
@@ -184,8 +187,19 @@
                                 <div class="min-w-0 lg:p-6">
 
                                     <h3
-                                        class="text-lg font-semibold transition-colors duration-300 group-hover:text-brand-mint">
-                                        {{ $member['position'] }}
+                                        class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 group-hover:text-brand-mint">
+                                        <span>{{ $member['position'] }}</span>
+
+                                        @if (!empty($member['linkedin']))
+                                            <a href="{{ $member['linkedin'] }}" target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="inline-flex items-center text-[#0A66C2] transition-all duration-300 hover:text-brand-mint hover:scale-110"
+                                                aria-label="View {{ $member['position'] }} LinkedIn profile"
+                                                title="LinkedIn Profile">
+                                                <img src="{{ Vite::asset('resources/images/contact/linkedin.svg') }}"
+                                                    alt="" aria-hidden="true" class="w-4.5 h-4.5">
+                                            </a>
+                                        @endif
                                     </h3>
 
                                     <blockquote class="mt-3 leading-7 text-white/65">

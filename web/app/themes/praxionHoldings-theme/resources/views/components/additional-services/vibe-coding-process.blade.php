@@ -4,13 +4,12 @@
 
         {{-- Heading --}}
         <div class="mx-auto max-w-2xl text-center">
-            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
                 How It Works
             </p>
 
-            <h2 id="vibe-coding-process-title"
-                class="mt-4 text-3xl font-semibold tracking-tight text-text-dark sm:text-4xl">
-                From a technical challenge to a clear next step.
+            <h2 id="vibe-coding-process-title" class="mt-4 text-3xl font-bold tracking-tight text-text-dark sm:text-4xl">
+                From a <span class="text-primary">technical challenge</span> to a clear next step.
             </h2>
 
             <p class="mt-4 text-base leading-7 text-muted sm:text-lg">
@@ -72,7 +71,7 @@
                         </span>
                     </div>
 
-                    <h3 class="mt-7 text-lg font-semibold leading-snug text-text-dark">
+                    <h3 class="mt-7 text-lg font-bold leading-snug text-text-dark">
                         {{ $step['title'] }}
                     </h3>
 
@@ -89,7 +88,7 @@
         <div
             class="mt-12 rounded-3xl bg-brand-light px-6 py-8 sm:px-8 sm:py-10 lg:flex lg:items-center lg:justify-between lg:gap-10">
             <div class="max-w-2xl">
-                <h3 class="text-xl font-semibold tracking-tight text-text-dark sm:text-2xl">
+                <h3 class="text-xl font-bold tracking-tight text-text-dark sm:text-2xl">
                     Ready to make progress on your project?
                 </h3>
 

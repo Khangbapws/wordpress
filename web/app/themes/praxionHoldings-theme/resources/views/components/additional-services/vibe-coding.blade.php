@@ -6,13 +6,13 @@
 
             {{-- Introduction --}}
             <div class="max-w-2xl">
-                <x-ui.badge color="green">
+                <x-ui.badge>
                     Technical Guidance
                 </x-ui.badge>
 
                 <h2 id="vibe-coding-title"
-                    class="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                    Build with AI.
+                    class="mt-5 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
+                    Build with <span class="text-primary">AI.</span>
                     <span class="lg:block">Get expertise when you need it.</span>
                 </h2>
 
@@ -51,11 +51,11 @@
 
             {{-- What we can work on --}}
             <div class="rounded-3xl border border-gray-200 bg-brand-light p-6 sm:p-8">
-                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
                     What We Can Help With
                 </p>
 
-                <h3 class="mt-3 text-xl font-semibold tracking-tight text-text-dark sm:text-2xl">
+                <h3 class="mt-3 text-xl font-bold tracking-tight text-text-dark sm:text-2xl">
                     Move past the blocker.
                 </h3>
 
@@ -95,7 +95,7 @@
                                 <i data-lucide="{{ $item['icon'] }}" class="h-5 w-5"></i>
                             </span>
 
-                            <h4 class="mt-4 text-base font-semibold text-text-dark">
+                            <h4 class="mt-4 text-base font-bold text-text-dark">
                                 {{ $item['title'] }}
                             </h4>
 
@@ -115,10 +115,10 @@
             <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
 
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+                    <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
                         01 / Founders
                     </p>
-                    <h3 class="mt-3 text-lg font-semibold text-text-dark">
+                    <h3 class="mt-3 text-lg font-bold text-text-dark">
                         Building your own idea
                     </h3>
                     <p class="mt-2 text-sm leading-6 text-muted">
@@ -128,10 +128,10 @@
                 </div>
 
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+                    <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
                         02 / Professionals
                     </p>
-                    <h3 class="mt-3 text-lg font-semibold text-text-dark">
+                    <h3 class="mt-3 text-lg font-bold text-text-dark">
                         Learning by building
                     </h3>
                     <p class="mt-2 text-sm leading-6 text-muted">
@@ -141,10 +141,10 @@
                 </div>
 
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+                    <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
                         03 / Developers
                     </p>
-                    <h3 class="mt-3 text-lg font-semibold text-text-dark">
+                    <h3 class="mt-3 text-lg font-bold text-text-dark">
                         Solving difficult problems
                     </h3>
                     <p class="mt-2 text-sm leading-6 text-muted">

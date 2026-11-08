@@ -70,13 +70,13 @@
         {{-- Section introduction --}}
         <div class="grid grid-cols-1 items-end gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.7fr)] lg:gap-12">
             <div class="max-w-2xl">
-                <x-ui.badge color="green">
+                <x-ui.badge>
                     Brand &amp; Creative
                 </x-ui.badge>
 
                 <h2 id="brand-photography-title"
-                    class="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                    Show your business at its best.
+                    class="mt-5 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
+                    Show your business at <span class="text-primary">its best</span>.
                 </h2>
             </div>
 
@@ -115,7 +115,7 @@
                         <i data-lucide="{{ $service['icon'] }}" class="h-5 w-5"></i>
                     </span>
 
-                    <h3 class="mt-5 text-lg font-semibold text-text-dark">
+                    <h3 class="mt-5 text-lg font-bold text-text-dark">
                         {{ $service['title'] }}
                     </h3>
 
@@ -137,7 +137,7 @@
                 </span>
 
                 <div>
-                    <h3 class="text-base font-semibold text-text-dark sm:text-lg">
+                    <h3 class="text-base font-bold text-text-dark sm:text-lg">
                         Local photography, built around your business.
                     </h3>
 
@@ -162,12 +162,12 @@
         {{-- Pricing --}}
         <div id="photography-packages" class="mt-20 scroll-mt-24 sm:mt-24">
             <div class="mx-auto max-w-2xl text-center">
-                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
+                <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
                     Photography Packages
                 </p>
 
-                <h3 class="mt-4 text-3xl font-semibold tracking-tight text-text-dark sm:text-4xl">
-                    A clear starting point for your brand.
+                <h3 class="mt-4 text-3xl font-bold tracking-tight text-text-dark sm:text-4xl">
+                    A clear starting point for <span class="text-primary">your brand</span>.
                 </h3>
 
                 <p class="mt-4 text-base leading-7 text-muted">
@@ -186,7 +186,7 @@
                         'border-gray-200' => !$package['featured'],
                     ])>
                         <div class="flex min-h-7 items-center justify-between gap-3">
-                            <h4 class="text-lg font-semibold text-text-dark">
+                            <h4 class="text-lg font-bold text-primary">
                                 {{ $package['name'] }}
                             </h4>
 

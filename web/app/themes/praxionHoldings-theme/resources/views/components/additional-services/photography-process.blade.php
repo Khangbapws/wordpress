@@ -2,7 +2,7 @@
     $photographySteps = [
         [
             'number' => '01',
-            'icon' => 'clipboard-list',
+            'icon' => 'briefcase-business',
             'title' => 'Share Your Brief',
             'description' =>
                 'Tell us about your business, the purpose of the shoot, your preferred location, and how you intend to use the images.',
@@ -24,7 +24,7 @@
         [
             'number' => '04',
             'icon' => 'image',
-            'title' => 'Edit & Deliver',
+            'title' => 'Edit <span class="text-primary">&amp;</span> Deliver',
             'description' =>
                 'We select and edit the agreed images, then deliver the final files according to the timeline and formats confirmed in your quotation.',
         ],
@@ -37,12 +37,12 @@
 
         {{-- Heading --}}
         <div class="mx-auto max-w-2xl text-center">
-            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
                 Our Process
             </p>
 
             <h2 id="photography-process-title"
-                class="mt-4 text-3xl font-semibold tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
+                class="mt-4 text-3xl font-bold tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
                 From your brief to the final images.
             </h2>
 
@@ -69,8 +69,8 @@
                         </span>
                     </div>
 
-                    <h3 class="mt-7 text-lg font-semibold text-text-dark">
-                        {{ $step['title'] }}
+                    <h3 class="mt-7 text-lg font-bold text-text-dark">
+                        {!! $step['title'] !!}
                     </h3>
 
                     <p class="mt-3 text-sm leading-6 text-muted">
@@ -85,11 +85,11 @@
         <div
             class="mt-10 grid grid-cols-1 gap-6 rounded-3xl bg-brand-light p-6 sm:p-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-center lg:gap-12 lg:p-10">
             <div>
-                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
                     Before We Start
                 </p>
 
-                <h3 class="mt-4 text-2xl font-semibold tracking-tight text-text-dark sm:text-3xl">
+                <h3 class="mt-4 text-2xl font-bold tracking-tight text-text-dark sm:text-3xl">
                     A little preparation goes a long way.
                 </h3>
 
@@ -128,7 +128,7 @@
                             <i data-lucide="{{ $item['icon'] }}" class="h-4 w-4"></i>
                         </span>
 
-                        <h4 class="mt-3 text-sm font-semibold text-text-dark">
+                        <h4 class="mt-3 text-sm font-bold text-text-dark">
                             {{ $item['title'] }}
                         </h4>
 
@@ -144,7 +144,7 @@
         {{-- CTA --}}
         <div class="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <div>
-                <h3 class="text-xl font-semibold text-text-dark">
+                <h3 class="text-xl font-bold text-text-dark">
                     Have a shoot in mind?
                 </h3>
 

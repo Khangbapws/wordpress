@@ -3,12 +3,12 @@
 
         {{-- Section heading --}}
         <div class="mx-auto max-w-2xl text-center">
-            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
                 How We Can Help
             </p>
 
-            <h2 id="service-overview-title" class="mt-4 text-3xl font-semibold tracking-tight text-text-dark sm:text-4xl">
-                The right expertise for your needs.
+            <h2 id="service-overview-title" class="mt-4 text-3xl font-bold tracking-tight text-text-dark sm:text-4xl">
+                The right <span class="text-primary">expertise</span> for your needs.
             </h2>
 
             <p class="mt-4 text-base leading-7 text-muted sm:text-lg">
@@ -39,11 +39,11 @@
                     </span>
                 </div>
 
-                <p class="mt-7 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+                <p class="mt-7 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
                     For Individuals &amp; Founders
                 </p>
 
-                <h3 class="mt-3 text-2xl font-semibold tracking-tight text-text-dark sm:text-3xl">
+                <h3 class="mt-3 text-2xl font-bold tracking-tight text-text-dark sm:text-3xl">
                     Technical Guidance
                 </h3>
 
@@ -90,11 +90,11 @@
                     </span>
                 </div>
 
-                <p class="mt-7 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+                <p class="mt-7 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
                     For Businesses &amp; Brands
                 </p>
 
-                <h3 class="mt-3 text-2xl font-semibold tracking-tight text-text-dark sm:text-3xl">
+                <h3 class="mt-3 text-2xl font-bold tracking-tight text-text-dark sm:text-3xl">
                     Brand &amp; Creative
                 </h3>
 

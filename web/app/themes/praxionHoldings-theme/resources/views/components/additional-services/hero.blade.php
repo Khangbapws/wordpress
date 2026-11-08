@@ -33,7 +33,7 @@
                     or a creative team to help present your business at its best.
                 </p>
 
-                <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <div class="hero-buttons mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                     <x-ui.button href="#vibe-coding" variant="primary" class="gap-2">
                         <i data-lucide="code-2" class="h-4 w-4" aria-hidden="true"></i>
                         <span>Technical Guidance</span>
@@ -45,7 +45,7 @@
                     </x-ui.button>
                 </div>
 
-                <div class="mt-8 border-t border-gray-200 pt-5">
+                <div class="hero-footer mt-8 border-t border-gray-200 pt-5">
                     <p class="hero-subtitle text-sm leading-6 text-muted">
                         For individuals, founders, growing businesses,
                         and established brands.

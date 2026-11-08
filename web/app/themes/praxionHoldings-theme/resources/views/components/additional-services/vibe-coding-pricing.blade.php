@@ -67,13 +67,13 @@
 
         {{-- Heading --}}
         <div class="mx-auto max-w-2xl text-center">
-            <x-ui.badge color="green">
+            <x-ui.badge>
                 Flexible Hourly Packages
             </x-ui.badge>
 
             <h2 id="vibe-coding-pricing-title"
-                class="mt-5 text-3xl font-semibold tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                Expert guidance, on your terms.
+                class="mt-5 text-3xl font-bold tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
+                <span class="text-primary">Expert</span> guidance, on your terms.
             </h2>
 
             <p class="mt-5 text-base leading-7 text-muted sm:text-lg">
@@ -97,7 +97,7 @@
                 ])>
                     {{-- Package label --}}
                     <div class="flex min-h-7 items-center justify-between gap-2">
-                        <p class="text-sm font-semibold text-text-dark">
+                        <p class="text-lg font-bold text-primary">
                             {{ $package['name'] }}
                         </p>
 

@@ -1,6 +1,7 @@
 @php
     $designPackages = [
         [
+            'icon' => 'message-square',
             'name' => 'Social Media Creative Pack',
             'price' => 'From 1.500.000 VNĐ',
             'description' => 'A small, cohesive set of original visuals for your next social media campaign.',
@@ -11,6 +12,7 @@
             ],
         ],
         [
+            'icon' => 'image',
             'name' => 'Brand Content Kit',
             'price' => 'From 2.500.000 VNĐ',
             'description' => 'A coordinated visual set combining your photography and brand communication.',
@@ -21,6 +23,7 @@
             ],
         ],
         [
+            'icon' => 'file-text',
             'name' => 'Custom Graphic Design',
             'price' => 'Custom quote',
             'description' => 'Design support for materials that require a more specific brief or production scope.',
@@ -39,13 +42,13 @@
         {{-- Introduction --}}
         <div class="grid grid-cols-1 items-end gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)] lg:gap-12">
             <div class="max-w-2xl">
-                <x-ui.badge color="green">
+                <x-ui.badge>
                     Creative Add-ons
                 </x-ui.badge>
 
                 <h2 id="graphic-design-title"
-                    class="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                    Make every brand touchpoint feel consistent.
+                    class="mt-5 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
+                    Make every <span class="text-primary">brand touchpoint</span> feel consistent.
                 </h2>
             </div>
 
@@ -63,10 +66,10 @@
                 <article class="flex h-full flex-col rounded-3xl border border-gray-200 bg-white p-6 sm:p-7">
                     <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-light text-primary"
                         aria-hidden="true">
-                        <i data-lucide="palette" class="h-5 w-5"></i>
+                        <i data-lucide="{{ $package['icon'] }}" class="h-5 w-5"></i>
                     </span>
 
-                    <h3 class="mt-5 text-lg font-semibold text-text-dark">
+                    <h3 class="mt-5 text-lg font-bold text-primary">
                         {{ $package['name'] }}
                     </h3>
 
@@ -107,7 +110,7 @@
         <div
             class="mt-8 flex flex-col gap-4 rounded-2xl border border-gray-200 bg-white p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
             <div class="max-w-2xl">
-                <h3 class="text-lg font-semibold text-text-dark">
+                <h3 class="text-lg font-bold text-text-dark">
                     Need photography and design together?
                 </h3>
 

@@ -56,12 +56,12 @@
 
             {{-- Intro --}}
             <div class="max-w-lg">
-                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
+                <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
                     Frequently Asked Questions
                 </p>
 
                 <h2 id="additional-services-faq-title"
-                    class="mt-4 text-3xl font-semibold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
+                    class="mt-4 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
                     Questions before getting started?
                 </h2>
 
