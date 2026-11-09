@@ -248,3 +248,302 @@
     animation: none !important;
   }
 }
+
+/* =========================================================
+   PRX PARTNER MARQUEE
+   ========================================================= */
+
+/* Single-partner editorial ticker */
+
+.prx-partner-ticker {
+  overflow: hidden;
+}
+
+.prx-partner-ticker__viewport {
+  overflow: hidden;
+  width: 100%;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+.prx-partner-ticker__track {
+  display: flex;
+  width: max-content;
+  animation: prx-partner-ticker-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.prx-partner-ticker__group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 2rem;
+
+  color: var(--color-muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.prx-partner-ticker__separator {
+  color: var(--color-primary);
+  font-size: 0.85rem;
+}
+
+/* Multiple-partner logo marquee */
+
+.prx-partner-marquee {
+  overflow: hidden;
+  width: 100%;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 7%,
+    black 93%,
+    transparent
+  );
+}
+
+.prx-partner-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: prx-partner-logo-scroll 35s linear infinite;
+  will-change: transform;
+}
+
+.prx-partner-marquee__group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.prx-partner-logo-card {
+  display: flex;
+  width: 220px;
+  height: 110px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(0 0 0 / 5%);
+  border-radius: 1rem;
+  background: white;
+  padding: 1.5rem;
+  transition:
+    border-color 300ms ease,
+    background-color 300ms ease;
+}
+
+.prx-partner-logo-card:hover {
+  border-color: rgb(46 125 50 / 20%);
+  background: var(--color-brand-light);
+}
+
+/* Seamless movement */
+
+@keyframes prx-partner-ticker-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes prx-partner-logo-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Pause while interacting */
+
+.prx-partner-ticker:hover .prx-partner-ticker__track,
+.prx-partner-marquee:hover .prx-partner-marquee__track {
+  animation-play-state: paused;
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .prx-partner-ticker__track,
+  .prx-partner-marquee__track {
+    animation: none;
+    transform: none;
+  }
+}
+
+/* =========================================================
+   PRX BRAND LOGO REVEAL
+   Symbol slides left + wordmark reveals
+   ========================================================= */
+
+.prx-brand-lockup {
+  --prx-logo-size: 40px;
+
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 220px;
+  width: 220px;
+  height: 60px;
+  align-items: center;
+  overflow: visible;
+}
+
+.prx-brand-lockup__mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  width: var(--prx-logo-size);
+  height: var(--prx-logo-size);
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(-50%);
+
+  animation: prx-logo-slide-left 1.25s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+}
+
+.prx-brand-lockup__mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.prx-brand-lockup__wordmark {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+
+  display: block;
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+
+  /* Important: preserve lowercase descenders */
+  line-height: 1.2;
+  padding-block: 0.08em;
+
+  white-space: nowrap;
+
+  /* Clip horizontally, but leave vertical breathing room */
+  clip-path: inset(-0.15em 100% -0.15em 0);
+  opacity: 0;
+  transform: translate(9px, -50%);
+
+  animation: prx-wordmark-reveal 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both;
+}
+
+/* ---------------------------------------------------------
+   3. Animation keyframes
+   --------------------------------------------------------- */
+
+@keyframes prx-logo-slide-left {
+  0% {
+    left: calc(50% - 20px);
+    transform: translateY(-50%) scale(0.92);
+  }
+
+  18% {
+    transform: translateY(-50%) scale(1.06);
+  }
+
+  100% {
+    left: 0;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+@keyframes prx-wordmark-reveal {
+  0% {
+    clip-path: inset(-0.15em 100% -0.15em 0);
+    opacity: 0;
+    transform: translate(9px, -50%);
+  }
+
+  100% {
+    clip-path: inset(-0.15em 0 -0.15em 0);
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+/* ---------------------------------------------------------
+   4. Responsive
+   --------------------------------------------------------- */
+
+@media (max-width: 639px) {
+  .prx-brand-lockup {
+    --prx-logo-size: 34px;
+
+    flex-basis: 184px;
+    width: 184px;
+    height: 42px;
+  }
+
+  .prx-brand-lockup__mark {
+    animation-name: prx-logo-slide-left-mobile;
+  }
+
+  .prx-brand-lockup__wordmark {
+    left: 43px;
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes prx-logo-slide-left-mobile {
+  0% {
+    left: calc(50% - 17px);
+    transform: translateY(-50%) scale(0.92);
+  }
+
+  18% {
+    transform: translateY(-50%) scale(1.06);
+  }
+
+  100% {
+    left: 0;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+/* ---------------------------------------------------------
+   5. Reduced motion accessibility
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .prx-brand-lockup__mark,
+  .prx-brand-lockup__wordmark {
+    animation: none !important;
+  }
+
+  .prx-brand-lockup__mark {
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .prx-brand-lockup__wordmark {
+    clip-path: none;
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+}

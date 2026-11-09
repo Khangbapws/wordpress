@@ -10,19 +10,16 @@
 
 <header class="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-white/95 backdrop-blur-md">
     <div class="container-page">
-        <div class="flex h-18 items-center justify-between gap-5 lg:h-20">
-            <a href="{{ home_url('/') }}"
-                class="shrink-0 rounded-sm text-xl font-bold tracking-tight text-primary no-underline sm:text-2xl"
-                aria-label="PRX Holdings home">
-                PRX Holdings
-            </a>
+        <div
+            class="flex h-20 items-center justify-between gap-5 lg:h-22
+           2xl:grid 2xl:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]
+           2xl:gap-0">
+            <x-layout.brand-logo class="2xl:justify-self-start" />
 
-            <nav class="hidden lg:block" aria-label="Primary navigation">
+            <nav class="hidden lg:block 2xl:justify-self-center" aria-label="Primary navigation">
                 <ul class="flex items-center gap-2">
                     @foreach ($navigation as $item)
                         <li>
-
-
                             <a href="{{ home_url($item['path']) }}"
                                 @if (is_page($item['page'])) aria-current="page" @endif
                                 @class([
@@ -36,19 +33,15 @@
                                     <x-ui.robot-mascot />
                                 @endif
                             </a>
-
-
                         </li>
                     @endforeach
                 </ul>
             </nav>
 
-            <div class="hidden shrink-0 items-center gap-3 lg:flex">
+            <div class="hidden shrink-0 items-center gap-3 lg:flex 2xl:justify-self-end">
 
-                {{-- Language switcher --}}
                 <x-layout.language-switcher />
 
-                {{-- Primary CTA --}}
                 <x-ui.button :href="home_url('/contact')">
                     Start now
                 </x-ui.button>
