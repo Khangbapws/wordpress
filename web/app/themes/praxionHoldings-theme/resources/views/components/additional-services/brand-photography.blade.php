@@ -165,7 +165,7 @@
                 </p>
 
                 <h3 class="mt-4 text-3xl font-bold tracking-tight text-text-dark sm:text-4xl">
-                    A clear starting point for <span class="text-primary">your brand</span>.
+                    A clear starting point for <span class="text-primary">your brand.</span>
                 </h3>
 
                 <p class="mt-4 text-base leading-7 text-muted">
