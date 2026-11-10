@@ -1,13 +1,12 @@
 <section aria-labelledby="demo-title" class="py-20 sm:py-24 lg:py-32">
     <div class="container-page">
         <div class="mx-auto max-w-3xl text-center">
-            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Proof of Execution</p>
+            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Bằng chứng Triển khai</p>
             <h2 id="demo-title" class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                Don't just take our word for it. Experience what we've built.
+                Đừng chỉ nghe chúng tôi nói. Hãy trực tiếp trải nghiệm những gì chúng tôi đã xây dựng.
             </h2>
             <p class="mt-5 text-lg leading-8 text-muted">
-                Beyond client work, we build technology of our own. Discover our flagship platform and the thinking
-                behind it.
+                Không dừng lại ở các dự án cho khách hàng, chúng tôi chủ động phát triển các giải pháp công nghệ của riêng mình. Khám phá nền tảng chủ lực và tư duy thiết kế đằng sau sản phẩm.
             </p>
         </div>
 
@@ -19,7 +18,7 @@
                     poster="{{ Vite::asset('resources/images/others/product-demo-poster.png') }}">
                     <source src="{{ Vite::asset('resources/videos/product-demo.mp4') }}" type="video/mp4">
 
-                    Your browser does not support the video tag.
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
                 </video>
 
                 {{-- Subtle overlay --}}
@@ -33,7 +32,7 @@
 
         <div class="mt-10 flex justify-center">
             <x-ui.button href="https://demo.prxholdings.com" target="_blank" rel="noopener noreferrer">
-                Experience the Product
+                Trải nghiệm sản phẩm
             </x-ui.button>
         </div>
     </div>

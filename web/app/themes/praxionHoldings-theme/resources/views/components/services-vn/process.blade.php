@@ -26,12 +26,12 @@
     <div class="container-page">
         <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start lg:gap-16">
             <div class="lg:sticky lg:top-28">
-                <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Practical guidance</p>
+                <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Hướng dẫn ứng dụng thực tế</p>
                 <h2 id="guidance-title" class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl">
-                    Choose for flexibility and planning horizon.
+                    Lựa chọn tối ưu theo khả năng linh hoạt và tầm nhìn quy hoạch.
                 </h2>
                 <p class="mt-5 text-lg leading-8 text-muted">
-                    One platform. The same capabilities for every business, regardless of size.
+                    Một nền tảng duy nhất. Trọn vẹn năng lực vận hành cho mọi quy mô doanh nghiệp.
                 </p>
             </div>
 
