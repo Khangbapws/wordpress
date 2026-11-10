@@ -106,19 +106,17 @@
 
                 <div class="max-w-2xl">
                     <x-ui.badge color="green">
-                        Partners &amp; Client Stories
+                        Đối tác & Câu chuyện khách hàng
                     </x-ui.badge>
 
                     <h2 id="partners-testimonials-title"
                         class="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight text-white sm:text-4xl lg:text-5xl">
-                        Good partnerships start with trust.
+                        Hợp tác bền vững bắt đầu từ sự tin tưởng.
                     </h2>
                 </div>
 
                 <p class="max-w-xl text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
-                    We believe meaningful results come from strong relationships,
-                    clear communication, and a shared commitment to building
-                    solutions that make a difference.
+                    Chúng tôi tin rằng những kết quả có ý nghĩa xuất phát từ mối quan hệ bền chặt, giao tiếp minh bạch và cam kết chung trong việc xây dựng các giải pháp tạo ra sự khác biệt.
                 </p>
 
             </div>
@@ -190,13 +188,11 @@
 
                                     <h4
                                         class="mt-5 max-w-lg text-2xl font-semibold leading-tight tracking-tight text-text-dark sm:text-3xl">
-                                        A shared commitment to meaningful progress.
+                                        Cam kết chung hướng tới sự phát triển ý nghĩa. suckaniggadick
                                     </h4>
 
                                     <p class="mt-4 max-w-lg text-sm leading-7 text-muted sm:text-base">
-                                        Every successful project begins with understanding
-                                        the people, goals, and challenges behind a business.
-                                        We are proud to feature our collaboration with
+                                        Mọi dự án thành công đều bắt đầu bằng việc thấu hiểu con người, mục tiêu và những thách thức đằng sau một doanh nghiệp. Chúng tôi tự hào giới thiệu sự hợp tác của mình với
                                         {{ $partner['short_name'] }}.
                                     </p>
 

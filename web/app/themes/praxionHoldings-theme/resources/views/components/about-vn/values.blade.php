@@ -28,18 +28,17 @@
     <div class="container-page">
         <div class="grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
             <div>
-                <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">The Proof is in Our Products
+                <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Minh chứng nằm ở các sản phẩm của chúng tôi
                 </p>
                 <h2 id="values-title"
                     class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                    We practice what we preach.
+                    Chúng tôi luôn nói đi đôi với làm.
                 </h2>
                 <p class="mt-5 text-lg leading-8 text-muted">
-                    Our expertise goes beyond delivery. We build, launch, and operate products of our own.
+                    Chuyên môn của chúng tôi vượt ra ngoài việc bàn giao dịch vụ. Chúng tôi tự mình xây dựng, ra mắt và vận hành các sản phẩm của riêng mình.
                 </p>
                 <p class="mt-5 text-lg leading-8 text-muted">
-                    Having built and operated our own SaaS, we bring a product owner's perspective to every
-                    partnership—guided by Precision, Reliability, and eXcellence.
+                    Với kinh nghiệm tự xây dựng và vận hành SaaS của chính mình, chúng tôi mang góc nhìn của một chủ sở hữu sản phẩm vào mọi hợp tác—được dẫn dắt bởi sự Chuẩn xác (Precision), Tin cậy (Reliability) và Xuất sắc (eXcellence).
                 </p>
             </div>
 

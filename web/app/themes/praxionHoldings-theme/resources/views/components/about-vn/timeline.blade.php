@@ -72,16 +72,15 @@
                     <div class="max-w-3xl">
 
                         <p class="text-sm font-semibold tracking-[0.18em] text-brand-mint uppercase">
-                            Our approach
+                            Phương pháp của chúng tôi
                         </p>
 
                         <h2 id="approach-title" class="mt-4 text-3xl leading-tight font-bold sm:text-4xl lg:text-5xl">
-                            How we think about software engineering.
+                            Cách chúng tôi tư duy về kỹ thuật phần mềm.
                         </h2>
 
                         <p class="mt-5 text-lg leading-8 text-white/70">
-                            We engineer complete software systems, not isolated pieces of code.
-                            These principles govern every project we touch.
+                            Chúng tôi kiến tạo các hệ thống phần mềm toàn diện, không phải là những đoạn mã rời rạc. Những nguyên tắc này chi phối mọi dự án mà chúng tôi thực hiện.
                         </p>
 
                     </div>
@@ -113,7 +112,7 @@
                     <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
 
                         <x-ui.button :href="home_url('/services')" variant="light">
-                            Explore What We Build
+                            Khám phá các giải pháp của chúng tôi
                         </x-ui.button>
 
                         <a href="{{ home_url('/contact') }}"
@@ -128,7 +127,7 @@
                                 $nextTick(() => $refs.approachButton.focus({ preventScroll: true }))
                             "
                             class="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-full border border-white/30 px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white motion-reduce:transition-none">
-                            Our team
+                            Đội ngũ của chúng tôi
                         </button>
 
                     </div>
@@ -152,16 +151,15 @@
                     <div class="max-w-3xl">
 
                         <p class="text-sm font-semibold tracking-[0.18em] text-brand-mint uppercase">
-                            Our team
+                            Đội ngũ của chúng tôi
                         </p>
 
                         <h2 id="team-title" class="mt-4 text-3xl leading-tight font-bold sm:text-4xl lg:text-5xl">
-                            The engineers behind the products.
+                            Những kỹ sư đứng sau các sản phẩm.
                         </h2>
 
                         <p class="mt-5 text-lg leading-8 text-white/70">
-                            A focused group spanning product management,
-                            UX/UI, frontend, backend, and infrastructure.
+                            Một đội ngũ chuyên sâu bao gồm quản lý sản phẩm, thiết kế UX/UI, lập trình viên frontend, backend và hạ tầng.
                         </p>
 
                     </div>
@@ -223,7 +221,7 @@
                                 $nextTick(() => $refs.teamButton.focus({ preventScroll: true }))
                             "
                             class="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-full bg-white px-6 py-3 text-center text-[0.95rem] font-semibold text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-dark hover:text-white hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white motion-reduce:transition-none motion-reduce:hover:translate-y-0">
-                            Our approach
+                            Phương pháp của chúng tôi
                         </button>
 
                     </div>
