@@ -2,20 +2,19 @@
     <div class="container-page">
         <div class="grid items-start gap-12 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
             <div class="lg:sticky lg:top-28">
-                <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Proof of Execution</p>
+                <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Minh chứng thực thi.</p>
                 <h2 id="home-showcase-title"
                     class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                    We engineer our own complex products.
+                    Chúng tôi tự phát triển các sản phẩm phức tạp của chính mình.
                 </h2>
                 <p class="mt-5 text-lg leading-8 text-muted">
-                    Meet our flagship product: an all-in-one platform built to run Beauty & Spa businesses.
+                    Gặp gỡ sản phẩm chủ lực của chúng tôi: nền tảng tất-cả-trong-một được thiết kế chuyên biệt để vận hành doanh nghiệp Beauty & Spa.
                 </p>
                 <p
                     class="mt-5 rounded-2xl border border-primary/15 bg-brand-light p-4 text-sm leading-6 text-primary-dark">
-                    Conceptualized, architected, and engineered 100% in-house. Features real-time sync, multi-branch
-                    logic, and cross-platform mobile apps.
+                    Được hình thành ý tưởng, thiết kế kiến trúc và phát triển 100% nội bộ. Nổi bật với tính năng đồng bộ theo thời gian thực, logic đa chi nhánh và ứng dụng di động đa nền tảng.
                 </p>
-                <x-ui.button :href="home_url('/solution#owner-dashboard')" class="mt-8">Open the full product preview</x-ui.button>
+                <x-ui.button :href="home_url('/solution#owner-dashboard')" class="mt-8">Mở bản xem trước đầy đủ của sản phẩm</x-ui.button>
             </div>
 
             <div class="dashboard-preview overflow-hidden rounded-3xl border border-gray-200/80 bg-white shadow-2xl shadow-black/[0.07] sm:rounded-4xl"
@@ -26,14 +25,14 @@
                         <span
                             class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-sm font-bold text-white">PRX</span>
                         <div>
-                            <p class="font-semibold text-text-dark">Owner workspace</p>
-                            <p class="text-xs text-muted">Demo workspace · sample data</p>
+                            <p class="font-semibold text-text-dark">Không gian làm việc cho chủ sở hữu</p>
+                            <p class="text-xs text-muted">Không gian làm việc bản demo · dữ liệu mẫu</p>
                         </div>
                     </div>
                     <span
                         class="inline-flex w-fit items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-2 text-xs font-semibold text-text-dark">
                         <i data-lucide="git-branch" class="h-4 w-4 text-primary" aria-hidden="true"></i>
-                        All branches
+                        Tất cả chi nhánh
                     </span>
                 </div>
 
@@ -52,8 +51,8 @@
                         <article class="rounded-2xl border border-gray-200/80 p-5">
                             <div class="flex items-center justify-between gap-4">
                                 <div>
-                                    <h3 class="font-semibold text-text-dark">Today’s appointments</h3>
-                                    <p class="mt-1 text-xs text-muted">Sample schedule</p>
+                                    <h3 class="font-semibold text-text-dark">Lịch hẹn hôm nay</h3>
+                                    <p class="mt-1 text-xs text-muted">Lịch trình mẫu</p>
                                 </div>
                                 <i data-lucide="calendar-days" class="h-5 w-5 text-primary" aria-hidden="true"></i>
                             </div>
@@ -76,29 +75,27 @@
                                     <i data-lucide="bell-ring" class="mt-0.5 h-5 w-5 shrink-0 text-amber-800"
                                         aria-hidden="true"></i>
                                     <div>
-                                        <h3 class="font-semibold text-amber-950">Low-stock notification</h3>
-                                        <p class="mt-1 text-sm text-amber-900">Shampoo · 4 sample units</p>
+                                        <h3 class="font-semibold text-amber-950">Thông báo sắp hết hàng</h3>
+                                        <p class="mt-1 text-sm text-amber-900">Dầu gội · 4 đơn vị mẫu</p>
                                     </div>
                                 </div>
                             </article>
                             <article class="rounded-2xl bg-text-dark p-5 text-white">
-                                <p class="text-xs font-semibold tracking-[0.14em] text-brand-mint uppercase">Owner &amp;
-                                    staff mobile app</p>
-                                <h3 class="mt-2 font-semibold">Next sample appointment at 09:00</h3>
-                                <p class="mt-2 text-sm leading-6 text-white/70">Essential schedule, stock, and retention
-                                    context away from the desktop.</p>
+                                <p class="text-xs font-semibold tracking-[0.14em] text-brand-mint uppercase">Ứng dụng di động dành cho chủ doanh nghiệp & nhân viên</p>
+                                <h3 class="mt-2 font-semibold">Lịch hẹn mẫu tiếp theo lúc 09:00</h3>
+                                <p class="mt-2 text-sm leading-6 text-white/70">Cung cấp ngữ cảnh cốt lõi về lịch trình, tồn kho và mức độ giữ chân khách hàng ngay cả khi rời xa máy tính.</p>
                             </article>
                         </div>
                     </div>
 
                     <div class="mt-5 grid gap-3 sm:grid-cols-2">
                         <div class="rounded-2xl bg-brand-light p-4">
-                            <p class="text-xs text-muted">Trending service · demo</p>
-                            <p class="mt-1 font-semibold text-text-dark">Hair colour · frequently booked</p>
+                            <p class="text-xs text-muted">Dịch vụ xu hướng · bản demo</p>
+                            <p class="mt-1 font-semibold text-text-dark">Nhuộm tóc · dịch vụ được đặt nhiều</p>
                         </div>
                         <div class="rounded-2xl bg-brand-light p-4">
-                            <p class="text-xs text-muted">Retention cycle · demo</p>
-                            <p class="mt-1 font-semibold text-text-dark">Hair colour · week 3 reminder</p>
+                            <p class="text-xs text-muted">Chu kỳ giữ chân khách hàng · bản demo</p>
+                            <p class="mt-1 font-semibold text-text-dark">Nhuộm tóc · nhắc lịch tuần 3</p>
                         </div>
                     </div>
                 </div>

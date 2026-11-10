@@ -26,14 +26,13 @@
 <section aria-labelledby="home-engagement-title" class="bg-white py-20 sm:py-24 lg:py-32">
     <div class="container-page">
         <div class="mx-auto max-w-3xl text-center">
-            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Engagement Models</p>
+            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Mô hình hợp tác</p>
             <h2 id="home-engagement-title"
                 class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                Flexible ways to build together.
+                Những phương thức linh hoạt để cùng hợp tác phát triển.
             </h2>
             <p class="mt-5 text-lg leading-8 text-muted">
-                Adapt our engineering team structure to match your project scope, technical requirements, and delivery
-                timeline.
+                Điều chỉnh cơ cấu đội ngũ kỹ thuật của chúng tôi để phù hợp với quy mô dự án, yêu cầu kỹ thuật và tiến độ bàn giao của bạn.
             </p>
         </div>
 

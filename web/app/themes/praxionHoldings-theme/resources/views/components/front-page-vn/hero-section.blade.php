@@ -8,26 +8,25 @@
     <div class="container-page">
         <div class="grid items-center gap-14 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16">
             <div>
-                <x-ui.badge>Premium Software Engineering Partner</x-ui.badge>
+                <x-ui.badge>Đối tác Kỹ thuật Phần mềm Cao cấp</x-ui.badge>
 
                 <h1 id="home-title"
                     class="hero-title mt-7 max-w-4xl text-4xl leading-[1.06] font-bold tracking-tight text-text-dark sm:text-5xl lg:text-6xl xl:text-7xl">
-                    Engineering complex software.
-                    <span class="text-primary">Built to scale.</span>
+                    Phát triển phần mềm phức tạp.
+                    <span class="text-primary">Thiết kế để mở rộng.</span>
                 </h1>
 
                 <p class="hero-subtitle mt-7 max-w-2xl text-lg leading-8 text-muted sm:text-xl">
-                    We design, build, and scale digital solutions that help businesses operate smarter and grow faster.
-                </p>
+                    Chúng tôi thiết kế, xây dựng và mở rộng các giải pháp kỹ thuật số giúp doanh nghiệp vận hành thông minh hơn và phát triển nhanh hơn.</p>
 
                 <div class="hero-cta mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
-                    <x-ui.button :href="home_url('/contact')">Discuss Your Project</x-ui.button>
-                    <x-ui.button :href="home_url('/services')" variant="secondary">View Capabilities</x-ui.button>
+                    <x-ui.button :href="home_url('/contact')">Trao đổi về dự án của bạn</x-ui.button>
+                    <x-ui.button :href="home_url('/services')" variant="secondary">Xem các năng lực chuyên môn</x-ui.button>
                 </div>
 
                 <p class="mt-6 flex items-start gap-2 text-sm leading-6 text-muted">
                     <i data-lucide="cpu" class="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true"></i>
-                    Modern tech stack. Clean architecture. Zero legacy debt.
+                    Công nghệ hiện đại | Kiến trúc tối ưu | Không nợ công nghệ.
                 </p>
             </div>
 
@@ -37,9 +36,8 @@
                     <div class="rounded-2xl bg-text-dark p-5 text-white sm:p-6">
                         <div class="flex items-start justify-between gap-4">
                             <div>
-                                <p class="text-xs font-semibold tracking-[0.14em] text-brand-mint uppercase">System
-                                    Architecture</p>
-                                <p class="mt-2 text-xl font-semibold">Production-grade infrastructure</p>
+                                <p class="text-xs font-semibold tracking-[0.14em] text-brand-mint uppercase">Hệ thống Kiến trúc</p>
+                                <p class="mt-2 text-xl font-semibold">Hạ tầng cấp độ sản xuất</p>
                             </div>
                             <span
                                 class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-brand-mint">
@@ -57,8 +55,8 @@
                                 class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-light text-primary"><i
                                     data-lucide="layout-grid" class="h-5 w-5" aria-hidden="true"></i></span>
                             <div>
-                                <p class="font-semibold text-text-dark">Client Application Layer</p>
-                                <p class="mt-0.5 text-xs text-muted">Responsive Web & Cross-platform Mobile</p>
+                                <p class="font-semibold text-text-dark">Tầng Ứng dụng Khách</p>
+                                <p class="mt-0.5 text-xs text-muted">Thiết bị đa nền tảng & Di động đa nền tảng</p>
                             </div>
                         </div>
                     </div>
@@ -69,23 +67,21 @@
                     <div class="grid gap-3 sm:grid-cols-2">
                         <div class="rounded-2xl border border-gray-200/80 bg-white p-4">
                             <i data-lucide="server" class="h-5 w-5 text-primary" aria-hidden="true"></i>
-                            <p class="mt-3 font-semibold text-text-dark">API & Microservices</p>
-                            <p class="mt-1 text-xs leading-5 text-muted">Scalable backend architecture</p>
+                            <p class="mt-3 font-semibold text-text-dark">API & Kiến trúc Microservices</p>
+                            <p class="mt-1 text-xs leading-5 text-muted">Kiến trúc backend dễ mở rộng</p>
                         </div>
                         <div class="rounded-2xl border border-gray-200/80 bg-white p-4">
                             <i data-lucide="database" class="h-5 w-5 text-primary" aria-hidden="true"></i>
-                            <p class="mt-3 font-semibold text-text-dark">Cloud Database</p>
-                            <p class="mt-1 text-xs leading-5 text-muted">Secure data storage</p>
+                            <p class="mt-3 font-semibold text-text-dark">Cơ sở dữ liệu đám mây</p>
+                            <p class="mt-1 text-xs leading-5 text-muted">Lưu trữ dữ liệu bảo mật</p>
                         </div>
                     </div>
 
                     <div class="mt-3 flex flex-wrap gap-2">
                         <span
-                            class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Performance-optimized
-                            systems</span>
+                            class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Hệ thống tối ưu hóa hiệu năng</span>
                         <span
-                            class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">Automated
-                            CI/CD</span>
+                            class="rounded-full bg-brand-light px-3 py-1.5 text-xs font-semibold text-primary-dark">CI/CD Tự động hóa</span>
                     </div>
                 </div>
             </div>
