@@ -11,39 +11,38 @@
                         class="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white px-4 py-2 text-xs font-semibold tracking-[0.14em] text-primary uppercase">
                         <i data-lucide="flask-conical" class="h-4 w-4" aria-hidden="true"></i>
 
-                        Coming Soon
+                        Sắp ra mắt
                     </div>
 
                     <p class="mt-6 text-sm font-semibold tracking-[0.18em] text-primary uppercase">
-                        Beyond client work
+                        Ngoài công việc với khách hàng
                     </p>
 
                     <h2 id="own-product-title"
                         class="mt-4 max-w-2xl text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                        We are building something of our own.
+                        Khởi nghiệp sản phẩm riêng
                     </h2>
 
                     <p class="mt-5 max-w-2xl text-lg leading-8 text-muted">
-                        Beyond client projects, we build and develop our own technology products.
+                        Bên cạnh các dự án khách hàng, chúng tôi tự xây dựng và phát triển các sản phẩm công nghệ của riêng mình
                     </p>
 
                     <p class="mt-4 max-w-2xl leading-7 text-muted">
-                        Our first product is a business management platform for Beauty &amp; Spa businesses, bringing
-                        customers, staff, daily operations, and performance tracking into one place.
+                        Sản phẩm đầu tiên của chúng tôi là một nền tảng quản lý vận hành dành cho các doanh nghiệp Làm đẹp & Spa, tích hợp khách hàng, nhân viên, hoạt động hàng ngày và theo dõi hiệu suất vào một nơi duy nhất
                     </p>
 
                     <div class="mt-8 flex flex-wrap gap-3">
 
                         <span class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-text-dark">
-                            Beauty &amp; Spa
+                            Làm đẹp & Spa
                         </span>
 
                         <span class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-text-dark">
-                            Business Management
+                            Quản lý doanh nghiệp
                         </span>
 
                         <span class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-text-dark">
-                            Coming Soon
+                            Sắp ra mắt
                         </span>
 
                     </div>
@@ -58,11 +57,11 @@
 
                             <div>
                                 <p class="text-xs font-semibold tracking-[0.14em] text-primary uppercase">
-                                    Product in development
+                                    Sản phẩm đang phát triển
                                 </p>
 
                                 <p class="mt-2 text-xl font-semibold text-text-dark">
-                                    Beauty &amp; Spa Management
+                                    Sản phẩm đang phát triển
                                 </p>
                             </div>
 
@@ -78,21 +77,21 @@
                             <div class="rounded-2xl bg-brand-light p-4">
                                 <i data-lucide="users-round" class="h-5 w-5 text-primary" aria-hidden="true"></i>
                                 <p class="mt-4 text-sm font-semibold text-text-dark">
-                                    Customers
+                                    Khách hàng
                                 </p>
                             </div>
 
                             <div class="rounded-2xl bg-surface p-4">
                                 <i data-lucide="calendar-days" class="h-5 w-5 text-primary" aria-hidden="true"></i>
                                 <p class="mt-4 text-sm font-semibold text-text-dark">
-                                    Bookings
+                                    Đơn đặt lịch
                                 </p>
                             </div>
 
                             <div class="rounded-2xl bg-surface p-4">
                                 <i data-lucide="users" class="h-5 w-5 text-primary" aria-hidden="true"></i>
                                 <p class="mt-4 text-sm font-semibold text-text-dark">
-                                    Staff
+                                    Nhân viên
                                 </p>
                             </div>
 
@@ -100,7 +99,7 @@
                                 <i data-lucide="chart-no-axes-column" class="h-5 w-5 text-primary"
                                     aria-hidden="true"></i>
                                 <p class="mt-4 text-sm font-semibold text-text-dark">
-                                    Business insights
+                                    Phân tích kinh doanh
                                 </p>
                             </div>
 
@@ -112,12 +111,12 @@
                                 <i data-lucide="construction" class="h-5 w-5 text-brand-mint" aria-hidden="true"></i>
 
                                 <span class="font-semibold">
-                                    Currently in development
+                                    Đang phát triển
                                 </span>
                             </div>
 
                             <p class="mt-2 text-sm leading-6 text-white/70">
-                                Product direction and features are still being developed.
+                                Hướng đi và tính năng sản phẩm vẫn đang trong quá trình phát triển
                             </p>
 
                         </div>

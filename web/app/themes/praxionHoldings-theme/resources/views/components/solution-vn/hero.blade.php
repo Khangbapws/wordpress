@@ -9,29 +9,28 @@
         <div class="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
             <div>
                 <x-ui.badge>
-                    Software Outsourcing
+                    Gia công phần mềm
                 </x-ui.badge>
 
                 <h1 id="solution-title"
                     class="hero-title mt-7 max-w-4xl text-4xl leading-[1.08] font-bold tracking-tight text-text-dark sm:text-5xl lg:text-6xl xl:text-7xl">
-                    Custom software,
+                    Phần mềm tùy chỉnh,
                     <span class="text-primary">
-                        built around your business.
+                        Được thiết kế riêng cho doanh nghiệp của bạn · Bản dùng thử
                     </span>
                 </h1>
 
                 <p class="hero-subtitle mt-7 max-w-2xl text-lg leading-8 text-muted sm:text-xl">
-                    We build web, mobile, business software, and Mini Apps that turn business needs into scalable
-                    digital solutions.
+                    Chúng tôi xây dựng các giải pháp web, di động, phần mềm doanh nghiệp và Mini App nhằm chuyển hóa nhu cầu kinh doanh thành các hệ thống số hóa có khả năng mở rộng. · Bản dùng thử
                 </p>
 
                 <div class="hero-cta mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
                     <x-ui.button href="/contact">
-                        Discuss Your Project
+                        Thảo luận về dự án của bạn · Bản dùng thử
                     </x-ui.button>
 
                     <x-ui.button href="/services" variant="secondary">
-                        Explore Our Services
+                        Khám phá dịch vụ của chúng tôi · Bản dùng thử
                     </x-ui.button>
                 </div>
             </div>
@@ -46,11 +45,11 @@
 
                         <div>
                             <p class="text-sm font-semibold text-primary">
-                                Custom Development
+                                Phát triển theo yêu cầu · Bản dùng thử
                             </p>
 
                             <h2 class="mt-2 text-xl font-semibold text-text-dark">
-                                Software designed around your business requirements.
+                                Phần mềm được thiết kế theo các yêu cầu vận hành của doanh nghiệp bạn · Bản dùng thử
                             </h2>
                         </div>
                     </div>
@@ -66,11 +65,11 @@
 
                         <div>
                             <p class="text-sm font-semibold text-brand-mint">
-                                End-to-End Delivery
+                                Giao hàng toàn diện · Bản dùng thử
                             </p>
 
                             <h2 class="mt-2 text-xl font-semibold">
-                                From product discovery to production and continuous improvement.
+                                Từ khâu khám phá sản phẩm đến giai đoạn vận hành và cải tiến liên tục · Bản dùng thử
                             </h2>
                         </div>
                     </div>

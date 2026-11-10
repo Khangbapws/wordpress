@@ -32,18 +32,17 @@
 
         <div class="max-w-3xl">
             <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
-                How we support your team
+                Cách chúng tôi hỗ trợ đội ngũ của bạn · Bản dùng thử
             </p>
 
             <h2 id="delivery-model-title"
                 class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                Flexible engagement.
-                <span class="block">Clear ownership.</span>
+                Hợp tác linh hoạt · Bản dùng thử
+                <span class="block">Quyền sở hữu rõ ràng · Bản dùng thử</span>
             </h2>
 
             <p class="mt-5 max-w-2xl text-lg leading-8 text-muted">
-                Whether you need a complete software partner or additional engineering capacity,
-                we can work around the way your team operates.
+                Cho dù bạn cần một đối tác phần mềm toàn diện hay năng lực kỹ thuật bổ sung, chúng tôi đều có thể linh hoạt điều chỉnh theo cách thức vận hành của đội ngũ bạn. · Bản dùng thử
             </p>
         </div>
 

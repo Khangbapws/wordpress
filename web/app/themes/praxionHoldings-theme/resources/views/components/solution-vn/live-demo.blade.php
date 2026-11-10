@@ -14,18 +14,16 @@
                     class="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white px-4 py-2 text-xs font-semibold tracking-[0.14em] text-primary uppercase">
                     <i data-lucide="play-circle" class="h-4 w-4" aria-hidden="true"></i>
 
-                    See it in action
+                    Xem thực tế · Bản dùng thử
                 </span>
 
                 <h2 id="live-demo-title"
                     class="mt-6 text-3xl leading-tight font-bold tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                    Experience the product before starting a project.
+                    Trải nghiệm sản phẩm trước khi bắt đầu dự án · Bản dùng thử
                 </h2>
 
                 <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-muted">
-                    Explore our interactive web application and see how
-                    business workflows can be translated into a real,
-                    usable software experience.
+                    Khám phá ứng dụng web tương tác của chúng tôi và tìm hiểu cách các quy trình vận hành doanh nghiệp được hiện thực hóa thành một trải nghiệm phần mềm thực tế và dễ sử dụng · Bản dùng thử
                 </p>
 
                 <div class="mt-8 flex justify-center">
@@ -33,7 +31,7 @@
                     <a href="https://demo.prxholdings.com/" target="_blank" rel="noopener noreferrer"
                         class="group inline-flex items-center justify-center gap-3 rounded-full bg-primary px-7 py-4 text-base font-semibold text-white shadow-lg shadow-primary/20 no-underline transition-all duration-300 hover:-translate-y-1 hover:bg-primary-dark hover:shadow-xl hover:shadow-primary/25">
                         <span>
-                            Explore Live Demo
+                            Khám phá bản demo trực tiếp · Bản dùng thử
                         </span>
 
                         <i data-lucide="arrow-up-right"
@@ -44,7 +42,7 @@
                 </div>
 
                 <p class="mt-4 text-xs text-muted">
-                    Opens the interactive demo in a new tab.
+                    Mở bản demo tương tác trong một tab mới · Bản dùng thử
                 </p>
 
             </div>

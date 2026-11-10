@@ -30,9 +30,8 @@
 <section aria-labelledby="solution-faq-title" class="bg-white py-20 sm:py-24 lg:py-32">
     <div class="container-page">
         <div class="mx-auto max-w-3xl text-center">
-            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Solution FAQ</p>
-            <h2 id="solution-faq-title" class="mt-4 text-3xl font-bold text-text-dark sm:text-4xl lg:text-5xl">Understand
-                the product boundaries.</h2>
+            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Câu hỏi thường gặp về giải pháp · Bản dùng thử</p>
+            <h2 id="solution-faq-title" class="mt-4 text-3xl font-bold text-text-dark sm:text-4xl lg:text-5xl">Hiểu rõ giới hạn sản phẩm · Bản dùng thử</h2>
         </div>
 
         <div x-data="{ openFaq: null }"

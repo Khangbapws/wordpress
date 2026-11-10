@@ -30,17 +30,15 @@
 
             <div>
                 <p class="text-sm font-semibold tracking-[0.18em] text-brand-mint uppercase">
-                    Why PRX Holdings
+                    Tai sao PRX Holdings
                 </p>
 
                 <h2 id="why-prx-title" class="mt-4 text-3xl leading-tight font-bold sm:text-4xl lg:text-5xl">
-                    A technology partner,
-                    not just a development vendor.
+                    Đối tác công nghệ, không chỉ là một nhà cung cấp dịch vụ phát triển
                 </h2>
 
                 <p class="mt-5 max-w-xl text-lg leading-8 text-white/70">
-                    We combine technical delivery with an understanding of
-                    how software fits into the business behind it.
+                    Chúng tôi kết hợp năng lực triển khai kỹ thuật với sự thấu hiểu sâu sắc về cách phần mềm vận hành và phục vụ cho mô hình kinh doanh đằng sau nó
                 </p>
             </div>
 
