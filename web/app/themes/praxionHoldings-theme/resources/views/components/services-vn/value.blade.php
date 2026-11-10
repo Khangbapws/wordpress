@@ -24,14 +24,13 @@
 <section aria-labelledby="value-title" class="scroll-mt-24 py-20 sm:py-24 lg:py-32">
     <div class="container-page">
         <div class="mx-auto max-w-3xl text-center">
-            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">The PRX Advantage</p>
+            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Lợi thế vượt trội từ PRX</p>
             <h2 id="value-title" class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                Serious software <span class="text-primary">engineering.</span> Competitive global <span
-                    class="text-primary">economics.</span>
+                Phát triển phần mềm chuẩn mực <span class="text-primary">chuyên sâu.</span> Hiệu quả chi phí đạt tiêu chuẩn <span
+                    class="text-primary">quốc tế.</span>
             </h2>
             <p class="mt-5 text-lg leading-8 text-muted">
-                We combine Vietnam’s engineering talent with efficient delivery to build enterprise-grade software at
-                competitive costs.
+                Chúng tôi kết hợp tài năng kỹ thuật tại Việt Nam với quy trình triển khai tối ưu để xây dựng phần mềm chuẩn doanh nghiệp với chi phí cạnh tranh.
             </p>
         </div>
 

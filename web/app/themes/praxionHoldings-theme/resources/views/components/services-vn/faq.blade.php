@@ -31,10 +31,10 @@
 <section aria-labelledby="services-faq-title" class="bg-white py-20 sm:py-24 lg:py-32" x-data="{ openIndex: null }">
     <div class="container-page">
         <div class="mx-auto max-w-3xl text-center">
-            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Objection Handling & Transparency
+            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Xử lý từ chối & Tính minh bạch
             </p>
             <h2 id="services-faq-title" class="mt-4 text-3xl font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                Questions answered before you start.
+                Giải đáp mọi thắc mắc trước khi bạn bắt đầu.
             </h2>
         </div>
 

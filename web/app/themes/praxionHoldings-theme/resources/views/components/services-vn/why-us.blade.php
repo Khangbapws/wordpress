@@ -1,13 +1,12 @@
 <section aria-labelledby="ai-comparison-title" class="bg-surface py-20 sm:py-24 lg:py-32">
     <div class="container-page">
         <div class="mx-auto max-w-3xl text-center">
-            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Total Cost of Ownership</p>
+            <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Tổng chi phí Sở hữu</p>
             <h2 id="ai-comparison-title" class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl">
-                AI accelerates code. We guarantee the product.
+                Tăng tốc bằng AI. Đảm bảo bằng chất lượng sản phẩm.
             </h2>
             <p class="mt-5 text-lg leading-8 text-muted">
-                Generating code is fast. Ensuring that code meets security standards, handles edge cases, and scales
-                reliably is where true engineering value is created.
+                Tạo ra mã nguồn thì nhanh. Nhưng việc đảm bảo mã nguồn đó đạt tiêu chuẩn bảo mật, xử lý trơn tru mọi trường hợp biên và vận hành ổn định ở quy mô lớn mới chính là nơi tạo ra giá trị kỹ thuật thực sự.
             </p>
         </div>
 
@@ -16,9 +15,8 @@
                 class="w-full rounded-3xl border border-primary/20 bg-white p-8 text-left shadow-sm transition-[border-color,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/50">
                 <div class="flex items-center justify-between">
                     <div>
-                        <h3 class="text-xl font-bold text-text-dark">AI Code Generation vs. Engineering Ownership</h3>
-                        <p class="mt-2 text-sm text-muted">See how responsibilities shift when moving from generated
-                            prototypes to production-ready software.</p>
+                        <h3 class="text-xl font-bold text-text-dark">Lập trình bằng AI và Trách nhiệm Kỹ thuật</h3>
+                        <p class="mt-2 text-sm text-muted">Theo dõi sự dịch chuyển về trách nhiệm khi chuyển từ bản mẫu (prototype) tạo bởi AI sang phần mềm vận hành thực tế (production-ready).</p>
                     </div>
                     <span
                         class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-light text-primary">
@@ -31,23 +29,17 @@
                 <div x-show="expanded" x-collapse.duration.500ms class="overflow-hidden">
                     <div class="mt-8 border-t border-gray-100 pt-8">
                         <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
-                            <div class="font-semibold text-text-dark sm:col-span-1">Architecture & UX</div>
-                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">AI
-                                    Tools:</span> Suggests generic patterns based on prompts.</div>
-                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Our
-                                    Team:</span> Designed and validated around your specific business constraints.</div>
+                            <div class="font-semibold text-text-dark sm:col-span-1">Kiến trúc Hệ thống & Trải nghiệm Người dùng</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">Công cụ Trí tuệ Nhân tạo:</span> Đề xuất các mô hình mẫu cơ bản dựa trên câu lệnh (prompt).</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Đội ngũ Chuyên gia:</span> Được thiết kế và kiểm chứng tối ưu theo đúng điều kiện và giới hạn vận hành riêng của doanh nghiệp.</div>
 
-                            <div class="font-semibold text-text-dark sm:col-span-1">Security & Deployment</div>
-                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">AI
-                                    Tools:</span> Provides unverified scripts and instructions.</div>
-                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Our
-                                    Team:</span> Hardens infrastructure and executes secure production deployment.</div>
+                            <div class="font-semibold text-text-dark sm:col-span-1">Bảo mật & Triển khai Hạ tầng</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">Công cụ Trí tuệ Nhân tạo:</span> Cung cấp các kịch bản mã nguồn và chỉ dẫn chưa qua kiểm chứng.</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Đội ngũ Chuyên gia:</span> Gia cố hạ tầng an toàn và thực thi quy trình triển khai chuẩn vận hành</div>
 
-                            <div class="font-semibold text-text-dark sm:col-span-1">Accountability</div>
-                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">AI
-                                    Tools:</span> None. You own the technical debt.</div>
-                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Our
-                                    Team:</span> Total technical ownership and ongoing reliability.</div>
+                            <div class="font-semibold text-text-dark sm:col-span-1">Trách nhiệm Giải trình & Trách nhiệm Kỹ thuật</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-text-dark">Công cụ Trí tuệ Nhân tạo:</span> Không có. Doanh nghiệp của bạn phải tự gánh chịu nợ kỹ thuật</div>
+                            <div class="text-sm text-muted sm:col-span-1"><span class="font-medium text-primary">Đội ngũ Chuyên gia:</span> Trách nhiệm kỹ thuật toàn diện và độ tin cậy vận hành dài hạn.</div>
                         </div>
                     </div>
                 </div>

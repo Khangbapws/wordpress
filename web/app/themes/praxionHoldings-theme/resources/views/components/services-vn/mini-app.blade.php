@@ -15,17 +15,16 @@
              ========================================================= --}}
         <div class="mx-auto max-w-3xl text-center">
             <x-ui.badge color="green">
-                Zalo Mini App Development
+                Phát triển Zalo Mini App chuyên nghiệp cho doanh nghiệp
             </x-ui.badge>
 
             <h2 id="miniapp-section-title"
                 class="mt-5 text-3xl font-semibold tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                Built for customers and business teams.
+                Thiết kế tối ưu cho cả khách hàng lẫn đội ngũ vận hành.
             </h2>
 
             <p class="mx-auto mt-5 max-w-2xl text-base leading-7 text-muted sm:text-lg">
-                We build customer-facing experiences and business tools that
-                work together across the web, mobile, and Zalo Mini Apps.
+                Chúng tôi xây dựng các trải nghiệm hướng đến khách hàng và bộ công cụ vận hành doanh nghiệp hoạt động đồng bộ trên toàn bộ nền tảng Web, Mobile và Zalo Mini App.
             </p>
         </div>
 
@@ -53,27 +52,26 @@
                         </span>
 
                         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
-                            Customer experience
+                            Trải nghiệm khách hàng
                         </p>
                     </div>
 
                     <h3
                         class="mt-5 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-[3rem]">
-                        Seamless service booking,
+                        Đặt dịch vụ liền mạch,
                         <span class="lg:block text-primary">
-                            directly inside Zalo.
+                            ngay trong ứng dụng Zalo
                         </span>
                     </h3>
 
                     <p class="mt-6 text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                        A Zalo Mini App that lets customers explore services, discover promotions, book appointments,
-                        and verify bookings—all in one place.
+                        Ứng dụng Zalo Mini App giúp khách hàng chủ động khám phá dịch vụ, theo dõi ưu đãi, đặt lịch hẹn và xác nhận thông tin đặt chỗ — tất cả tập trung trên một nền tảng duy nhất.
                     </p>
 
                     <div class="mt-8">
                         <x-ui.button :href="$bookingMiniAppUrl" target="_blank" rel="noopener noreferrer" variant="primary"
                             class="group gap-2">
-                            <span>Try the Booking Mini App</span>
+                            <span>Trải nghiệm ứng dụng Đặt lịch Mini App</span>
 
                             <i data-lucide="arrow-up-right"
                                 class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -92,7 +90,7 @@
                                 preload="metadata" aria-label="Booking Mini App preview">
                                 <source src="{{ $bookingMiniAppVideoUrl }}" type="video/mp4">
 
-                                Your browser does not support the video tag.
+                                Trình duyệt của bạn không hỗ trợ thẻ video.
                             </video>
                         </div>
                     </div>
@@ -117,7 +115,7 @@
                                 preload="metadata" aria-label="Business Manager Mini App preview">
                                 <source src="{{ $managerMiniAppVideoUrl }}" type="video/mp4">
 
-                                Your browser does not support the video tag.
+                                Trình duyệt của bạn không hỗ trợ thẻ video.
                             </video>
                         </div>
                     </div>
@@ -134,26 +132,26 @@
                         </span>
 
                         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
-                            Business operations
+                            Vận hành doanh nghiệp
                         </p>
                     </div>
 
                     <h3
                         class="mt-5 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-[3rem]">
-                        Business operations,
+                        Vận hành doanh nghiệp,
                         <span class="lg:block text-primary">
-                            built for mobile.
+                           tối ưu cho thiết bị di động.
                         </span>
                     </h3>
 
                     <p class="mt-6 text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                        Manage staff, inventory, revenue, and store operations—all from anywhere.
+                        Quản lý nhân sự, hàng tồn kho, doanh thu và toàn bộ hoạt động chi nhánh — mọi lúc, mọi nơi.
                     </p>
 
                     <div class="mt-8">
                         <x-ui.button :href="$managerMiniAppUrl" target="_blank" rel="noopener noreferrer" variant="secondary"
                             class="group gap-2">
-                            <span>Try the Manager Mini App</span>
+                            <span>Trải nghiệm ứng dụng Quản lý Mini App</span>
 
                             <i data-lucide="arrow-up-right"
                                 class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

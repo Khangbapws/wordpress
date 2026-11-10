@@ -28,10 +28,10 @@
             <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Technical Expertise</p>
             <h2 id="shared-capabilities-title"
                 class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                We build reliable systems, not <span class="text-primary">isolated components.</span>
+                Chúng tôi xây dựng các hệ thống tin cậy, không phải <span class="text-primary">các hợp phần riêng lẻ.</span>
             </h2>
             <p class="mt-5 text-lg leading-8 text-muted">
-                We turn complex business needs into secure, scalable software built to last.
+                Chúng tôi hiện thực hóa các nhu cầu kinh doanh phức tạp thành phần mềm bảo mật, có khả năng mở rộng cao và bền vững theo thời gian.
             </p>
         </div>
         <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
