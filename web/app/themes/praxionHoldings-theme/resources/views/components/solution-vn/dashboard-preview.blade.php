@@ -11,18 +11,16 @@
     <div class="container-page">
         <div class="mx-auto max-w-3xl text-center">
             <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
-                Product engineering in practice
+                Thực tế kỹ thuật sản phẩm
             </p>
 
             <h2 id="dashboard-heading"
                 class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                We build products, not just features.
+                Chúng tôi xây dựng sản phẩm toàn diện, không chỉ dừng lại ở các tính năng đơn lẻ.
             </h2>
 
             <p class="mt-5 text-lg leading-8 text-muted text-pretty">
-                The interface below illustrates the kind of operational web application
-                our team can design and develop — from dashboards and workforce tools
-                to business intelligence and workflow management.
+                Giao diện dưới đây minh họa loại ứng dụng web vận hành mà đội ngũ của chúng tôi có thể thiết kế và phát triển — từ bảng điều khiển (dashboard) và công cụ quản lý nhân sự đến hệ thống thông tin kinh doanh (BI) và quản lý quy trình làm việc.
             </p>
         </div>
 
@@ -35,18 +33,18 @@
                         <span
                             class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-sm font-bold text-white">PRX</span>
                         <div>
-                            <p class="font-semibold text-text-dark">Owner workspace</p>
-                            <p class="text-xs text-muted">Demo workspace · sample data</p>
+                            <p class="font-semibold text-text-dark">Không gian làm việc của chủ sở hữu</p>
+                            <p class="text-xs text-muted">Không gian làm việc dùng thử · Dữ liệu mẫu</p>
                         </div>
                     </div>
 
                     <div class="flex flex-col gap-2 sm:flex-row sm:items-center">
-                        <label for="dashboard-branch" class="text-sm font-semibold text-text-dark">Branch view</label>
+                        <label for="dashboard-branch" class="text-sm font-semibold text-text-dark">Góc nhìn chi nhánh</label>
                         <select id="dashboard-branch" x-model="branch"
                             class="min-h-11 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-text-dark">
-                            <option value="all">All branches</option>
-                            <option value="branch-a">Sample Branch A</option>
-                            <option value="branch-b">Sample Branch B</option>
+                            <option value="all">Tất cả các chi nhánh</option>
+                            <option value="branch-a">Chi nhánh Mẫu A</option>
+                            <option value="branch-b">Chi nhánh Mẫu B</option>
                         </select>
                     </div>
                 </div>
@@ -83,24 +81,21 @@
                         <div class="mt-5 hidden rounded-2xl border border-primary/10 bg-white/80 p-4 lg:block">
                             <div class="flex items-center gap-2 text-sm font-semibold text-text-dark">
                                 <i data-lucide="settings" class="h-4 w-4 text-primary" aria-hidden="true"></i>
-                                Settings &amp; branches
+                                Cài đặt & chi nhánh
                             </div>
-                            <p class="mt-2 text-xs leading-5 text-muted">Access branch management within the owner
-                                workspace.</p>
+                            <p class="mt-2 text-xs leading-5 text-muted">Truy cập quản lý chi nhánh trong không gian làm việc của chủ sở hữu.</p>
                         </div>
                     </aside>
 
                     <div class="min-w-0 bg-white p-4 sm:p-6 lg:p-8">
                         <div class="mb-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                             <div>
-                                <p class="text-xs font-semibold tracking-[0.14em] text-primary uppercase">Current
-                                    context</p>
-                                <p class="mt-1 text-lg font-semibold text-text-dark" x-text="branchLabel">All branches
+                                <p class="text-xs font-semibold tracking-[0.14em] text-primary uppercase">Ngữ cảnh hiện tại</p>
+                                <p class="mt-1 text-lg font-semibold text-text-dark" x-text="branchLabel">Tất cả chi nhánh
                                 </p>
                             </div>
                             <span
-                                class="inline-flex w-fit rounded-full bg-gray-100 px-3 py-1.5 text-xs font-semibold text-muted">Sample
-                                data</span>
+                                class="inline-flex w-fit rounded-full bg-gray-100 px-3 py-1.5 text-xs font-semibold text-muted">Dữ liệu mẫu</span>
                         </div>
 
                         <section id="dashboard-panel-overview" role="tabpanel" aria-labelledby="dashboard-tab-overview"
@@ -111,7 +106,7 @@
                                         <p class="text-xs leading-5 text-muted">{{ $label }}</p>
                                         <p class="mt-2 text-xl font-bold tracking-tight text-text-dark">
                                             {{ $value }}</p>
-                                        <p class="mt-1 text-[0.7rem] font-semibold text-primary uppercase">Demo value
+                                        <p class="mt-1 text-[0.7rem] font-semibold text-primary uppercase">Giá trị dùng thử
                                         </p>
                                     </article>
                                 @endforeach
@@ -121,8 +116,8 @@
                                 <article class="rounded-2xl border border-gray-200/80 p-5">
                                     <div class="flex items-center justify-between gap-4">
                                         <div>
-                                            <h3 class="font-semibold text-text-dark">Today's appointments</h3>
-                                            <p class="mt-1 text-xs text-muted">8 sample bookings across all branches</p>
+                                            <h3 class="font-semibold text-text-dark">Không tìm thấy lịch hẹn nào được ghi nhận cho ngày hôm nay trong lịch của bạn.</h3>
+                                            <p class="mt-1 text-xs text-muted">8 lượt đặt chỗ mẫu trên tất cả các chi nhánh</p>
                                         </div>
                                         <i data-lucide="calendar-days" class="h-5 w-5 text-primary"
                                             aria-hidden="true"></i>
@@ -143,8 +138,8 @@
                                 </article>
 
                                 <article class="rounded-2xl border border-gray-200/80 p-5">
-                                    <h3 class="font-semibold text-text-dark">Staff workload</h3>
-                                    <p class="mt-1 text-xs text-muted">5 staff scheduled · demo</p>
+                                    <h3 class="font-semibold text-text-dark">Khối lượng công việc của nhân sự</h3>
+                                    <p class="mt-1 text-xs text-muted">5 nhân sự đã lên lịch · Bản dùng thử</p>
                                     <ul class="mt-5 space-y-4">
                                         @foreach ([['Staff A', '4 appointments', 'w-4/5'], ['Staff B', '3 appointments', 'w-3/5'], ['Staff C', '2 appointments', 'w-2/5']] as [$name, $load, $width])
                                             <li>
@@ -164,24 +159,24 @@
                             <article class="mt-5 rounded-2xl border border-gray-200/80 p-5">
                                 <div class="flex items-center justify-between gap-4">
                                     <div>
-                                        <h3 class="font-semibold text-text-dark">Trending services</h3>
-                                        <p class="mt-1 text-xs text-muted">Popular and frequently booked · sample data
+                                        <h3 class="font-semibold text-text-dark">Dịch vụ thịnh hành</h3>
+                                        <p class="mt-1 text-xs text-muted">Phổ biến và được đặt lịch thường xuyên · dữ liệu mẫu
                                         </p>
                                     </div>
                                     <i data-lucide="trending-up" class="h-5 w-5 text-primary" aria-hidden="true"></i>
                                 </div>
                                 <ul class="mt-4 grid gap-3 sm:grid-cols-3">
                                     <li class="rounded-xl bg-brand-light p-4">
-                                        <p class="text-sm font-semibold text-text-dark">Hair colour</p>
-                                        <p class="mt-1 text-xs text-primary-dark">Frequently booked · demo</p>
+                                        <p class="text-sm font-semibold text-text-dark">Nhuộm tóc</p>
+                                        <p class="mt-1 text-xs text-primary-dark">Được đặt lịch thường xuyên · Bản dùng thử</p>
                                     </li>
                                     <li class="rounded-xl bg-surface p-4">
-                                        <p class="text-sm font-semibold text-text-dark">Skin-care service</p>
-                                        <p class="mt-1 text-xs text-muted">Popular · demo</p>
+                                        <p class="text-sm font-semibold text-text-dark">Dịch vụ chăm sóc da</p>
+                                        <p class="mt-1 text-xs text-muted">Phổ biến · Bản dùng thử</p>
                                     </li>
                                     <li class="rounded-xl bg-surface p-4">
-                                        <p class="text-sm font-semibold text-text-dark">Hair service</p>
-                                        <p class="mt-1 text-xs text-muted">Frequently booked · demo</p>
+                                        <p class="text-sm font-semibold text-text-dark">Dịch vụ tóc</p>
+                                        <p class="mt-1 text-xs text-muted">Được đặt lịch thường xuyên · Bản dùng thử</p>
                                     </li>
                                 </ul>
                             </article>
@@ -191,8 +186,8 @@
                             x-show="tab === 'team'">
                             <div class="grid gap-5 xl:grid-cols-[1.1fr_0.9fr]">
                                 <article class="rounded-2xl border border-gray-200/80 p-5 sm:p-6">
-                                    <h3 class="text-lg font-semibold text-text-dark">Staff schedules</h3>
-                                    <p class="mt-1 text-sm text-muted">Sample schedule for today</p>
+                                    <h3 class="text-lg font-semibold text-text-dark">Lịch trình nhân sự</h3>
+                                    <p class="mt-1 text-sm text-muted">Lịch trình mẫu cho ngày hôm nay</p>
                                     <ul class="mt-5 divide-y divide-gray-200/80">
                                         @foreach ([['Staff A', '09:00–17:00', 'Branch A'], ['Staff B', '10:00–18:00', 'Branch B'], ['Staff C', '12:00–20:00', 'Branch A']] as [$name, $hours, $branch])
                                             <li
@@ -211,11 +206,10 @@
                                         class="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-primary"><i
                                             data-lucide="circle-dollar-sign" class="h-5 w-5"
                                             aria-hidden="true"></i></span>
-                                    <h3 class="mt-5 text-lg font-semibold text-text-dark">Commission visibility</h3>
-                                    <p class="mt-2 leading-7 text-muted">Review staff commission information alongside
-                                        schedules and work activity.</p>
+                                    <h3 class="mt-5 text-lg font-semibold text-text-dark">Khả năng hiển thị hoa hồng</h3>
+                                    <p class="mt-2 leading-7 text-muted">Xem lại thông tin hoa hồng của nhân sự đi kèm với lịch trình và hoạt động công việc · Dữ liệu mẫu.</p>
                                     <div class="mt-5 rounded-xl bg-white p-4">
-                                        <p class="text-xs text-muted">Sample commission total</p>
+                                        <p class="text-xs text-muted">Tổng hoa hồng mẫu</p>
                                         <p class="mt-1 text-2xl font-bold text-text-dark">US$240</p>
                                     </div>
                                 </article>
@@ -226,38 +220,36 @@
                             aria-labelledby="dashboard-tab-inventory" x-show="tab === 'inventory'">
                             <div class="grid gap-5 lg:grid-cols-[1fr_0.8fr]">
                                 <article class="rounded-2xl border border-gray-200/80 p-5 sm:p-6">
-                                    <h3 class="text-lg font-semibold text-text-dark">Inventory status</h3>
-                                    <p class="mt-1 text-sm text-muted">Sample stock view across selected branches</p>
+                                    <h3 class="text-lg font-semibold text-text-dark">Trạng thái kho hàng</h3>
+                                    <p class="mt-1 text-sm text-muted">Xem kho hàng mẫu trên các chi nhánh đã chọn · Dữ liệu mẫu</p>
                                     <ul class="mt-5 space-y-3">
                                         <li
                                             class="flex items-center justify-between gap-4 rounded-xl border border-amber-300 bg-amber-50 p-4">
                                             <div>
-                                                <p class="font-semibold text-text-dark">Shampoo</p>
+                                                <p class="font-semibold text-text-dark">Dầu gội</p>
                                                 <p class="text-xs text-muted">4 units · sample</p>
                                             </div><span
-                                                class="rounded-full bg-amber-200 px-3 py-1 text-xs font-semibold text-amber-950">Low
-                                                stock</span>
+                                                class="rounded-full bg-amber-200 px-3 py-1 text-xs font-semibold text-amber-950">Tồn kho thấp · Dữ liệu mẫu</span>
                                         </li>
                                         <li class="flex items-center justify-between gap-4 rounded-xl bg-surface p-4">
                                             <div>
-                                                <p class="font-semibold text-text-dark">Hair colour stock</p>
-                                                <p class="text-xs text-muted">28 units · sample</p>
-                                            </div><span class="text-xs font-semibold text-primary-dark">In range</span>
+                                                <p class="font-semibold text-text-dark">Tồn kho màu nhuộm · Dữ liệu mẫu</p>
+                                                <p class="text-xs text-muted">28 đơn vị · Dữ liệu mẫu</p>
+                                            </div><span class="text-xs font-semibold text-primary-dark">Trong hạn mức · Dữ liệu mẫu</span>
                                         </li>
                                         <li class="flex items-center justify-between gap-4 rounded-xl bg-surface p-4">
                                             <div>
-                                                <p class="font-semibold text-text-dark">Skin-care serum</p>
-                                                <p class="text-xs text-muted">9 units · sample</p>
-                                            </div><span class="text-xs font-semibold text-muted">Monitor</span>
+                                                <p class="font-semibold text-text-dark">Serum dưỡng da</p>
+                                                <p class="text-xs text-muted">9 đơn vị · Dữ liệu mẫu</p>
+                                            </div><span class="text-xs font-semibold text-muted">Màn hình</span>
                                         </li>
                                     </ul>
                                 </article>
                                 <article class="rounded-2xl bg-text-dark p-5 text-white sm:p-6">
                                     <i data-lucide="bell-ring" class="h-6 w-6 text-brand-mint"
                                         aria-hidden="true"></i>
-                                    <h3 class="mt-5 text-lg font-semibold">Low-stock notification</h3>
-                                    <p class="mt-3 leading-7 text-white/70">The dashboard can notify an owner when an
-                                        item such as shampoo is running low.</p>
+                                    <h3 class="mt-5 text-lg font-semibold">Thông báo tồn kho thấp · Bản dùng thử</h3>
+                                    <p class="mt-3 leading-7 text-white/70">Bảng điều khiển có thể thông báo cho chủ sở hữu khi một mặt hàng như dầu gội sắp hết.</p>
                                 </article>
                             </div>
                         </section>
@@ -270,29 +262,26 @@
                                         class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-light text-primary"><i
                                             data-lucide="message-circle-heart" class="h-5 w-5"
                                             aria-hidden="true"></i></span>
-                                    <h3 class="mt-5 text-lg font-semibold text-text-dark">Smart CRM and Retention</h3>
-                                    <p class="mt-3 leading-7 text-muted">Example: when hair colour commonly needs a
-                                        touch-up after four weeks, the system can send a Zalo or SMS reminder in week
-                                        three with a small discount code.</p>
+                                    <h3 class="mt-5 text-lg font-semibold text-text-dark">CRM thông minh và Giữ chân khách hàng</h3>
+                                    <p class="mt-3 leading-7 text-muted">Ví dụ: khi màu nhuộm tóc thường cần dặm lại sau bốn tuần, hệ thống có thể gửi tin nhắn nhắc nhở qua Zalo hoặc SMS vào tuần thứ ba kèm theo một mã giảm giá nhỏ. · Bản dùng thử</p>
                                     <p
                                         class="mt-4 rounded-xl bg-surface p-4 text-xs font-semibold leading-5 text-primary-dark">
-                                        Sample cycle: Hair colour · reminder prepared for week 3</p>
+                                        Chu kỳ mẫu: Màu nhuộm · Đã chuẩn bị nhắc nhở cho tuần 3 · Dữ liệu mẫu</p>
                                 </article>
                                 <article class="rounded-2xl border border-gray-200/80 p-5 sm:p-6">
                                     <span
                                         class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-light text-primary"><i
                                             data-lucide="images" class="h-5 w-5" aria-hidden="true"></i></span>
-                                    <h3 class="mt-5 text-lg font-semibold text-text-dark">Digital Beauty Portfolio</h3>
-                                    <p class="mt-3 leading-7 text-muted">Before-and-after service images are stored
-                                        chronologically and automatically combined so customer progress is easier to
-                                        see.</p>
+                                    <h3 class="mt-5 text-lg font-semibold text-text-dark">Danh mục làm đẹp kỹ thuật số · Bản dùng thử
+
+Trước và sau khi thực hiện dịch vụ, hình ảnh được lưu trữ theo trình tự thời gian và tự động kết hợp lại để dễ dàng theo dõi quá trình tiến triển của khách hàng. · Dữ liệu mẫu</p>
                                     <div class="mt-4 grid grid-cols-2 gap-3" aria-label="Sample portfolio comparison">
                                         <div
                                             class="rounded-xl bg-gray-100 p-4 text-center text-xs font-semibold text-muted">
-                                            Before · demo</div>
+                                           Trước · Bản dùng thử</div>
                                         <div
                                             class="rounded-xl bg-brand-light p-4 text-center text-xs font-semibold text-primary-dark">
-                                            After · demo</div>
+                                           Sau · Bản dùng thử</div>
                                     </div>
                                 </article>
                             </div>

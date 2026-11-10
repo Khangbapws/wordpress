@@ -34,21 +34,19 @@
                     <i data-lucide="smartphone" class="h-4 w-4 text-brand-mint" aria-hidden="true"></i>
 
                     <span class="text-xs font-semibold tracking-[0.14em] text-brand-mint uppercase">
-                        Zalo Mini App Development
+                        Phát triển Zalo Mini App
                     </span>
                 </div>
 
                 <h2 id="zalo-mini-app-title" class="mt-6 text-3xl leading-tight font-bold sm:text-4xl lg:text-5xl">
-                    Build where your customers
+                    Xây dựng nơi khách hàng của bạn
                     <span class="text-brand-mint">
                         already are.
                     </span>
                 </h2>
 
                 <p class="mt-6 max-w-xl text-lg leading-8 text-white/70">
-                    We design and develop Mini Apps that bring your
-                    products, services, and business workflows closer
-                    to your customers and teams.
+                    Chúng tôi thiết kế và phát triển các Mini App đưa sản phẩm, dịch vụ và quy trình kinh doanh của bạn đến gần hơn với khách hàng và đội ngũ · Bản dùng thử
                 </p>
 
                 <div class="mt-6 flex items-center gap-4">
@@ -58,7 +56,7 @@
                         </p>
 
                         <p class="mt-1 text-sm text-white/60">
-                            Monthly active Zalo users in Vietnam
+                            Người dùng Zalo hoạt động hàng tháng tại Việt Nam
                         </p>
                     </div>
                 </div>

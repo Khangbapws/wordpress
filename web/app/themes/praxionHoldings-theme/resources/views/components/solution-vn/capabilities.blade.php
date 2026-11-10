@@ -38,16 +38,15 @@
         <div class="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
             <div>
                 <p class="text-sm font-semibold tracking-[0.18em] text-brand-mint uppercase">
-                    What we build
+                    Những gì chúng tôi xây dựng
                 </p>
 
                 <h2 id="capability-title" class="mt-4 text-3xl leading-tight font-bold sm:text-4xl lg:text-5xl">
-                    Software capabilities for real business needs.
+                    Năng lực phần mềm đáp ứng nhu cầu thực tế của doanh nghiệp.
                 </h2>
 
                 <p class="mt-5 text-lg leading-8 text-white/70">
-                    We build around your workflows, users, and business objectives —
-                    not around a predefined product template.
+                    Chúng tôi phát triển giải pháp xoay quanh quy trình làm việc, người dùng và mục tiêu kinh doanh của bạn — thay vì gò ép vào một khuôn mẫu sản phẩm có sẵn.
                 </p>
             </div>
 

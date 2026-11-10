@@ -22,16 +22,15 @@
     <div class="container-page">
         <div class="mx-auto max-w-3xl text-center">
             <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
-                Solutions we build
+                Giải pháp chúng tôi xây dựng · Bản dùng thử
             </p>
 
             <h2 id="ecosystem-title" class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                Software for customers, teams, and operations.
+                Phần mềm dành cho khách hàng, đội ngũ và vận hành · Bản dùng thử
             </h2>
 
             <p class="mt-5 text-lg leading-8 text-muted">
-                We build connected digital experiences that support the people
-                using your product and the teams operating behind it.
+                Chúng tôi xây dựng các trải nghiệm kỹ thuật số kết nối, hỗ trợ những người sử dụng sản phẩm của bạn và đội ngũ vận hành đằng sau đó. · Bản dùng thử
             </p>
         </div>
 
