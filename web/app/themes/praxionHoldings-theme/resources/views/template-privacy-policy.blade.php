@@ -1,0 +1,9 @@
+{{--
+  Template Name: Privacy Policy Template
+--}}
+@section('content')
+    <div>
+        <h1>Privacy Policy</h1>
+        <p>This is the privacy policy page.</p>
+    </div>
+@endsection

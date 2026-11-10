@@ -77,7 +77,7 @@
 
                     <ul class="mt-5 space-y-1">
                         <li>
-                            <a href="{{ home_url('/terms-and-conditions') }}"
+                            <a href="{{ home_url('/terms-of-service') }}"
                                 class="inline-flex min-h-11 items-center text-sm font-medium text-muted transition-colors duration-200 hover:text-primary">
                                 Terms of Service
                             </a>
