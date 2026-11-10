@@ -71,19 +71,18 @@
         <div class="grid grid-cols-1 items-end gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.7fr)] lg:gap-12">
             <div class="max-w-2xl">
                 <x-ui.badge>
-                    Brand &amp; Creative
+                    Xây dựng Thương hiệu &amp; Thiết kế Sáng tạo
                 </x-ui.badge>
 
                 <h2 id="brand-photography-title"
                     class="mt-5 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                    Show your business at <span class="text-primary">its best</span>.
+                    Khẳng định đẳng cấp doanh nghiệp theo <span class="text-primary">cách trọn vẹn nhất</span>.
                 </h2>
             </div>
 
             <div>
                 <p class="text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                    Make a lasting first impression with professional photography that brings your brand, products, and
-                    people to life.
+                    Tạo ấn tượng đầu tiên đậm nét với dịch vụ chụp ảnh chuyên nghiệp, thổi hồn vào thương hiệu, sản phẩm và đội ngũ của bạn.
                 </p>
 
                 <div class="mt-5 flex flex-wrap gap-2">
@@ -96,7 +95,7 @@
                     </x-ui.badge>
 
                     <x-ui.badge color="gray">
-                        Graphic Design Available
+                        Sẵn sàng cung cấp dịch vụ thiết kế đồ họa
                     </x-ui.badge>
                 </div>
             </div>
@@ -136,21 +135,18 @@
 
                 <div>
                     <h3 class="text-base font-bold text-text-dark sm:text-lg">
-                        Local photography, built around your business.
+                        Dịch vụ chụp ảnh tại địa phương, thiết kế riêng cho doanh nghiệp của bạn
                     </h3>
 
                     <p class="mt-2 max-w-2xl text-sm leading-6 text-muted">
-                        Photography bookings are available in Hanoi and
-                        Nha Trang, subject to scheduling and project scope.
-                        Travel outside the agreed service area may incur
-                        additional charges.
+                        Dịch vụ chụp ảnh hiện nhận lịch tại Hà Nội và Nha Trang, tùy thuộc vào lịch trình và quy mô dự án. Chi phí di chuyển ngoài khu vực phục vụ thỏa thuận có thể phát sinh thêm phụ phí.
                     </p>
                 </div>
             </div>
 
             <a href="{{ home_url('/contact') }}?service=brand-photography"
                 class="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary-dark">
-                <span>Check availability</span>
+                <span>Kiểm tra lịch trống</span>
 
                 <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
             </a>
@@ -161,15 +157,15 @@
         <div id="photography-packages" class="mt-20 scroll-mt-24 sm:mt-24">
             <div class="mx-auto max-w-2xl text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
-                    Photography Packages
+                    Gói dịch vụ chụp ảnh
                 </p>
 
                 <h3 class="mt-4 text-3xl font-bold tracking-tight text-text-dark sm:text-4xl">
-                    A clear starting point for <span class="text-primary">your brand</span>.
+                    Điểm khởi đầu hoàn hảo cho <span class="text-primary">thương hiệu của bạn</span>.
                 </h3>
 
                 <p class="mt-4 text-base leading-7 text-muted">
-                    Choose your package. We'll confirm the scope and deliverables before the shoot.
+                    Lựa chọn gói dịch vụ của bạn. Chúng tôi sẽ chốt chi tiết yêu cầu và sản phẩm bàn giao trước buổi chụp.
                 </p>
             </div>
 
@@ -235,10 +231,7 @@
             </div>
 
             <p class="mx-auto mt-6 max-w-3xl text-center text-xs leading-6 text-muted">
-                Prices are indicative starting packages. Final quotations
-                depend on the confirmed brief, location, production
-                requirements, and deliverables. Additional services,
-                travel, and special production costs are quoted separately.
+                Mức giá trên là giá tham khảo cho các gói khởi điểm. Báo giá chính thức sẽ phụ thuộc vào yêu cầu chi tiết đã thống nhất, địa điểm, chi phí sản xuất và sản phẩm bàn giao. Các dịch vụ bổ sung, chi phí di chuyển và chi phí sản xuất đặc biệt sẽ được báo giá riêng.
             </p>
         </div>
 
