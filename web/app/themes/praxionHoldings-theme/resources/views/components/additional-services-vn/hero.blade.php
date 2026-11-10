@@ -10,42 +10,40 @@
             {{-- Main heading --}}
             <div class="max-w-2xl">
                 <x-ui.badge>
-                    Additional Services
+                    Dịch vụ bổ sung
                 </x-ui.badge>
 
                 <h1 id="additional-services-title"
                     class="hero-title mt-6 text-4xl font-bold leading-[1.08] tracking-tight text-text-dark sm:text-5xl lg:text-6xl">
-                    Expert support for your <span class="text-primary">next step.</span>
+                    Hỗ trợ chuyên sâu cho <span class="text-primary">bước đi tiếp theo của bạn.</span>
                 </h1>
 
                 <p class="hero-subtitle mt-6 max-w-xl text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                    From AI-powered solutions to digital branding, we help businesses innovate, stand out, and grow.
+                    Từ các giải pháp ứng dụng AI đến xây dựng thương hiệu số, chúng tôi giúp doanh nghiệp đổi mới, bứt phá và phát triển.
                 </p>
             </div>
 
             {{-- Supporting copy and navigation --}}
             <div class="lg:pl-6">
                 <p class="hero-subtitle text-lg leading-8 text-text-dark sm:text-xl">
-                    Not every challenge needs custom software. Sometimes, expert technical guidance or creative support
-                    is all you need.
+                    Không phải mọi thách thức đều cần đến phần mềm tùy chỉnh. Đôi khi, sự tư vấn kỹ thuật chuyên sâu hoặc hỗ trợ sáng tạo từ chuyên gia là tất cả những gì bạn cần.
                 </p>
 
                 <div class="hero-buttons mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                     <x-ui.button href="#vibe-coding" variant="primary" class="gap-2">
                         <i data-lucide="code-2" class="h-4 w-4" aria-hidden="true"></i>
-                        <span>Technical Guidance</span>
+                        <span>Tư vấn kỹ thuật</span>
                     </x-ui.button>
 
                     <x-ui.button href="#brand-creative" variant="secondary" class="gap-2">
                         <i data-lucide="camera" class="h-4 w-4" aria-hidden="true"></i>
-                        <span>Brand &amp; Creative</span>
+                        <span>Thương hiệu &amp; Sáng tạo</span>
                     </x-ui.button>
                 </div>
 
                 <div class="hero-footer mt-8 border-t border-gray-200 pt-5">
                     <p class="hero-subtitle text-sm leading-6 text-muted">
-                        For individuals, founders, growing businesses,
-                        and established brands.
+                        Dành cho cá nhân, nhà sáng lập, doanh nghiệp đang phát triển và các thương hiệu đã khẳng định vị thế.
                     </p>
                 </div>
             </div>

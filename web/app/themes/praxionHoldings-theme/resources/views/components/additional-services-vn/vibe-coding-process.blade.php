@@ -9,11 +9,11 @@
             </p>
 
             <h2 id="vibe-coding-process-title" class="mt-4 text-3xl font-bold tracking-tight text-text-dark sm:text-4xl">
-                From a <span class="text-primary">technical challenge</span> to a clear next step.
+                Từ một <span class="text-primary">thử thách kỹ thuật</span> đến bước đi tiếp theo rõ ràng.
             </h2>
 
             <p class="mt-4 text-base leading-7 text-muted sm:text-lg">
-                A simple process. Every session focused on results.
+                Quy trình đơn giản. Mỗi buổi làm việc đều tập trung vào kết quả.
             </p>
         </div>
 
@@ -88,22 +88,22 @@
             class="mt-12 rounded-3xl bg-brand-light px-6 py-8 sm:px-8 sm:py-10 lg:flex lg:items-center lg:justify-between lg:gap-10">
             <div class="max-w-2xl">
                 <h3 class="text-xl font-bold tracking-tight text-text-dark sm:text-2xl">
-                    Ready to make progress on your project?
+                    Sẵn sàng tạo bước tiến cho dự án của bạn?
                 </h3>
 
                 <p class="mt-3 text-sm leading-6 text-muted sm:text-base">
-                    Choose your support package and share your goals. We'll clarify the next steps before your session.
+                    Chọn gói dịch vụ phù hợp và chia sẻ mục tiêu của bạn. Chúng tôi sẽ làm rõ các bước tiếp theo trước khi buổi làm việc bắt đầu.
                 </p>
             </div>
 
             <div class="mt-6 flex flex-col gap-3 sm:flex-row lg:mt-0 lg:shrink-0">
                 <x-ui.button :href="home_url('/contact') . '?service=vibe-coding'" variant="primary" class="justify-center gap-2">
-                    <span>Book a Session</span>
+                    <span>Đặt buổi tư vấn</span>
                     <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
                 </x-ui.button>
 
                 <x-ui.button href="#vibe-coding-pricing" variant="secondary" class="justify-center">
-                    View Packages
+                    Xem các gói dịch vụ
                 </x-ui.button>
             </div>
         </div>

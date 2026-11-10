@@ -68,16 +68,16 @@
         {{-- Heading --}}
         <div class="mx-auto max-w-2xl text-center">
             <x-ui.badge>
-                Flexible Hourly Packages
+                Gói dịch vụ linh hoạt theo giờ
             </x-ui.badge>
 
             <h2 id="vibe-coding-pricing-title"
                 class="mt-5 text-3xl font-bold tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                <span class="text-primary">Expert</span> guidance, on your terms.
+                <span class="text-primary">Tư vấn</span> chuyên sâu, theo cách của bạn.
             </h2>
 
             <p class="mt-5 text-base leading-7 text-muted sm:text-lg">
-                Start with a single session or get ongoing support as your project grows.
+                Bắt đầu với một buổi tư vấn đơn lẻ hoặc nhận hỗ trợ xuyên suốt khi dự án của bạn phát triển.
             </p>
         </div>
 
@@ -133,7 +133,7 @@
                             </p>
                         @else
                             <p class="mt-3 text-xs text-muted">
-                                A simple way to get started
+                                Một cách đơn giản để bắt đầu
                             </p>
                         @endif
                     </div>
@@ -168,10 +168,7 @@
         {{-- Pricing notes --}}
         <div class="mx-auto mt-8 max-w-3xl text-center">
             <p class="text-xs leading-6 text-muted">
-                All prices are in Vietnamese dong (VND). Packages represent
-                developer guidance time, not a guaranteed project deliverable.
-                Sessions are scheduled by agreement. Implementation work,
-                third-party costs, and separately scoped development are not included.
+                Tất cả giá niêm yết đều bằng Đồng Việt Nam (VND). Các gói dịch vụ thể hiện thời gian hướng dẫn trực tiếp từ nhà phát triển, không phải cam kết về bàn giao dự án hoàn chỉnh. Các buổi làm việc được sắp xếp theo thỏa thuận chung. Khối lượng công việc triển khai thực tế, chi phí bên thứ ba và các hạng mục phát triển được lập hồ sơ riêng sẽ không bao gồm trong gói.
             </p>
         </div>
 

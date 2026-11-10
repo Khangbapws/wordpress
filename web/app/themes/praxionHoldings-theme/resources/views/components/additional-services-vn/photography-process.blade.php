@@ -85,16 +85,15 @@
             class="mt-10 grid grid-cols-1 gap-6 rounded-3xl bg-brand-light p-6 sm:p-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-center lg:gap-12 lg:p-10">
             <div>
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
-                    Before We Start
+                    Trước khi bắt đầu
                 </p>
 
                 <h3 class="mt-4 text-2xl font-bold tracking-tight text-text-dark sm:text-3xl">
-                    A little preparation goes a long way.
+                    Một chút chuẩn bị chu đáo sẽ mang lại hiệu quả vượt trội.
                 </h3>
 
                 <p class="mt-4 text-sm leading-6 text-muted sm:text-base sm:leading-7">
-                    You do not need a complete creative brief. A few details
-                    will help us recommend a suitable approach and quotation.
+                    Bạn không cần chuẩn bị một bản yêu cầu sáng tạo hoàn chỉnh. Chỉ cần vài thông tin chi tiết cũng sẽ giúp chúng tôi đề xuất phương án và bảng báo giá phù hợp.
                 </p>
             </div>
 
@@ -144,16 +143,16 @@
         <div class="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <div>
                 <h3 class="text-xl font-bold text-text-dark">
-                    Have a shoot in mind?
+                    Bạn đã có ý tưởng cho buổi chụp?
                 </h3>
 
                 <p class="mt-2 text-sm leading-6 text-muted">
-                    Tell us about your business and the visual content you need.
+                    Hãy chia sẻ với chúng tôi về doanh nghiệp của bạn và nội dung hình ảnh bạn đang cần.
                 </p>
             </div>
 
             <x-ui.button :href="home_url('/contact') . '?service=brand-photography'" variant="primary" class="shrink-0 justify-center gap-2">
-                <span>Request a Photography Quote</span>
+                <span>Yêu cầu báo giá chụp ảnh</span>
 
                 <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
             </x-ui.button>

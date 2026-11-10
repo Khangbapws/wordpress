@@ -29,18 +29,16 @@
             <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
                 <div class="max-w-2xl">
                     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
-                        Selected Work
+                        Dự án tiêu biểu
                     </p>
 
                     <h2 id="brand-photography-portfolio-title"
                         class="mt-4 text-3xl font-semibold tracking-tight text-text-dark sm:text-4xl">
-                        Brands, spaces, and stories.
+                        Thương hiệu, không gian và câu chuyện.
                     </h2>
 
                     <p class="mt-4 text-base leading-7 text-muted sm:text-lg">
-                        Explore selected photography projects and see how
-                        visual content can help communicate a brand's
-                        atmosphere, identity, and experience.
+                        Khám phá các dự án chụp ảnh tiêu biểu để thấy cách nội dung hình ảnh giúp truyền tải không khí, bản sắc và trải nghiệm của một thương hiệu.
                     </p>
                 </div>
 

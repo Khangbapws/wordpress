@@ -43,17 +43,17 @@
         <div class="grid grid-cols-1 items-end gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)] lg:gap-12">
             <div class="max-w-2xl">
                 <x-ui.badge>
-                    Creative Add-ons
+                    Các dịch vụ sáng tạo bổ sung
                 </x-ui.badge>
 
                 <h2 id="graphic-design-title"
                     class="mt-5 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                    Make every <span class="text-primary">brand touchpoint</span> feel consistent.
+                    Tạo sự đồng bộ cho mọi <span class="text-primary">điểm chạm thương hiệu</span> của bạn.
                 </h2>
             </div>
 
             <p class="text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                Consistent visuals. Stronger branding. Every touchpoint matters.
+                Hình ảnh đồng bộ. Thương hiệu mạnh mẽ hơn. Mọi điểm chạm đều quan trọng.
             </p>
         </div>
 
@@ -94,7 +94,7 @@
 
                     <div class="mt-8">
                         <x-ui.button :href="home_url('/contact') . '?service=graphic-design&package=' . \Illuminate\Support\Str::slug($package['name'])" variant="secondary" class="w-full justify-center gap-2">
-                            <span>Request a Quote</span>
+                            <span>Yêu cầu báo giá</span>
 
                             <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
                         </x-ui.button>
@@ -109,25 +109,23 @@
             class="mt-8 flex flex-col gap-4 rounded-2xl border border-gray-200 bg-white p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
             <div class="max-w-2xl">
                 <h3 class="text-lg font-bold text-text-dark">
-                    Need photography and design together?
+                    Bạn cần kết hợp dịch vụ chụp ảnh và thiết kế?
                 </h3>
 
                 <p class="mt-2 text-sm leading-6 text-muted">
-                    Combine visual content production and graphic design
-                    within one brief to keep your campaign consistent.
+                    Kết hợp sản xuất nội dung hình ảnh và thiết kế đồ họa trong cùng một yêu cầu để giữ cho chiến dịch của bạn luôn đồng bộ.
                 </p>
             </div>
 
             <x-ui.button href="#brand-creative" variant="primary" class="shrink-0 justify-center gap-2">
-                <span>Explore Photography</span>
+                <span>Khám phá dịch vụ chụp ảnh</span>
 
                 <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
             </x-ui.button>
         </div>
 
         <p class="mt-5 text-center text-xs leading-6 text-muted">
-            Prices are indicative starting points. Final scope, deliverables,
-            revision rounds, and usage formats are confirmed in the quotation.
+            Mức giá mang tính chất tham khảo ban đầu. Quy mô chính thức, sản phẩm bàn giao, số lần chỉnh sửa và định dạng sử dụng sẽ được xác nhận cụ thể trong bảng báo giá.
         </p>
 
     </div>
