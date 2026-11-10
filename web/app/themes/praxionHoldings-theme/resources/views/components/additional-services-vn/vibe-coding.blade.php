@@ -12,35 +12,32 @@
 
                 <h2 id="vibe-coding-title"
                     class="mt-5 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                    Build with <span class="text-primary">AI.</span>
-                    <span class="lg:block">Get expertise when you need it.</span>
+                    Xây dựng cùng <span class="text-primary">AI.</span>
+                    <span class="lg:block">Nhận hỗ trợ chuyên môn ngay khi bạn cần.</span>
                 </h2>
 
                 <p class="mt-6 text-base leading-7 text-muted sm:text-lg sm:leading-8">
-                    Turn your ideas into working software with one-to-one guidance from experienced developers—from
-                    first prototype to production.
+                    Biến ý tưởng thành phần mềm hoạt động thực tế với sự hướng dẫn 1 kèm 1 từ các nhà phát triển giàu kinh nghiệm—từ nguyên mẫu đầu tiên cho đến khi đưa vào vận hành thực tế.
                 </p>
 
                 <p class="mt-4 text-base leading-7 text-muted">
-                    Get expert guidance for AI-assisted development, MVPs, and technical challenges—without committing
-                    to a full development project.
+                    Nhận hướng dẫn chuyên môn cho việc phát triển hỗ trợ bởi AI, các sản phẩm khả thi tối thiểu (MVP) và các thử thách kỹ thuật—mà không cần cam kết thực hiện toàn bộ dự án phát triển.
                 </p>
 
                 <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                     <x-ui.button href="#vibe-coding-pricing" variant="primary" class="gap-2">
-                        <span>Explore Hourly Packages</span>
+                        <span>Khám phá các Gói theo Giờ</span>
                         <i data-lucide="arrow-down" class="h-4 w-4" aria-hidden="true"></i>
                     </x-ui.button>
 
                     <x-ui.button :href="home_url('/contact')" variant="text" class="gap-2">
-                        <span>Ask a Question</span>
+                        <span>Đặt câu hỏi</span>
                         <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
                     </x-ui.button>
                 </div>
 
                 <p class="mt-4 text-xs leading-5 text-muted">
-                    Sessions are focused on guidance and collaboration.
-                    Project delivery is scoped separately.
+                    Các buổi làm việc tập trung vào việc hướng dẫn và hợp tác. Việc bàn giao dự án được lập phạm vi riêng.
                 </p>
             </div>
 
@@ -48,16 +45,15 @@
             {{-- What we can work on --}}
             <div class="rounded-3xl border border-gray-200 bg-brand-light p-6 sm:p-8">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
-                    What We Can Help With
+                    Những gì chúng tôi có thể hỗ trợ
                 </p>
 
                 <h3 class="mt-3 text-xl font-bold tracking-tight text-text-dark sm:text-2xl">
-                    Move past the blocker.
+                    Vượt qua rào cản.
                 </h3>
 
                 <p class="mt-3 text-sm leading-6 text-muted">
-                    Bring a real task, a technical question, or a feature
-                    you are trying to build.
+                    Mang đến một nhiệm vụ thực tế, một câu hỏi kỹ thuật hoặc một tính năng mà bạn đang muốn xây dựng..
                 </p>
 
                 <div class="mt-7 grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -112,40 +108,37 @@
 
                 <div>
                     <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
-                        01 / Founders
+                        01 / Nhà sáng lập
                     </p>
                     <h3 class="mt-3 text-lg font-bold text-text-dark">
-                        Building your own idea
+                        Tự xây dựng ý tưởng của riêng bạn
                     </h3>
                     <p class="mt-2 text-sm leading-6 text-muted">
-                        Get technical guidance while validating an idea,
-                        developing a prototype, or building an MVP.
+                        Nhận hướng dẫn kỹ thuật trong khi kiểm chứng ý tưởng, phát triển bản mẫu hoặc xây dựng sản phẩm khả thi tối thiểu (MVP).
                     </p>
                 </div>
 
                 <div>
                     <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
-                        02 / Professionals
+                        02 / Chuyên gia
                     </p>
                     <h3 class="mt-3 text-lg font-bold text-text-dark">
-                        Learning by building
+                        Học qua thực hành
                     </h3>
                     <p class="mt-2 text-sm leading-6 text-muted">
-                        Understand how AI-assisted development works
-                        while making progress on a practical project.
+                        Hiểu rõ cách hoạt động của quy trình phát triển hỗ trợ bằng AI trong khi vẫn tiến hành triển khai một dự án thực tế.
                     </p>
                 </div>
 
                 <div>
                     <p class="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
-                        03 / Developers
+                        03 / Nhà phát triển
                     </p>
                     <h3 class="mt-3 text-lg font-bold text-text-dark">
-                        Solving difficult problems
+                        Giải quyết các vấn đề phức tạp
                     </h3>
                     <p class="mt-2 text-sm leading-6 text-muted">
-                        Get another experienced perspective on debugging,
-                        code quality, and technical decisions.
+                        Có thêm một góc nhìn giàu kinh nghiệm về xử lý lỗi (debugging), chất lượng mã nguồn và các quyết định kỹ thuật.
                     </p>
                 </div>
 

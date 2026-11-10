@@ -8,11 +8,11 @@
             </p>
 
             <h2 id="service-overview-title" class="mt-4 text-3xl font-bold tracking-tight text-text-dark sm:text-4xl">
-                The right <span class="text-primary">expertise</span> for your needs.
+              Chuyên môn phù hợp <span class="text-primary">cho nhu</span> cầu của bạn.
             </h2>
 
             <p class="mt-4 text-base leading-7 text-muted sm:text-lg">
-                Get the support you need—from building products to growing your brand.
+                Nhận sự hỗ trợ bạn cần—từ xây dựng sản phẩm đến phát triển thương hiệu.
             </p>
         </div>
 
@@ -39,17 +39,15 @@
                 </div>
 
                 <p class="mt-7 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
-                    For Individuals &amp; Founders
+                    Dành cho Cá nhân &amp; Nhà sáng lập
                 </p>
 
                 <h3 class="mt-3 text-2xl font-bold tracking-tight text-text-dark sm:text-3xl">
-                    Technical Guidance
+                    Tư vấn Kỹ thuật
                 </h3>
 
                 <p class="mt-4 text-base leading-7 text-muted">
-                    Build with AI and get guidance from an experienced
-                    developer when you need help with code, debugging,
-                    architecture, or deployment.
+                    Xây dựng cùng AI và nhận hướng dẫn từ một nhà phát triển giàu kinh nghiệm khi bạn cần hỗ trợ về mã nguồn, gỡ lỗi, kiến trúc hoặc triển khai.
                 </p>
 
                 <ul class="mt-6 space-y-3">
@@ -62,7 +60,7 @@
                 </ul>
 
                 <div class="mt-8 flex items-center gap-2 text-sm font-semibold text-primary">
-                    <span>Explore Vibe Coding Support</span>
+                    <span>Khám phá Hỗ trợ Vibe Coding</span>
                     <i data-lucide="arrow-right"
                         class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                         aria-hidden="true"></i>
@@ -90,16 +88,15 @@
                 </div>
 
                 <p class="mt-7 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
-                    For Businesses &amp; Brands
+                    Dành cho Doanh nghiệp &amp; Thương hiệu
                 </p>
 
                 <h3 class="mt-3 text-2xl font-bold tracking-tight text-text-dark sm:text-3xl">
-                    Brand &amp; Creative
+                    Thương hiệu &amp; Sáng tạo
                 </h3>
 
                 <p class="mt-4 text-base leading-7 text-muted">
-                    Present your business with professional brand photography
-                    and supporting graphic design tailored to your visual identity.
+				Thể hiện doanh nghiệp của bạn với dịch vụ chụp ảnh thương hiệu chuyên nghiệp cùng thiết kế đồ họa bổ trợ được tùy chỉnh theo bản sắc thị giác của bạn.
                 </p>
 
                 <ul class="mt-6 space-y-3">
@@ -112,7 +109,7 @@
                 </ul>
 
                 <div class="mt-8 flex items-center gap-2 text-sm font-semibold text-primary">
-                    <span>Explore Brand Services</span>
+                    <span>Khám phá Dịch vụ Thương hiệu</span>
                     <i data-lucide="arrow-right"
                         class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                         aria-hidden="true"></i>

@@ -57,23 +57,21 @@
             {{-- Intro --}}
             <div class="max-w-lg">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary sm:text-sm">
-                    Frequently Asked Questions
+                    Các câu hỏi thường gặp
                 </p>
 
                 <h2 id="additional-services-faq-title"
                     class="mt-4 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                    Questions before getting started?
+                    Bạn có thắc mắc trước khi bắt đầu?
                 </h2>
 
                 <p class="mt-5 text-base leading-7 text-muted sm:text-lg">
-                    Find out how our technical guidance, photography,
-                    and creative services work before choosing the
-                    right option for your needs.
+                    Tìm hiểu cách các dịch vụ tư vấn kỹ thuật, chụp ảnh và sáng tạo của chúng tôi hoạt động trước khi lựa chọn giải pháp phù hợp với nhu cầu của bạn.
                 </p>
 
                 <div class="mt-7">
                     <x-ui.button :href="home_url('/contact')" variant="secondary" class="gap-2">
-                        <span>Contact Our Team</span>
+                        <span>Liên hệ với đội ngũ của chúng tôi</span>
 
                         <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
                     </x-ui.button>
