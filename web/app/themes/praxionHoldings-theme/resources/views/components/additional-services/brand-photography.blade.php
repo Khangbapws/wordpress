@@ -76,7 +76,7 @@
 
                 <h2 id="brand-photography-title"
                     class="mt-5 text-3xl font-bold leading-[1.12] tracking-tight text-text-dark sm:text-4xl lg:text-5xl">
-                    Show your business at <span class="text-primary">its best</span>.
+                    Show your business at <span class="text-primary">its best.</span>
                 </h2>
             </div>
 
