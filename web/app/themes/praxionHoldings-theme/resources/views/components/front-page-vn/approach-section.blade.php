@@ -27,12 +27,10 @@
     <div class="container-page">
         <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <div class="lg:sticky lg:top-32 lg:self-start">
-                <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Our Philosophy</p>
-                <h2 class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl">We build software with
-                    product intuition, not <span class="text-primary">just code.</span>
+                <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Triết lý của chúng tôi</p>
+                <h2 class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl">Chúng tôi xây dựng phần mềm bằng tư duy sản phẩm nhạy bén, không <span class="text-primary">hỉ đơn thuần là mã nguồn.</span>
                 </h2>
-                <p class="mt-5 text-lg leading-8 text-muted">We go beyond specifications—challenging assumptions,
-                    improving user experiences, and owning results from start to finish.</p>
+                <p class="mt-5 text-lg leading-8 text-muted">Chúng tôi không chỉ dừng lại ở các yêu cầu kỹ thuật—mà luôn đặt lại vấn đề với các giả định, nâng tầm trải nghiệm người dùng và chịu trách nhiệm toàn diện cho kết quả từ đầu đến cuối.</p>
             </div>
 
             <div
