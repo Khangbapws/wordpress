@@ -8,6 +8,35 @@
     ];
 @endphp
 
+{{-- Homepage logo intro: replay on every homepage visit --}}
+@if (is_front_page())
+    <script>
+        (() => {
+            const root = document.documentElement;
+            const animationClass = 'prx-home-logo-intro';
+
+            const playLogoIntro = () => {
+                root.classList.remove(animationClass);
+
+                // Force browser to recalculate styles and restart animation.
+                void root.offsetWidth;
+
+                root.classList.add(animationClass);
+            };
+
+            // Play on every normal homepage load.
+            playLogoIntro();
+
+            // Replay when the browser restores homepage from BFCache.
+            window.addEventListener('pageshow', (event) => {
+                if (event.persisted) {
+                    playLogoIntro();
+                }
+            });
+        })();
+    </script>
+@endif
+
 <header class="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-white/95 backdrop-blur-md">
     <div class="container-page">
         <div

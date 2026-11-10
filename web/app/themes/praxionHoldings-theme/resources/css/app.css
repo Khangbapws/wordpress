@@ -390,8 +390,9 @@
 }
 
 /* =========================================================
-   PRX BRAND LOGO REVEAL
-   Symbol slides left + wordmark reveals
+   PRX BRAND LOCKUP
+   Default state: fully visible logo
+   Intro state: animated only on homepage, once per session
    ========================================================= */
 
 .prx-brand-lockup {
@@ -406,10 +407,13 @@
   overflow: visible;
 }
 
+/* PRX Symbol */
+
 .prx-brand-lockup__mark {
   position: absolute;
   top: 50%;
   left: 0;
+
   display: flex;
   width: var(--prx-logo-size);
   height: var(--prx-logo-size);
@@ -417,8 +421,6 @@
   justify-content: center;
 
   transform: translateY(-50%);
-
-  animation: prx-logo-slide-left 1.25s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
 }
 
 .prx-brand-lockup__mark img {
@@ -428,25 +430,44 @@
   object-fit: contain;
 }
 
+/* PRX Holdings Wordmark */
+
 .prx-brand-lockup__wordmark {
   position: absolute;
   top: 50%;
   left: 50px;
 
   display: block;
+
   color: var(--color-primary);
   font-family: var(--font-sans);
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.045em;
-
-  /* Important: preserve lowercase descenders */
   line-height: 1.2;
   padding-block: 0.08em;
-
   white-space: nowrap;
 
-  /* Clip horizontally, but leave vertical breathing room */
+  /* Default: fully visible */
+  clip-path: none;
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+/* =========================================================
+   HOMEPAGE INTRO ANIMATION
+   Only activated through the html class
+   ========================================================= */
+
+/* Symbol moves from center to its final position */
+
+html.prx-home-logo-intro .prx-brand-lockup__mark {
+  animation: prx-logo-slide-left 1.25s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+}
+
+/* Wordmark reveals from left to right */
+
+html.prx-home-logo-intro .prx-brand-lockup__wordmark {
   clip-path: inset(-0.15em 100% -0.15em 0);
   opacity: 0;
   transform: translate(9px, -50%);
@@ -454,9 +475,7 @@
   animation: prx-wordmark-reveal 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both;
 }
 
-/* ---------------------------------------------------------
-   3. Animation keyframes
-   --------------------------------------------------------- */
+/* Keyframes */
 
 @keyframes prx-logo-slide-left {
   0% {
@@ -487,9 +506,10 @@
     transform: translate(0, -50%);
   }
 }
-/* ---------------------------------------------------------
-   4. Responsive
-   --------------------------------------------------------- */
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
 @media (max-width: 639px) {
   .prx-brand-lockup {
@@ -497,16 +517,16 @@
 
     flex-basis: 184px;
     width: 184px;
-    height: 42px;
-  }
-
-  .prx-brand-lockup__mark {
-    animation-name: prx-logo-slide-left-mobile;
+    height: 48px;
   }
 
   .prx-brand-lockup__wordmark {
     left: 43px;
     font-size: 1.25rem;
+  }
+
+  html.prx-home-logo-intro .prx-brand-lockup__mark {
+    animation-name: prx-logo-slide-left-mobile;
   }
 }
 
@@ -526,22 +546,22 @@
   }
 }
 
-/* ---------------------------------------------------------
-   5. Reduced motion accessibility
-   --------------------------------------------------------- */
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
-  .prx-brand-lockup__mark,
-  .prx-brand-lockup__wordmark {
+  html.prx-home-logo-intro .prx-brand-lockup__mark,
+  html.prx-home-logo-intro .prx-brand-lockup__wordmark {
     animation: none !important;
   }
 
-  .prx-brand-lockup__mark {
+  html.prx-home-logo-intro .prx-brand-lockup__mark {
     left: 0;
     transform: translateY(-50%);
   }
 
-  .prx-brand-lockup__wordmark {
+  html.prx-home-logo-intro .prx-brand-lockup__wordmark {
     clip-path: none;
     opacity: 1;
     transform: translateY(-50%);

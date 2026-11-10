@@ -2,18 +2,17 @@
     'logo' => 'resources/images/logo/prx-logo.png',
 ])
 
+
 <a href="{{ home_url('/') }}" aria-label="PRX Holdings home"
     {{ $attributes->merge([
         'class' =>
             'prx-brand-lockup shrink-0 rounded-sm no-underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary',
     ]) }}>
-    {{-- PRX Symbol --}}
     <span class="prx-brand-lockup__mark" aria-hidden="true">
-        <img src="{{ Vite::asset($logo) }}" alt="" width="40" height="40" fetchpriority="high"
-            decoding="async">
+        <img src="{{ Vite::asset('resources/images/logo/prx-logo.png') }}" alt="" width="40" height="40"
+            fetchpriority="high" decoding="async">
     </span>
 
-    {{-- Wordmark --}}
     <span class="prx-brand-lockup__wordmark" aria-hidden="true">
         PRX Holdings
     </span>
