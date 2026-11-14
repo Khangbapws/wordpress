@@ -5,6 +5,7 @@ import './lib/lenis';
 import { initSmoothAnchor } from './utils/smoothAnchor';
 import { initAnimations } from './animations';
 
+import { initHeroScene } from './modules/hero-scene';
 function bootstrap() {
   initIcons();
 
@@ -13,6 +14,8 @@ function bootstrap() {
   initSmoothAnchor();
 
   initAnimations();
+
+  initHeroScene();
 }
 
 document.addEventListener('DOMContentLoaded', bootstrap);

@@ -26,21 +26,21 @@
             'linkedin' => 'https://www.linkedin.com/in/tung-nguyen-quang-723450191/',
             'quote' =>
                 '“We don’t just build what you ask for. We understand why it needs to exist, then build it to last.”',
-            'image' => 'team/Tung_4x3.jpg',
+            'image' => 'team/tung.png',
         ],
         [
             'position' => 'Mr. Ngo Khang - CEO',
             'linkedin' => 'https://www.linkedin.com/in/khang-ngo-118a84283/',
             'quote' =>
                 '“The best technology does not make a business more complicated. It makes the right things simpler, clearer, and easier to scale.”',
-            'image' => 'team/Khang_4x3.jpg',
+            'image' => 'team/khang.png',
         ],
         [
             'position' => 'Mr. Mihai - CDO',
             'linkedin' => 'https://www.linkedin.com/in/mihai-soroiu-180727434/',
             'quote' =>
                 '“Great software is where engineering, design, and business thinking meet — every interaction should have a purpose.”',
-            'image' => 'team/Mihai_4x3.jpg',
+            'image' => 'team/mihai.png',
         ],
     ];
 @endphp
@@ -175,12 +175,32 @@
 
                                 {{-- Image --}}
                                 <div
-                                    class="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl bg-white/10 lg:h-40 lg:w-full lg:rounded-t-2xl lg:rounded-b-none">
+                                    class="group/avatar relative h-24 w-24 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-gradient-to-b from-emerald-950/80 via-[#243122] to-[#1a2419] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.12)] lg:h-52 lg:w-full lg:rounded-t-2xl lg:rounded-b-none lg:border-x-0 lg:border-t-0">
 
+                                    <!-- 1. Họa tiết lưới chấm mờ (Architectural Dot Grid) -->
+                                    <div
+                                        class="pointer-events-none absolute inset-0 opacity-35 [background-image:radial-gradient(rgba(255,255,255,0.18)_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_75%_80%_at_50%_40%,#000_40%,transparent_100%)]">
+                                    </div>
+
+                                    <!-- 2. Đèn Spotlight chiếu từ đỉnh khung -->
+                                    <div
+                                        class="pointer-events-none absolute -top-12 left-1/2 h-40 w-72 -translate-x-1/2 rounded-full bg-lime-300/15 blur-2xl transition-all duration-500 group-hover/avatar:bg-lime-300/25 group-hover/avatar:scale-110">
+                                    </div>
+
+                                    <!-- 3. Vầng hào quang định vị sau vai nhân vật -->
+                                    <div
+                                        class="pointer-events-none absolute bottom-0 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-emerald-400/10 blur-xl transition-opacity duration-500 group-hover/avatar:opacity-100 lg:h-44 lg:w-44">
+                                    </div>
+
+                                    <!-- 4. Ảnh chân dung: căn đáy (object-bottom), chừa khoảng thở trên đỉnh đầu & đổ bóng khối -->
                                     <img src="{{ Vite::asset('resources/images/' . $member['image']) }}"
                                         alt="Team member: {{ $member['position'] }}" loading="lazy" decoding="async"
-                                        class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100">
+                                        class="relative z-10 h-full w-full object-contain object-bottom px-2 pt-2 drop-shadow-[0_12px_20px_rgba(0,0,0,0.55)] transition-transform duration-500 ease-out group-hover/avatar:scale-[1.04] lg:px-6 lg:pt-4 motion-reduce:transition-none">
 
+                                    <!-- 5. Lớp chuyển sắc đáy giúp phần thân dưới hòa mượt vào nền card -->
+                                    <div
+                                        class="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-8 bg-gradient-to-t from-[#1f291e] via-[#1f291e]/40 to-transparent">
+                                    </div>
                                 </div>
 
                                 {{-- Content --}}

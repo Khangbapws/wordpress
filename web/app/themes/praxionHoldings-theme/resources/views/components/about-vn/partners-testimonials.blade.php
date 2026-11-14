@@ -106,17 +106,17 @@
 
                 <div class="max-w-2xl">
                     <x-ui.badge color="green">
-                        Đối tác & Câu chuyện khách hàng
+                        Đối tác & Khách hàng
                     </x-ui.badge>
 
                     <h2 id="partners-testimonials-title"
                         class="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight text-white sm:text-4xl lg:text-5xl">
-                        Hợp tác bền vững bắt đầu từ sự tin tưởng.
+                        Niềm tin tạo nên hợp tác bền vững.
                     </h2>
                 </div>
 
                 <p class="max-w-xl text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
-                    Chúng tôi tin rằng những kết quả có ý nghĩa xuất phát từ mối quan hệ bền chặt, giao tiếp minh bạch và cam kết chung trong việc xây dựng các giải pháp tạo ra sự khác biệt.
+                    Cùng đối tác kiến tạo giải pháp khác biệt, tạo giá trị lâu dài.
                 </p>
 
             </div>
@@ -140,20 +140,20 @@
 
                         <div>
                             <p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand-mint">
-                                {{ $hasMultiplePartners ? 'Selected Partners' : 'Featured Client' }}
+                                {{ $hasMultiplePartners ? 'Đối tác chiến lược' : 'Dấu ấn hợp tác tiêu biểu' }}
                             </p>
 
                             <h3 class="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
                                 {{ $hasMultiplePartners
-                                    ? 'Organizations we are proud to work with.'
-                                    : 'Partnerships are built one project at a time.' }}
+                                    ? 'Những doanh nghiệp tiên phong mà chúng tôi tự hào sát cánh.'
+                                    : 'Niềm tin đối tác được bồi đắp từ giá trị của từng dự án.' }}
                             </h3>
                         </div>
 
                         <p class="max-w-md text-sm leading-6 text-white/60">
                             {{ $hasMultiplePartners
-                                ? 'A growing network of businesses connected through collaboration and shared goals.'
-                                : 'We value the opportunity to work with businesses that trust us with their digital ambitions.' }}
+                                ? 'Mạng lưới doanh nghiệp vươn tầm — kết nối bằng hợp tác, đồng hành vì mục tiêu chung.'
+                                : 'Chúng tôi luôn trân quý từng cơ hội sát cánh cùng các doanh nghiệp hiện thực hóa khát vọng công nghệ.' }}
                         </p>
 
                     </div>
@@ -182,24 +182,24 @@
                                         <span class="h-2 w-2 rounded-full bg-primary"></span>
 
                                         <span class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-                                            {{ $partner['relationship'] ?? 'Client' }}
+                                            {{ $partner['relationship'] ?? 'Đối tác đồng hành' }}
                                         </span>
                                     </div>
 
                                     <h4
                                         class="mt-5 max-w-lg text-2xl font-semibold leading-tight tracking-tight text-text-dark sm:text-3xl">
-                                        Cam kết chung hướng tới sự phát triển ý nghĩa. suckaniggadick
+                                        Cùng kiến tạo giá trị bền vững.
                                     </h4>
 
                                     <p class="mt-4 max-w-lg text-sm leading-7 text-muted sm:text-base">
-                                        Mọi dự án thành công đều bắt đầu bằng việc thấu hiểu con người, mục tiêu và những thách thức đằng sau một doanh nghiệp. Chúng tôi tự hào giới thiệu sự hợp tác của mình với
+                                        Thấu hiểu để đồng hành. Tự hào hợp tác cùng
                                         {{ $partner['short_name'] }}.
                                     </p>
 
                                     <div class="mt-7 flex flex-wrap items-center gap-3">
                                         <span
                                             class="inline-flex items-center rounded-full bg-brand-light px-4 py-2 text-xs font-semibold text-primary-dark">
-                                            {{ $partner['location'] ?? 'Vietnam' }}
+                                            {{ $partner['location'] ?? 'Việt Nam' }}
                                         </span>
 
                                         @if (!empty($partner['url']))
@@ -253,16 +253,16 @@
                                         @for ($copy = 0; $copy < 2; $copy++)
                                             <div class="prx-partner-ticker__group">
 
-                                                <span>BUILT ON TRUST</span>
+                                                <span>XÂY DỰNG TRÊN NIỀM TIN</span>
                                                 <span class="prx-partner-ticker__separator">✳</span>
 
-                                                <span>SHARED AMBITION</span>
+                                                <span>CHUNG MỘT KHÁT VỌNG</span>
                                                 <span class="prx-partner-ticker__separator">✳</span>
 
-                                                <span>THOUGHTFUL COLLABORATION</span>
+                                                <span>HỢP TÁC TẬN TÂM</span>
                                                 <span class="prx-partner-ticker__separator">✳</span>
 
-                                                <span>LONG-TERM THINKING</span>
+                                                <span>TƯ DUY DÀI HẠN</span>
                                                 <span class="prx-partner-ticker__separator">✳</span>
 
                                             </div>
@@ -551,8 +551,8 @@
             {{-- Trust statement --}}
             <div class="mt-12 border-t border-white/15 pt-6 sm:mt-16">
                 <p class="text-sm leading-6 text-white/50">
-                    Every partnership begins with understanding the people,
-                    goals, and challenges behind the project.
+                    Mỗi hành trình đồng hành đều bắt đầu từ sự lắng nghe — thấu hiểu đội ngũ, mục tiêu và nút thắt thực
+                    sự của doanh nghiệp bạn.
                 </p>
             </div>
 

@@ -79,7 +79,7 @@
                                 ])>
                                 <span>{{ $item['label'] }}</span>
 
-                                @if ($item['page'] === 'additional-services')
+                                @if ($item['page'] === 'lien-he')
                                     <x-ui.robot-mascot />
                                 @endif
                             </a>
@@ -93,7 +93,7 @@
                 <x-layout.language-switcher />
 
                 <x-ui.button :href="home_url('/lien-he')">
-                    Start now
+                    Bắt đầu ngay
                 </x-ui.button>
 
             </div>
@@ -122,7 +122,7 @@
                                     ])>
                                     <span>{{ $item['label'] }}</span>
 
-                                    @if ($item['page'] === 'additional-services')
+                                    @if ($item['page'] === 'lien-he')
                                         <x-ui.robot-mascot />
                                     @endif
                                 </a>
@@ -134,11 +134,11 @@
                     <div class="mt-3 flex items-center justify-between gap-3 border-t border-gray-100 px-1 pt-4">
                         <div>
                             <p class="text-sm font-semibold text-text-dark">
-                                Language
+                                Ngôn ngữ
                             </p>
 
                             <p class="mt-0.5 text-xs text-muted">
-                                Choose your preferred language
+                                Chọn ngôn ngữ ưa thích
                             </p>
                         </div>
 
@@ -147,7 +147,7 @@
 
                     {{-- Mobile CTA --}}
                     <x-ui.button :href="home_url('/lien-he')" class="mt-4 w-full">
-                        Start now
+                        Bắt đầu ngay
                     </x-ui.button>
                 </nav>
             </details>

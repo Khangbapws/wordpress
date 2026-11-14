@@ -2,45 +2,45 @@
     $commitments = [
         [
             'icon' => 'hammer',
-            'title' => 'Start practical',
+            'title' => 'Bắt đầu từ giá trị thực tiễn',
             'copy' =>
-                'We avoid complexity that does not create business value. A prototype is not a finished product, and architecture should scale with actual need.',
+                'Chúng tôi nói không với sự phức tạp không tạo ra giá trị kinh doanh. Một bản mẫu thử nghiệm (prototype) chưa phải là sản phẩm hoàn chỉnh, và kiến trúc hệ thống phải được mở rộng theo đúng nhu cầu tăng trưởng thực tế.',
         ],
         [
             'icon' => 'shield-check',
-            'title' => 'Engineer for production',
+            'title' => 'Kỹ thuật chuẩn vận hành thực tế',
             'copy' =>
-                'Deployment, monitoring, and iteration are part of real software engineering. Customers should never inherit an unmaintainable codebase.',
+                'Triển khai vận hành, giám sát liên tục và cải tiến không ngừng mới là bản chất thực sự của kỹ thuật phần mềm. Khách hàng không bao giờ đáng phải gánh nhận một hệ thống mã nguồn chắp vá, không thể bảo trì.',
         ],
         [
             'icon' => 'bot',
-            'title' => 'Intelligent AI integration',
+            'title' => 'Tích hợp AI thông minh & thực tiễn',
             'copy' =>
-                'We use AI as a powerful engineering accelerator, while ensuring architecture, quality, and business judgment remain firmly under human ownership.',
+                'Chúng tôi ứng dụng AI như một đòn bẩy tăng tốc kỹ thuật mạnh mẽ, nhưng luôn giữ vững quyền làm chủ của con người đối với kiến trúc hệ thống, tiêu chuẩn chất lượng và tư duy chiến lược kinh doanh.',
         ],
     ];
 
     $teamMembers = [
         [
-            'position' => 'Mr. Nguyen Quang Tung - CTO',
+            'position' => 'Ông Nguyen Quang Tung - CTO',
             'linkedin' => 'https://www.linkedin.com/in/tung-nguyen-quang-723450191/',
             'quote' =>
-                '“We don’t just build what you ask for. We understand why it needs to exist, then build it to last.”',
-            'image' => 'team/Tung_4x3.jpg',
+                '“Chúng tôi không chỉ lập trình theo yêu cầu. Chúng tôi thấu hiểu lý do sản phẩm cần tồn tại — rồi kiến tạo nên một hệ thống bền vững với thời gian.”',
+            'image' => 'team/tung.png',
         ],
         [
-            'position' => 'Mr. Ngo Khang - CEO',
+            'position' => 'Ông Ngo Khang - CEO',
             'linkedin' => 'https://www.linkedin.com/in/khang-ngo-118a84283/',
             'quote' =>
-                '“The best technology does not make a business more complicated. It makes the right things simpler, clearer, and easier to scale.”',
-            'image' => 'team/Khang_4x3.jpg',
+                '“Công nghệ tối ưu nhất không làm doanh nghiệp thêm phức tạp — mà giúp những điều cốt lõi trở nên tinh gọn hơn, minh bạch hơn và dễ dàng mở rộng quy mô.”',
+            'image' => 'team/khang.png',
         ],
         [
-            'position' => 'Mr. Mihai - CDO',
+            'position' => 'Ông Mihai - CDO',
             'linkedin' => 'https://www.linkedin.com/in/mihai-soroiu-180727434/',
             'quote' =>
-                '“Great software is where engineering, design, and business thinking meet — every interaction should have a purpose.”',
-            'image' => 'team/Mihai_4x3.jpg',
+                '“Một phần mềm xuất sắc là điểm giao thoa giữa kỹ thuật chuẩn xác, thiết kế tinh tế và tư duy kinh doanh sắc bén — nơi mọi điểm chạm tương tác đều mang một mục đích rõ ràng.”',
+            'image' => 'team/mihai.png',
         ],
     ];
 @endphp
@@ -80,7 +80,8 @@
                         </h2>
 
                         <p class="mt-5 text-lg leading-8 text-white/70">
-                            Chúng tôi kiến tạo các hệ thống phần mềm toàn diện, không phải là những đoạn mã rời rạc. Những nguyên tắc này chi phối mọi dự án mà chúng tôi thực hiện.
+                            Chúng tôi kiến tạo các hệ thống phần mềm toàn diện, không phải là những đoạn mã rời rạc.
+                            Những nguyên tắc này chi phối mọi dự án mà chúng tôi thực hiện.
                         </p>
 
                     </div>
@@ -111,13 +112,13 @@
                     {{-- Actions --}}
                     <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
 
-                        <x-ui.button :href="home_url('/services')" variant="light">
+                        <x-ui.button :href="home_url('/dich-vu')" variant="light">
                             Khám phá các giải pháp của chúng tôi
                         </x-ui.button>
 
-                        <a href="{{ home_url('/contact') }}"
+                        <a href="{{ home_url('/lien-he') }}"
                             class="inline-flex min-h-12 items-center justify-center rounded-full border border-white/30 px-6 py-3 font-semibold text-white no-underline transition-colors duration-300 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
-                            Talk About Your Project
+                            Khởi động dự án cùng PRX
                         </a>
 
                         <button type="button" x-ref="teamButton" aria-controls="team-panel"
@@ -159,7 +160,7 @@
                         </h2>
 
                         <p class="mt-5 text-lg leading-8 text-white/70">
-                            Một đội ngũ chuyên sâu bao gồm quản lý sản phẩm, thiết kế UX/UI, lập trình viên frontend, backend và hạ tầng.
+                            Đội ngũ chuyên gia về sản phẩm, UX/UI, frontend, backend và hạ tầng.
                         </p>
 
                     </div>
@@ -173,12 +174,32 @@
 
                                 {{-- Image --}}
                                 <div
-                                    class="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl bg-white/10 lg:h-40 lg:w-full lg:rounded-t-2xl lg:rounded-b-none">
+                                    class="group/avatar relative h-24 w-24 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-gradient-to-b from-emerald-950/80 via-[#243122] to-[#1a2419] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.12)] lg:h-52 lg:w-full lg:rounded-t-2xl lg:rounded-b-none lg:border-x-0 lg:border-t-0">
 
+                                    <!-- 1. Họa tiết lưới chấm mờ (Architectural Dot Grid) -->
+                                    <div
+                                        class="pointer-events-none absolute inset-0 opacity-35 [background-image:radial-gradient(rgba(255,255,255,0.18)_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_75%_80%_at_50%_40%,#000_40%,transparent_100%)]">
+                                    </div>
+
+                                    <!-- 2. Đèn Spotlight chiếu từ đỉnh khung -->
+                                    <div
+                                        class="pointer-events-none absolute -top-12 left-1/2 h-40 w-72 -translate-x-1/2 rounded-full bg-lime-300/15 blur-2xl transition-all duration-500 group-hover/avatar:bg-lime-300/25 group-hover/avatar:scale-110">
+                                    </div>
+
+                                    <!-- 3. Vầng hào quang định vị sau vai nhân vật -->
+                                    <div
+                                        class="pointer-events-none absolute bottom-0 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-emerald-400/10 blur-xl transition-opacity duration-500 group-hover/avatar:opacity-100 lg:h-44 lg:w-44">
+                                    </div>
+
+                                    <!-- 4. Ảnh chân dung: căn đáy (object-bottom), chừa khoảng thở trên đỉnh đầu & đổ bóng khối -->
                                     <img src="{{ Vite::asset('resources/images/' . $member['image']) }}"
                                         alt="Team member: {{ $member['position'] }}" loading="lazy" decoding="async"
-                                        class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100">
+                                        class="relative z-10 h-full w-full object-contain object-bottom px-2 pt-2 drop-shadow-[0_12px_20px_rgba(0,0,0,0.55)] transition-transform duration-500 ease-out group-hover/avatar:scale-[1.04] lg:px-6 lg:pt-4 motion-reduce:transition-none">
 
+                                    <!-- 5. Lớp chuyển sắc đáy giúp phần thân dưới hòa mượt vào nền card -->
+                                    <div
+                                        class="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-8 bg-gradient-to-t from-[#1f291e] via-[#1f291e]/40 to-transparent">
+                                    </div>
                                 </div>
 
                                 {{-- Content --}}

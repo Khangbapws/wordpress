@@ -16,7 +16,7 @@
 <section aria-label="Technology Stack" class="overflow-hidden border-y border-gray-200/80 bg-white py-16">
     <div class="container-page mx-auto">
         <p class="text-center text-sm font-semibold tracking-[0.15em] text-muted uppercase">
-            Công nghệ hiện đại. Kỹ thuật cấp độ sản xuất.
+            Nền tảng công nghệ hiện đại. Kỹ thuật chuẩn vận hành thực tế.
         </p>
     </div>
 
