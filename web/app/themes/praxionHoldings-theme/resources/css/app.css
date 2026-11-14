@@ -640,3 +640,49 @@ img.emoji {
     animation: none;
   }
 }
+
+/* ==========================================================================
+   CORE CAPABILITIES BENTO GRID
+   ========================================================================== */
+
+.bento-spotlight {
+  background: radial-gradient(
+    420px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    color-mix(in oklab, var(--color-primary, #0f766e) 9%, transparent),
+    transparent 70%
+  );
+}
+
+.bento-spotlight--dark {
+  background: radial-gradient(
+    460px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(94, 234, 212, 0.14),
+    transparent 70%
+  );
+}
+
+.bento-card-mesh {
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--color-primary, #0f766e) 22%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+  mask-image: radial-gradient(
+    ellipse 85% 85% at 100% 0%,
+    #000 20%,
+    transparent 80%
+  );
+}
+
+.bento-card-mesh--dark {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.18) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+  mask-image: radial-gradient(
+    ellipse 85% 85% at 100% 0%,
+    #000 20%,
+    transparent 80%
+  );
+}

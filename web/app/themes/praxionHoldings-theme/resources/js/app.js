@@ -6,6 +6,7 @@ import { initSmoothAnchor } from './utils/smoothAnchor';
 import { initAnimations } from './animations';
 
 import { initHeroScene } from './modules/hero-scene';
+import { initCapabilitiesSection } from './modules/capabilities-section';
 function bootstrap() {
   initIcons();
 
@@ -16,6 +17,7 @@ function bootstrap() {
   initAnimations();
 
   initHeroScene();
+  initCapabilitiesSection();
 }
 
 document.addEventListener('DOMContentLoaded', bootstrap);

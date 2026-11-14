@@ -1,41 +1,51 @@
-<section aria-labelledby="home-capabilities-title" class="py-20 sm:py-24 lg:py-32">
+<section aria-labelledby="home-capabilities-title" data-capabilities-section
+    class="relative isolate overflow-hidden bg-surface py-20 sm:py-24 lg:py-32">
+    {{-- Ánh sáng nền nhẹ tạo chiều sâu phân tách với section liền kề --}}
+    <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+        <div class="absolute top-1/4 -left-40 h-96 w-96 rounded-full bg-primary/[0.06] blur-3xl"></div>
+        <div class="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-brand-mint/30 blur-3xl"></div>
+    </div>
+
     <div class="container-page">
-        <div class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end lg:gap-16">
-            <div>
-                <p class="text-sm font-semibold tracking-[0.18em] text-primary uppercase">Năng lực cốt lõi</p>
-                <h2 id="home-capabilities-title"
-                    class="mt-4 text-3xl leading-tight font-bold text-text-dark sm:text-4xl lg:text-5xl">
-                    Chiều sâu kỹ thuật trải rộng trên toàn bộ phổ phần mềm.
-                </h2>
-            </div>
-            <p class="text-lg leading-8 text-muted">
-                Từ thiết kế kiến trúc ban đầu đến việc triển khai đám mây phức tạp, chúng tôi mang quy trình kỹ thuật chuẩn mực vào mọi sản phẩm.
-            </p>
-        </div>
+        <x-ui.section-header id="home-capabilities-title" eyebrow="Năng lực cốt lõi"
+            title="Chiều sâu kỹ thuật xuyên suốt mọi tầng công nghệ."
+            description="Từ thiết kế kiến trúc nền tảng đến triển khai hạ tầng đám mây chuyên sâu, mọi sản phẩm của PRX đều được bảo chứng bởi quy trình kỹ thuật bài bản và dày dạn kinh nghiệm." />
 
-        <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            <x-front-page.bento-card icon="cpu" title="Custom Web Platforms" :wide="true">
-                Thiết kế kiến trúc ứng dụng web có độ bền vững cao, bảo mật và dễ mở rộng, được tối ưu hóa cho lượng truy cập đồng thời lớn và logic nghiệp vụ phức tạp.
+        <div data-bento-grid class="mt-12 grid gap-5 md:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-6">
+            <x-front-page.bento-card index="01" icon="cpu" tag="Enterprise Architecture"
+                title="Custom Web Platforms" variant="dark" :wide="true" :tags="['High Concurrency', 'Multi-Tenant SaaS', 'Sub-50ms Latency']">
+                Kiến tạo các ứng dụng web bền bỉ, bảo mật cao và sẵn sàng mở rộng — được thiết kế chuyên biệt để chịu
+                tải truy cập đồng thời lớn và xử lý những bài toán nghiệp vụ phức tạp.
             </x-front-page.bento-card>
 
-            <x-front-page.bento-card icon="smartphone" title="Mobile Engineering">
-                Ứng dụng di động native và đa nền tảng được xây dựng với kiến trúc tối ưu và hiệu năng giao diện mượt mà.
+            <x-front-page.bento-card index="02" icon="smartphone" tag="iOS & Android" title="Mobile Engineering"
+                :tags="['Native & Cross-Platform', '60fps UI']">
+                Phát triển ứng dụng di động đa nền tảng và chuyên biệt (Native) với kiến trúc chuẩn sạch cùng trải
+                nghiệm giao diện mượt mà vượt trội.
             </x-front-page.bento-card>
 
-            <x-front-page.bento-card icon="layers" title="System Integration & APIs">
-                Phát triển các API REST/GraphQL mạnh mẽ để kết nối các hệ thống rời rạc và tự động hóa các hoạt động vận hành.
+            <x-front-page.bento-card index="03" icon="layers" tag="REST • GraphQL"
+                title="System Integration & APIs" :tags="['Event-Driven', 'Real-Time Sync']">
+                Xây dựng kiến trúc API REST/GraphQL chịu tải cao — xóa bỏ rào cản giữa các hệ thống rời rạc, đồng bộ dữ
+                liệu xuyên suốt và tự động hóa vận hành doanh nghiệp.
             </x-front-page.bento-card>
 
-            <x-front-page.bento-card icon="refresh-cw" title="Legacy Modernization" :wide="true">
-                Tái cấu trúc kiến trúc nguyên khối sang các framework hiện đại mà không làm gián đoạn kinh doanh hay downtime.
+            <x-front-page.bento-card index="04" icon="refresh-cw" tag="Zero-Downtime Migration"
+                title="Legacy Modernization" :wide="true" :tags="['Microservices Refactor', 'Data Integrity', 'Incremental Rollout']">
+                Chuyển đổi mượt mà các hệ thống lõi cồng kềnh sang kiến trúc hiện đại — nâng cấp sức mạnh công nghệ toàn
+                diện với cam kết vận hành xuyên suốt, không thời gian chết (Zero Downtime).
             </x-front-page.bento-card>
 
-            <x-front-page.bento-card icon="pen-tool" title="Product UI/UX Design" :wide="true">
-                Chuyển hóa các yêu cầu nghiệp vụ phức tạp thành giao diện sản phẩm trực quan, dễ truy cập và tối ưu hóa chuyển đổi.
+            <x-front-page.bento-card index="05" icon="pen-tool" tag="Design Systems" title="Product UI/UX Design"
+                :wide="true" :tags="['Interactive Prototyping', 'WCAG Accessibility', 'Conversion-Focused']">
+                Biến những bài toán nghiệp vụ chuyên sâu thành trải nghiệm giao diện tinh gọn, thân thiện với mọi người
+                dùng và thúc đẩy mạnh mẽ hiệu quả chuyển đổi.
             </x-front-page.bento-card>
 
-            <x-front-page.bento-card icon="shield-check" title="DevOps & Security">
-                Quy trình CI/CD tự động hóa, đóng gói container và giám sát cơ sở hạ tầng đám mây chủ động.
+            <x-front-page.bento-card index="06" icon="shield-check" tag="Cloud & SecOps" title="DevOps & Security"
+                variant="accent" :tablet-full="true" :tags="['Automated CI/CD', '24/7 Observability']">
+                Thiết lập luồng vận hành CI/CD tự động, chuẩn hóa môi trường với công nghệ container và giám sát chủ
+                động toàn bộ hạ tầng đám mây nhằm phát hiện sớm mọi rủi ro.
             </x-front-page.bento-card>
         </div>
     </div>
