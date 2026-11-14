@@ -1,6 +1,4 @@
-{{--
-  Template Name: Front Page VN
---}}
+{{-- Vietnamese Homepage --}}
 @extends('layouts.app')
 
 @section('content')
