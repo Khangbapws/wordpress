@@ -3,7 +3,7 @@
     {{-- Nền lưới bản vẽ kỹ thuật & Ánh sáng môi trường --}}
     <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
         <div class="hero-blueprint-grid absolute inset-0 opacity-60"></div>
-        <div class="absolute -top-32 left-1/4 h-[28rem] w-[28rem] rounded-full bg-primary/10 blur-3xl"></div>
+        <div class="absolute -top-32 left-1/4 h-112 w-md rounded-full bg-primary/10 blur-3xl"></div>
         <div class="absolute top-1/2 -right-32 h-96 w-96 rounded-full bg-brand-mint/55 blur-3xl"></div>
     </div>
 

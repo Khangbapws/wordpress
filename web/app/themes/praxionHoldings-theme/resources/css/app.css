@@ -1,57 +1,154 @@
-@import 'tailwindcss' theme(static);
+/* ==========================================================================
+   PRX HOLDINGS — Tailwind CSS v4 application stylesheet
+   Keep layout, spacing and responsive styling in Blade utilities.
+   Keep this file for design tokens, base rules, reusable components and
+   custom visual effects that are not convenient as utility classes.
+   ========================================================================== */
+
+@import 'tailwindcss';
+
+/* Tailwind v4 source detection (paths are relative to this CSS file). */
 @source "../../app/**/*.php";
 @source "../**/*.blade.php";
 @source "../**/*.js";
 
-@theme {
-  /* Fonts - Đồng bộ font chữ hiện đại, bo tròn nhẹ cho ngành làm đẹp */
+/* ==========================================================================
+   1. DESIGN TOKENS
+   ========================================================================== */
+
+@theme static {
+  /* Typography */
   --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
   --font-heading: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
-  /* Colors - Định nghĩa lại bảng màu Xanh Lá & Trắng của Praxion Holdings */
-  --color-primary: #2e7d32; /* Xanh lá thương hiệu (Thay cho màu xanh dương cũ) */
-  --color-primary-dark: #1b5e20; /* Xanh lá đậm khi hover */
-  --color-brand-light: #f2f9f3; /* Xanh lá siêu nhạt làm nền */
-  --color-brand-mint: #c8e6c9; /* Xanh mint làm điểm nhấn */
-  --color-text-dark: #1c2a1e; /* Chữ xanh đen đậm cho thanh lịch */
-  --color-muted: #616e64; /* Màu xám nhạt cho text phụ */
+  /* PRX brand palette */
+  --color-primary: #2e7d32;
+  --color-primary-dark: #1b5e20;
+  --color-brand-light: #f2f9f3;
+  --color-brand-mint: #c8e6c9;
+  --color-text-dark: #1c2a1e;
+  --color-muted: #616e64;
   --color-surface: #fafcfb;
 
-  /* Spacing */
+  /* Additional spacing tokens: 4.5rem and 22rem */
   --spacing-18: 4.5rem;
   --spacing-88: 22rem;
 
-  /* Border radius */
+  /*
+   * Intentional PRX radius overrides.
+   * These also change rounded-sm / rounded-md / rounded-lg site-wide.
+   */
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
+
+  /* Shared motion curve, available as the ease-prx utility. */
+  --ease-prx: cubic-bezier(0.22, 1, 0.36, 1);
 }
-/* Component styles — Quy hoạch toàn bộ nút bấm vào đây bằng @apply */
+
+/* ==========================================================================
+   2. BASE STYLES
+   ========================================================================== */
+
+@layer base {
+  :root {
+    --prx-ease: var(--ease-prx);
+  }
+
+  body {
+    @apply bg-surface font-sans text-text-dark antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold tracking-tight;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-3 outline-primary;
+  }
+
+  /* Preserve the existing offset for controls below the fixed header. */
+  button,
+  summary,
+  select,
+  input,
+  textarea {
+    @apply scroll-mt-28;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::marker {
+    content: '';
+  }
+
+  [x-cloak] {
+    display: none !important;
+  }
+
+  /* Keep WordPress emoji at text size instead of its default image size. */
+  img.emoji {
+    display: inline-block !important;
+    width: 1em !important;
+    height: 1em !important;
+    margin-inline: 0.15em !important;
+    vertical-align: -0.1em !important;
+  }
+}
+
+/* ==========================================================================
+   3. SHARED LAYOUT UTILITY
+   ========================================================================== */
+
+@utility container-page {
+  @apply mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-10;
+}
+
+/* ==========================================================================
+   4. REUSABLE COMPONENTS
+   ========================================================================== */
+
 @layer components {
-  /* Nhóm các nút bấm cạnh nhau */
+  /* ------------------------------------------------------------------------
+     Buttons
+     Prefer x-ui.button for new work. Keep these classes for existing markup.
+     ------------------------------------------------------------------------ */
+
   .btn-group {
-    @apply inline-flex items-center gap-3; /* gap-3 tương đương 12px */
+    @apply inline-flex items-center gap-3;
   }
 
-  /* Nút bấm chính (Bắt đầu ngay) */
   .btn-cta {
-    @apply inline-flex items-center justify-center px-6 py-3
-           font-semibold rounded-full bg-primary text-white
-           transition-all duration-300 no-underline;
-  }
-  .btn-cta:hover {
-    @apply bg-primary-dark -translate-y-0.5 shadow-lg shadow-primary/20 no-underline;
+    @apply inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 font-semibold text-white no-underline transition-all duration-300;
   }
 
-  /* Nút Đăng nhập tối giản (Màu xanh lá, không gạch chân) */
+  .btn-cta:hover {
+    @apply -translate-y-0.5 bg-primary-dark shadow-lg shadow-primary/20 no-underline;
+  }
+
   .btn-login {
-    @apply text-primary font-semibold px-6 py-3 rounded-full
-           transition-all duration-300 inline-block no-underline;
+    @apply inline-block rounded-full px-6 py-3 font-semibold text-primary no-underline transition-all duration-300;
   }
+
   .btn-login:hover {
-    @apply bg-primary/10 -translate-y-0.5 no-underline; /* Tạo nền mờ 10% từ màu primary */
+    @apply -translate-y-0.5 bg-primary/10 no-underline;
   }
+
+  /* ------------------------------------------------------------------------
+     Contact Form 7
+     ------------------------------------------------------------------------ */
 
   .prx-contact-form .wpcf7-form {
     @apply space-y-0;
@@ -78,7 +175,7 @@
   }
 
   .prx-contact-form .prx-contact-control {
-    @apply min-h-12 w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-text-dark shadow-sm placeholder:text-gray-400 focus:border-primary mt-2 mb-3;
+    @apply mt-2 mb-3 min-h-12 w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-text-dark shadow-sm placeholder:text-gray-400 focus:border-primary;
   }
 
   .prx-contact-form textarea.prx-contact-control {
@@ -102,7 +199,7 @@
   }
 
   .prx-contact-form .prx-contact-submit {
-    @apply inline-flex min-h-12 w-full items-center justify-center rounded-full bg-primary px-7 py-3 font-semibold text-white transition hover:bg-primary-dark disabled:cursor-wait disabled:opacity-70 sm:w-auto;
+    @apply inline-flex min-h-12 w-full items-center justify-center rounded-full bg-primary px-7 py-3 font-semibold text-white transition-colors hover:bg-primary-dark disabled:cursor-wait disabled:opacity-70 sm:w-auto;
   }
 
   .prx-contact-form .wpcf7-response-output {
@@ -118,77 +215,277 @@
   .prx-contact-form.spam .wpcf7-response-output {
     @apply border-red-300 bg-red-50 text-red-950;
   }
+
+  /* ------------------------------------------------------------------------
+     Robot mascot
+     ------------------------------------------------------------------------ */
+
+  .robot-mascot {
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  .robot-mascot__body {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: prx-robot-bounce 4.8s ease-in-out infinite;
+  }
+
+  .robot-mascot__wave-arm {
+    transform-box: view-box;
+    transform-origin: 60% 65%;
+    animation: prx-robot-wave 4.8s ease-in-out infinite;
+  }
+
+  /* ------------------------------------------------------------------------
+     Partner ticker and multi-logo marquee
+     ------------------------------------------------------------------------ */
+
+  .prx-partner-ticker {
+    overflow: hidden;
+  }
+
+  .prx-partner-ticker__viewport,
+  .prx-partner-marquee {
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+  }
+
+  .prx-partner-ticker__track {
+    display: flex;
+    width: max-content;
+    animation: prx-partner-ticker-scroll 28s linear infinite;
+  }
+
+  .prx-partner-ticker__group {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2rem;
+    color: var(--color-muted);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .prx-partner-ticker__separator {
+    color: var(--color-primary);
+    font-size: 0.85rem;
+  }
+
+  .prx-partner-marquee__track {
+    display: flex;
+    width: max-content;
+    animation: prx-partner-logo-scroll 35s linear infinite;
+  }
+
+  .prx-partner-marquee__group {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .prx-partner-logo-card {
+    display: flex;
+    width: 220px;
+    height: 110px;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(0 0 0 / 5%);
+    border-radius: 1rem;
+    background: #fff;
+    padding: 1.5rem;
+    transition:
+      border-color 300ms ease,
+      background-color 300ms ease;
+  }
+
+  .prx-partner-logo-card:hover {
+    border-color: rgb(46 125 50 / 20%);
+    background: var(--color-brand-light);
+  }
+
+  .prx-partner-ticker:hover .prx-partner-ticker__track,
+  .prx-partner-marquee:hover .prx-partner-marquee__track {
+    animation-play-state: paused;
+  }
+
+  /* ------------------------------------------------------------------------
+     PRX brand lockup / homepage logo reveal
+     ------------------------------------------------------------------------ */
+
+  .prx-brand-lockup {
+    --prx-brand-width: 220px;
+    --prx-mark-size: 40px;
+    --prx-mark-start: calc((var(--prx-brand-width) - var(--prx-mark-size)) / 2);
+    --prx-wordmark-left: 50px;
+
+    position: relative;
+    display: inline-flex;
+    width: var(--prx-brand-width);
+    height: 60px;
+    flex: 0 0 var(--prx-brand-width);
+    align-items: center;
+    overflow: visible;
+  }
+
+  .prx-brand-lockup__mark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    width: var(--prx-mark-size);
+    height: var(--prx-mark-size);
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+  }
+
+  .prx-brand-lockup__mark img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .prx-brand-lockup__wordmark {
+    position: absolute;
+    top: 50%;
+    left: var(--prx-wordmark-left);
+    display: block;
+    color: var(--color-primary);
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    line-height: 1.2;
+    padding-block: 0.08em;
+    white-space: nowrap;
+    clip-path: none;
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+
+  /* Homepage-only intro class is added by the inline script in the header. */
+  html.prx-home-logo-intro .prx-brand-lockup__mark {
+    animation: prx-logo-slide-left 1.25s var(--prx-ease) 0.15s both;
+  }
+
+  html.prx-home-logo-intro .prx-brand-lockup__wordmark {
+    clip-path: inset(-0.15em 100% -0.15em 0);
+    opacity: 0;
+    transform: translate(9px, -50%);
+    animation: prx-wordmark-reveal 0.95s var(--prx-ease) 0.55s both;
+  }
+
+  /* Hero / architecture visuals */
+  .hero-blueprint-grid {
+    background-image: radial-gradient(
+      color-mix(in oklab, var(--color-primary) 18%, transparent) 1px,
+      transparent 1px
+    );
+    background-size: 24px 24px;
+    mask-image: radial-gradient(
+      ellipse 80% 75% at 50% 45%,
+      #000 35%,
+      transparent 100%
+    );
+  }
+
+  .arch-data-conduit {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .arch-data-conduit::after {
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      var(--color-primary),
+      #22d3ee
+    );
+    content: '';
+    transform: translateY(-100%);
+    animation: prx-data-flow 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  .arch-data-conduit--delayed::after {
+    animation-delay: 1.2s;
+  }
+
+  /* Core capabilities bento visuals. Pointer coordinates are updated only
+     for the card currently under a fine pointer (see capabilities-section.js). */
+  .bento-spotlight {
+    background: radial-gradient(
+      420px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      color-mix(in oklab, var(--color-primary) 9%, transparent),
+      transparent 70%
+    );
+  }
+
+  .bento-spotlight--dark {
+    background: radial-gradient(
+      460px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgb(94 234 212 / 14%),
+      transparent 70%
+    );
+  }
+
+  .bento-card-mesh {
+    background-image: radial-gradient(
+      color-mix(in oklab, var(--color-primary) 22%, transparent) 1px,
+      transparent 1px
+    );
+    background-size: 14px 14px;
+    mask-image: radial-gradient(
+      ellipse 85% 85% at 100% 0%,
+      #000 20%,
+      transparent 80%
+    );
+  }
+
+  .bento-card-mesh--dark {
+    background-image: radial-gradient(
+      rgb(255 255 255 / 18%) 1px,
+      transparent 1px
+    );
+    background-size: 14px 14px;
+    mask-image: radial-gradient(
+      ellipse 85% 85% at 100% 0%,
+      #000 20%,
+      transparent 80%
+    );
+  }
 }
 
-@layer base {
-  body {
-    @apply antialiased bg-surface text-text-dark;
-  }
+/* ==========================================================================
+   5. ANIMATION KEYFRAMES
+   ========================================================================== */
 
-  :focus-visible {
-    @apply outline-2 outline-offset-3 outline-primary;
-  }
-
-  button,
-  summary,
-  select,
-  input,
-  textarea {
-    @apply scroll-mt-28;
-  }
-
-  summary::-webkit-details-marker {
-    display: none;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-heading font-bold tracking-tight;
-  }
-
-  /* Thẻ a mặc định sẽ ăn theo màu xanh lá của hệ thống */
-  a {
-    @apply no-underline;
-  }
-  [x-cloak] {
-    display: none !important;
-  }
-}
-@utility container-page {
-  @apply mx-auto
-    max-w-[1440px]
-    px-5
-    sm:px-8
-    lg:px-10;
-}
-
-/* ========================================
-   PRX Robot Mascot
-   Wave first, then bounce
-   ======================================== */
-
-.robot-mascot {
-  overflow: visible;
-  pointer-events: none;
-}
-
-.robot-mascot__body {
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: prx-robot-bounce 4.8s ease-in-out infinite;
-}
-
-.robot-mascot__wave-arm {
-  transform-box: view-box;
-  transform-origin: 60% 65%;
-  animation: prx-robot-wave 4.8s ease-in-out infinite;
-}
-
-/* Greeting phase: wave the arm first */
 @keyframes prx-robot-wave {
   0%,
   8%,
@@ -208,7 +505,6 @@
   }
 }
 
-/* Invitation phase: gently bounce after waving */
 @keyframes prx-robot-bounce {
   0%,
   40%,
@@ -216,141 +512,18 @@
     transform: translateY(0);
   }
 
-  46% {
-    transform: translateY(-2px);
-  }
-
-  52% {
-    transform: translateY(0);
-  }
-
-  58% {
-    transform: translateY(-3px);
-  }
-
-  64% {
-    transform: translateY(0);
-  }
-
+  46%,
+  58%,
   70% {
     transform: translateY(-2px);
   }
 
+  52%,
+  64%,
   76% {
     transform: translateY(0);
   }
 }
-
-/* Respect reduced-motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  .robot-mascot__body,
-  .robot-mascot__wave-arm {
-    animation: none !important;
-  }
-}
-
-/* =========================================================
-   PRX PARTNER MARQUEE
-   ========================================================= */
-
-/* Single-partner editorial ticker */
-
-.prx-partner-ticker {
-  overflow: hidden;
-}
-
-.prx-partner-ticker__viewport {
-  overflow: hidden;
-  width: 100%;
-
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 8%,
-    black 92%,
-    transparent
-  );
-}
-
-.prx-partner-ticker__track {
-  display: flex;
-  width: max-content;
-  animation: prx-partner-ticker-scroll 28s linear infinite;
-  will-change: transform;
-}
-
-.prx-partner-ticker__group {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  gap: 2rem;
-  padding-right: 2rem;
-
-  color: var(--color-muted);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  white-space: nowrap;
-  text-transform: uppercase;
-}
-
-.prx-partner-ticker__separator {
-  color: var(--color-primary);
-  font-size: 0.85rem;
-}
-
-/* Multiple-partner logo marquee */
-
-.prx-partner-marquee {
-  overflow: hidden;
-  width: 100%;
-
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 7%,
-    black 93%,
-    transparent
-  );
-}
-
-.prx-partner-marquee__track {
-  display: flex;
-  width: max-content;
-  animation: prx-partner-logo-scroll 35s linear infinite;
-  will-change: transform;
-}
-
-.prx-partner-marquee__group {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  gap: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.prx-partner-logo-card {
-  display: flex;
-  width: 220px;
-  height: 110px;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgb(0 0 0 / 5%);
-  border-radius: 1rem;
-  background: white;
-  padding: 1.5rem;
-  transition:
-    border-color 300ms ease,
-    background-color 300ms ease;
-}
-
-.prx-partner-logo-card:hover {
-  border-color: rgb(46 125 50 / 20%);
-  background: var(--color-brand-light);
-}
-
-/* Seamless movement */
 
 @keyframes prx-partner-ticker-scroll {
   from {
@@ -372,192 +545,90 @@
   }
 }
 
-/* Pause while interacting */
-
-.prx-partner-ticker:hover .prx-partner-ticker__track,
-.prx-partner-marquee:hover .prx-partner-marquee__track {
-  animation-play-state: paused;
-}
-
-/* Reduced motion accessibility */
-
-@media (prefers-reduced-motion: reduce) {
-  .prx-partner-ticker__track,
-  .prx-partner-marquee__track {
-    animation: none;
-    transform: none;
-  }
-}
-
-/* =========================================================
-   PRX BRAND LOCKUP
-   Default state: fully visible logo
-   Intro state: animated only on homepage, once per session
-   ========================================================= */
-
-.prx-brand-lockup {
-  --prx-logo-size: 40px;
-
-  position: relative;
-  display: inline-flex;
-  flex: 0 0 220px;
-  width: 220px;
-  height: 60px;
-  align-items: center;
-  overflow: visible;
-}
-
-/* PRX Symbol */
-
-.prx-brand-lockup__mark {
-  position: absolute;
-  top: 50%;
-  left: 0;
-
-  display: flex;
-  width: var(--prx-logo-size);
-  height: var(--prx-logo-size);
-  align-items: center;
-  justify-content: center;
-
-  transform: translateY(-50%);
-}
-
-.prx-brand-lockup__mark img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/* PRX Holdings Wordmark */
-
-.prx-brand-lockup__wordmark {
-  position: absolute;
-  top: 50%;
-  left: 50px;
-
-  display: block;
-
-  color: var(--color-primary);
-  font-family: var(--font-sans);
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -0.045em;
-  line-height: 1.2;
-  padding-block: 0.08em;
-  white-space: nowrap;
-
-  /* Default: fully visible */
-  clip-path: none;
-  opacity: 1;
-  transform: translateY(-50%);
-}
-
-/* =========================================================
-   HOMEPAGE INTRO ANIMATION
-   Only activated through the html class
-   ========================================================= */
-
-/* Symbol moves from center to its final position */
-
-html.prx-home-logo-intro .prx-brand-lockup__mark {
-  animation: prx-logo-slide-left 1.25s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
-}
-
-/* Wordmark reveals from left to right */
-
-html.prx-home-logo-intro .prx-brand-lockup__wordmark {
-  clip-path: inset(-0.15em 100% -0.15em 0);
-  opacity: 0;
-  transform: translate(9px, -50%);
-
-  animation: prx-wordmark-reveal 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both;
-}
-
-/* Keyframes */
-
+/* Animate the logo with transform instead of changing `left` each frame. */
 @keyframes prx-logo-slide-left {
   0% {
-    left: calc(50% - 20px);
-    transform: translateY(-50%) scale(0.92);
+    transform: translate(var(--prx-mark-start), -50%) scale(0.92);
   }
 
   18% {
-    transform: translateY(-50%) scale(1.06);
+    transform: translate(var(--prx-mark-start), -50%) scale(1.06);
   }
 
   100% {
-    left: 0;
-    transform: translateY(-50%) scale(1);
+    transform: translate(0, -50%) scale(1);
   }
 }
 
 @keyframes prx-wordmark-reveal {
-  0% {
+  from {
     clip-path: inset(-0.15em 100% -0.15em 0);
     opacity: 0;
     transform: translate(9px, -50%);
   }
 
-  100% {
+  to {
     clip-path: inset(-0.15em 0 -0.15em 0);
     opacity: 1;
     transform: translate(0, -50%);
   }
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+@keyframes prx-data-flow {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   6. RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
 
 @media (max-width: 639px) {
   .prx-brand-lockup {
-    --prx-logo-size: 34px;
-
-    flex-basis: 184px;
-    width: 184px;
+    --prx-brand-width: 184px;
+    --prx-mark-size: 34px;
+    --prx-wordmark-left: 43px;
     height: 48px;
   }
 
   .prx-brand-lockup__wordmark {
-    left: 43px;
     font-size: 1.25rem;
   }
-
-  html.prx-home-logo-intro .prx-brand-lockup__mark {
-    animation-name: prx-logo-slide-left-mobile;
-  }
 }
 
-@keyframes prx-logo-slide-left-mobile {
-  0% {
-    left: calc(50% - 17px);
-    transform: translateY(-50%) scale(0.92);
-  }
-
-  18% {
-    transform: translateY(-50%) scale(1.06);
-  }
-
-  100% {
-    left: 0;
-    transform: translateY(-50%) scale(1);
-  }
-}
-
-/* =========================================================
-   ACCESSIBILITY
-   ========================================================= */
+/* ==========================================================================
+   7. ACCESSIBILITY: REDUCED MOTION
+   Keep one consolidated preference block for all animated components.
+   ========================================================================== */
 
 @media (prefers-reduced-motion: reduce) {
+  .robot-mascot__body,
+  .robot-mascot__wave-arm,
+  .prx-partner-ticker__track,
+  .prx-partner-marquee__track,
+  .arch-data-conduit::after,
   html.prx-home-logo-intro .prx-brand-lockup__mark,
   html.prx-home-logo-intro .prx-brand-lockup__wordmark {
     animation: none !important;
   }
 
+  .prx-partner-ticker__track,
+  .prx-partner-marquee__track {
+    transform: none;
+  }
+
   html.prx-home-logo-intro .prx-brand-lockup__mark {
-    left: 0;
     transform: translateY(-50%);
   }
 
@@ -566,123 +637,4 @@ html.prx-home-logo-intro .prx-brand-lockup__wordmark {
     opacity: 1;
     transform: translateY(-50%);
   }
-}
-
-/* ==========================================================================
-   HERO SCENE & ROBOT MASCOT VISUALS
-   ========================================================================== */
-
-/* Lưới chấm kiến trúc mờ dần về các cạnh */
-.hero-blueprint-grid {
-  background-image: radial-gradient(
-    color-mix(in oklab, var(--color-primary, #0f766e) 18%, transparent) 1px,
-    transparent 1px
-  );
-  background-size: 24px 24px;
-  mask-image: radial-gradient(
-    ellipse 80% 75% at 50% 45%,
-    #000 35%,
-    transparent 100%
-  );
-}
-
-/* Luồng xung dữ liệu chạy dọc đường nối giữa các tầng kiến trúc */
-.arch-data-conduit {
-  position: relative;
-  overflow: hidden;
-}
-
-.arch-data-conduit::after {
-  content: '';
-  position: absolute;
-  inset-inline: 0;
-  top: -100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    var(--color-primary, #0f766e),
-    #22d3ee
-  );
-  animation: dataPulseFlow 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-
-.arch-data-conduit--delayed::after {
-  animation-delay: 1.2s;
-}
-
-@keyframes dataPulseFlow {
-  0% {
-    top: -100%;
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  100% {
-    top: 100%;
-    opacity: 0;
-  }
-}
-
-/* Chống WordPress Twemoji tự động phóng to trên toàn trang */
-img.emoji {
-  display: inline-block !important;
-  height: 1em !important;
-  width: 1em !important;
-  margin: 0 0.15em !important;
-  vertical-align: -0.1em !important;
-}
-
-/* Tôn trọng cài đặt giảm chuyển động của người dùng */
-@media (prefers-reduced-motion: reduce) {
-  .arch-data-conduit::after {
-    animation: none;
-  }
-}
-
-/* ==========================================================================
-   CORE CAPABILITIES BENTO GRID
-   ========================================================================== */
-
-.bento-spotlight {
-  background: radial-gradient(
-    420px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    color-mix(in oklab, var(--color-primary, #0f766e) 9%, transparent),
-    transparent 70%
-  );
-}
-
-.bento-spotlight--dark {
-  background: radial-gradient(
-    460px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    rgba(94, 234, 212, 0.14),
-    transparent 70%
-  );
-}
-
-.bento-card-mesh {
-  background-image: radial-gradient(
-    color-mix(in oklab, var(--color-primary, #0f766e) 22%, transparent) 1px,
-    transparent 1px
-  );
-  background-size: 14px 14px;
-  mask-image: radial-gradient(
-    ellipse 85% 85% at 100% 0%,
-    #000 20%,
-    transparent 80%
-  );
-}
-
-.bento-card-mesh--dark {
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.18) 1px,
-    transparent 1px
-  );
-  background-size: 14px 14px;
-  mask-image: radial-gradient(
-    ellipse 85% 85% at 100% 0%,
-    #000 20%,
-    transparent 80%
-  );
 }

@@ -58,7 +58,7 @@
                                 ])>
                                 <span>{{ $item['label'] }}</span>
 
-                                @if ($item['page'] === 'additional-services')
+                                @if ($item['page'] === 'contact')
                                     <x-ui.robot-mascot />
                                 @endif
                             </a>
@@ -101,7 +101,7 @@
                                     ])>
                                     <span>{{ $item['label'] }}</span>
 
-                                    @if ($item['page'] === 'additional-services')
+                                    @if ($item['page'] === 'contact')
                                         <x-ui.robot-mascot />
                                     @endif
                                 </a>

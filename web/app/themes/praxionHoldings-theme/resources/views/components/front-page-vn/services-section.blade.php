@@ -2,7 +2,7 @@
     class="relative isolate overflow-hidden bg-surface py-20 sm:py-24 lg:py-32">
     {{-- Ánh sáng nền nhẹ tạo chiều sâu phân tách với section liền kề --}}
     <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-        <div class="absolute top-1/4 -left-40 h-96 w-96 rounded-full bg-primary/[0.06] blur-3xl"></div>
+        <div class="absolute top-1/4 -left-40 h-96 w-96 rounded-full bg-primary/6 blur-3xl"></div>
         <div class="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-brand-mint/30 blur-3xl"></div>
     </div>
 
